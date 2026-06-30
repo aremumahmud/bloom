@@ -4,7 +4,6 @@ import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { MessageCircle, X, Send, ArrowRight, Phone, Mail } from "lucide-react";
 import Link from "next/link";
-import { supabase } from "@/integrations/supabase/client";
 
 interface Message {
   role: "user" | "assistant";
@@ -40,13 +39,16 @@ export function ChatWidget() {
     setIsLoading(true);
 
     try {
-      const { data, error } = await supabase.functions.invoke("chat", {
-        body: {
+      const res = await fetch("/api/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
           messages: updatedMessages.map(({ role, content }) => ({ role, content })),
-        },
+        }),
       });
 
-      if (error) throw error;
+      if (!res.ok) throw new Error("Request failed");
+      const data = await res.json();
 
       setMessages((prev) => [
         ...prev,
