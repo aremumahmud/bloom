@@ -17,7 +17,6 @@ import {
 } from "@/components/ui/breadcrumb";
 import { Phone, Mail, MapPin, Clock, CheckCircle, Instagram, Facebook } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
-import { supabase } from "@/integrations/supabase/client";
 import handsImage from "@/assets/hands-connection.jpg";
 
 const contactInfo = [
@@ -67,55 +66,30 @@ const Contact = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    const { error } = await supabase.from("consultations").insert({
-      name: formData.name,
-      email: formData.email,
-      phone: formData.phone || null,
-      relationship: formData.relationship || null,
-      message: formData.message,
-      referral_source: formData.referral_source || null,
-    });
-    
-    setIsSubmitting(false);
-    
-    if (error) {
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      if (!res.ok) throw new Error("Request failed");
+
+      setIsSubmitted(true);
+      toast({
+        title: "Message sent",
+        description: "We'll be in touch within one business day.",
+      });
+    } catch {
       toast({
         title: "Something went wrong",
         description: "Please try again or call us directly.",
         variant: "destructive",
       });
-      return;
+    } finally {
+      setIsSubmitting(false);
     }
-
-    // Send email notification (fire-and-forget)
-    supabase.functions.invoke("consultation-notify", {
-      body: formData,
-    }).catch((err) => console.error("Email notify failed:", err));
-
-    // Sync contact to Brevo CRM with tag and list
-    const nameParts = formData.name.trim().split(/\s+/);
-    supabase.functions.invoke("brevo-sync", {
-      body: {
-        email: formData.email,
-        firstName: nameParts[0] || "",
-        lastName: nameParts.slice(1).join(" ") || "",
-        phone: formData.phone || undefined,
-        source: "Contact Page",
-        tag: "General Inquiry",
-        attributes: {
-          RELATIONSHIP: formData.relationship || "",
-          REFERRAL_SOURCE: formData.referral_source || "",
-          MESSAGE: formData.message || "",
-        },
-      },
-    }).catch((err) => console.error("Brevo sync failed:", err));
-    
-    setIsSubmitted(true);
-    toast({
-      title: "Message sent",
-      description: "We'll be in touch within one business day.",
-    });
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {

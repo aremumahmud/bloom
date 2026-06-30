@@ -8,7 +8,6 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
-import { supabase } from "@/integrations/supabase/client";
 
 const REQUEST_TYPES = [
   "Schedule Change",
@@ -43,39 +42,12 @@ export function CareRequestModal({ open, onOpenChange }: CareRequestModalProps) 
     }
     setLoading(true);
     try {
-      const { error: dbError } = await supabase.from("care_requests").insert({
-        client_name: form.clientName,
-        phone: form.phone,
-        email: form.email || null,
-        request_type: form.requestType,
-        message: form.message,
+      const res = await fetch("/api/care-request", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
       });
-      if (dbError) throw dbError;
-
-      // Send email notification (fire-and-forget)
-      supabase.functions.invoke("care-request", { body: form }).catch((err) =>
-        console.error("Care request email failed:", err)
-      );
-
-      // Sync contact to Brevo CRM with tag and list
-      if (form.email) {
-        const nameParts = form.clientName.trim().split(/\s+/);
-        supabase.functions.invoke("brevo-sync", {
-          body: {
-            email: form.email,
-            firstName: nameParts[0] || "",
-            lastName: nameParts.slice(1).join(" ") || "",
-            phone: form.phone || undefined,
-            source: "Care Request Form",
-            tag: "Care Inquiry",
-            attributes: {
-              REQUEST_TYPE: form.requestType || "",
-              MESSAGE: form.message || "",
-            },
-          },
-        }).catch((err) => console.error("Brevo sync failed:", err));
-      }
-
+      if (!res.ok) throw new Error("Request failed");
       setSubmitted(true);
     } catch (err) {
       console.error("Care request error:", err);

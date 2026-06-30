@@ -6,7 +6,6 @@ import { BookOpen, CheckCircle, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 
 const signs = [
@@ -31,30 +30,12 @@ export const LeadMagnetSection = () => {
 
     setLoading(true);
     try {
-      const { error } = await supabase.from("lead_magnet_downloads" as any).insert({
-        full_name: form.name.trim(),
-        email: form.email.trim(),
-        phone: form.phone.trim() || null,
-        guide_name: "5-signs-guide",
-      } as any);
-
-      if (error) throw error;
-
-      // Sync to Brevo CRM
-      try {
-        await supabase.functions.invoke("brevo-sync", {
-          body: {
-            email: form.email.trim(),
-            name: form.name.trim(),
-            phone: form.phone.trim() || undefined,
-            lead_type: "Guide Download",
-            source: "5 Signs Guide",
-          },
-        });
-      } catch {
-        // Non-critical — don't block success
-      }
-
+      const res = await fetch("/api/lead-magnet", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name: form.name.trim(), email: form.email.trim(), phone: form.phone.trim() || undefined }),
+      });
+      if (!res.ok) throw new Error("Request failed");
       setSubmitted(true);
     } catch {
       toast.error("Something went wrong. Please try again.");

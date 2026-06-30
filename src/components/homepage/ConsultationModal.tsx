@@ -8,7 +8,6 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { CheckCircle } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
-import { supabase } from "@/integrations/supabase/client";
 
 interface ConsultationModalProps {
   open: boolean;
@@ -40,38 +39,12 @@ export function ConsultationModal({ open, onOpenChange }: ConsultationModalProps
     }
     setLoading(true);
     try {
-      const { error } = await supabase.from("consultations").insert({
-        name: form.name,
-        email: form.email,
-        phone: form.phone || null,
-        relationship: form.relationship || null,
-        message: form.message,
-        referral_source: form.referral_source || null,
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ...form, source: "Consultation Form" }),
       });
-      if (error) throw error;
-
-      supabase.functions.invoke("consultation-notify", { body: form }).catch((err) =>
-        console.error("Consultation email failed:", err)
-      );
-
-      // Sync contact to Brevo CRM with tag and list
-      const nameParts = form.name.trim().split(/\s+/);
-      supabase.functions.invoke("brevo-sync", {
-        body: {
-          email: form.email,
-          firstName: nameParts[0] || "",
-          lastName: nameParts.slice(1).join(" ") || "",
-          phone: form.phone || undefined,
-          source: "Consultation Form",
-          tag: "Consultation Request",
-          attributes: {
-            RELATIONSHIP: form.relationship || "",
-            REFERRAL_SOURCE: form.referral_source || "",
-            MESSAGE: form.message || "",
-          },
-        },
-      }).catch((err) => console.error("Brevo sync failed:", err));
-
+      if (!res.ok) throw new Error("Request failed");
       setSubmitted(true);
     } catch (err) {
       console.error("Consultation error:", err);

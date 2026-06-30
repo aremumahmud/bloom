@@ -5,7 +5,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Mail, CheckCircle, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 
 export const NewsletterSection = () => {
@@ -22,35 +21,12 @@ export const NewsletterSection = () => {
 
     setLoading(true);
     try {
-      const { error } = await supabase.from("newsletter_subscribers" as any).insert({
-        email: form.email.trim(),
-        full_name: form.name.trim() || null,
-      } as any);
-
-      if (error) {
-        if (error.code === "23505") {
-          toast.info("You're already subscribed — thank you!");
-          setSubmitted(true);
-          return;
-        }
-        throw error;
-      }
-
-      // Sync to Brevo CRM
-      try {
-        await supabase.functions.invoke("brevo-sync", {
-          body: {
-            email: form.email.trim(),
-            firstName: form.name.trim().split(" ")[0] || "",
-            lastName: form.name.trim().split(" ").slice(1).join(" ") || "",
-            source: "Newsletter",
-            tag: "Newsletter Subscriber",
-          },
-        });
-      } catch {
-        // Non-critical
-      }
-
+      const res = await fetch("/api/newsletter", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email: form.email.trim(), name: form.name.trim() || undefined }),
+      });
+      if (!res.ok) throw new Error("Request failed");
       setSubmitted(true);
     } catch {
       toast.error("Something went wrong. Please try again.");
