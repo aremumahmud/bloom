@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Lato:wght@300;400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Bloom Home Care Design System - Quiet Luxury, Warm, Intentional */
+
+@layer base {
+  :root {
+    /* Warm cream background — #F7F3ED */
+    --background: 33 38% 95%;
+    --foreground: 30 15% 18%;
+
+    /* Slightly warmer card surfaces */
+    --card: 33 30% 93%;
+    --card-foreground: 30 15% 18%;
+
+    --popover: 33 30% 93%;
+    --popover-foreground: 30 15% 18%;
+
+    /* Forest green from logo — #1A3C2B */
+    --primary: 151 39% 17%;
+    --primary-foreground: 33 38% 97%;
+
+    /* Warm taupe secondary */
+    --secondary: 30 15% 92%;
+    --secondary-foreground: 30 15% 25%;
+
+    /* Muted tones */
+    --muted: 30 10% 90%;
+    --muted-foreground: 30 10% 45%;
+
+    /* Light green accent */
+    --accent: 151 20% 93%;
+    --accent-foreground: 151 39% 17%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Soft borders */
+    --border: 30 15% 88%;
+    --input: 30 15% 88%;
+    --ring: 151 39% 17%;
+
+    --radius: 0.75rem;
+
+    /* Custom tokens for Bloom Home Care */
+    --cream: 33 38% 95%;
+    --ivory: 33 30% 93%;
+    --warm-white: 33 25% 97%;
+    --charcoal: 30 15% 18%;
+    --charcoal-light: 30 10% 35%;
+    --sage: 151 39% 17%;        /* deep forest green — logo primary */
+    --sage-light: 151 20% 93%;  /* very light green tint */
+    --sage-dark: 151 39% 11%;   /* deep hover green */
+    --bloom-pink: 344 54% 58%;  /* rose pink — tulip petals */
+    --bloom-gold: 42 50% 55%;   /* warm gold — logo border & "HOME CARE" */
+    --taupe: 30 10% 60%;
+    --stone: 30 8% 75%;
+
+    /* Sidebar - keeping for shadcn compatibility */
+    --sidebar-background: 33 30% 93%;
+    --sidebar-foreground: 30 15% 25%;
+    --sidebar-primary: 151 39% 17%;
+    --sidebar-primary-foreground: 33 38% 97%;
+    --sidebar-accent: 151 20% 93%;
+    --sidebar-accent-foreground: 151 39% 17%;
+    --sidebar-border: 30 15% 88%;
+    --sidebar-ring: 151 39% 17%;
+  }
+
+  .dark {
+    --background: 30 15% 10%;
+    --foreground: 33 25% 95%;
+
+    --card: 30 15% 12%;
+    --card-foreground: 33 25% 95%;
+
+    --popover: 30 15% 12%;
+    --popover-foreground: 33 25% 95%;
+
+    --primary: 151 30% 52%;
+    --primary-foreground: 30 15% 10%;
+
+    --secondary: 30 10% 18%;
+    --secondary-foreground: 33 25% 90%;
+
+    --muted: 30 10% 20%;
+    --muted-foreground: 30 10% 60%;
+
+    --accent: 151 15% 20%;
+    --accent-foreground: 151 20% 80%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 30 10% 20%;
+    --input: 30 10% 20%;
+    --ring: 151 30% 52%;
+
+    --sidebar-background: 30 15% 12%;
+    --sidebar-foreground: 33 25% 90%;
+    --sidebar-primary: 151 30% 52%;
+    --sidebar-primary-foreground: 30 15% 10%;
+    --sidebar-accent: 151 15% 20%;
+    --sidebar-accent-foreground: 151 20% 80%;
+    --sidebar-border: 30 10% 20%;
+    --sidebar-ring: 151 30% 52%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Lato', system-ui, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', Georgia, serif;
+    @apply font-medium tracking-tight;
+  }
+}
+
+@layer components {
+  .container-narrow {
+    @apply max-w-4xl mx-auto px-6;
+  }
+
+  .container-wide {
+    @apply max-w-6xl mx-auto px-6;
+  }
+
+  .section-padding {
+    @apply py-20 md:py-28 lg:py-32;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer utilities {
+  .font-serif {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+
+  .font-sans {
+    font-family: 'Lato', system-ui, sans-serif;
+  }
+
+  /* Subtle gradient overlays */
+  .gradient-warm {
+    background: linear-gradient(
+      180deg,
+      hsl(var(--cream)) 0%,
+      hsl(var(--ivory)) 100%
+    );
+  }
+
+  .gradient-sage {
+    background: linear-gradient(
+      135deg,
+      hsl(var(--sage-light)) 0%,
+      hsl(var(--cream)) 100%
+    );
+  }
+
+  /* Animation utilities */
+  .animate-fade-up {
+    animation: fadeUp 0.6s ease-out forwards;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+/* ── PAS Flowing Reader Mode ── */
+.pas-flowing-reader .handbook-page {
+  width: 100% !important;
+  height: auto !important;
+  max-width: 860px;
+  margin: 0 auto;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  border-bottom: 1px solid #D0C9BF;
+}
+
+/* Remove page footers in flowing mode */
+.pas-flowing-reader .handbook-page > div:last-child:not(.relative) {
+  display: none;
+}
+
+/* Increase font sizes for readability */
+.pas-flowing-reader .handbook-page p {
+  font-size: 15px !important;
+  line-height: 1.8 !important;
+}
+
+.pas-flowing-reader .handbook-page h2 {
+  font-size: 22px !important;
+}
+
+.pas-flowing-reader .handbook-page h3 {
+  font-size: 17px !important;
+}
+
+/* Tables remain tables but get larger text */
+.pas-flowing-reader .handbook-page table {
+  font-size: 13px !important;
+}
+
+.pas-flowing-reader .handbook-page th,
+.pas-flowing-reader .handbook-page td {
+  font-size: 13px !important;
+  padding: 6px 10px !important;
+}
+
+/* Remove overflow-hidden from content areas in flowing mode */
+.pas-flowing-reader .handbook-page .overflow-hidden {
+  overflow: visible !important;
+}
+
+/* ── Print styles for all document pages ── */
+@media print {
+  @page {
+    size: letter;
+    margin: 0;
+  }
+
+  .no-print,
+  .sticky {
+    display: none !important;
+  }
+
+  body {
+    background: #fff !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* Scale fixed-size document pages to fill the paper */
+  .packet-page,
+  .print-page-break {
+    page-break-after: always;
+    break-after: page;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+  }
+  .packet-page:last-child,
+  .print-page-break:last-child {
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
+  .pas-flowing-reader .handbook-page,
+  .handbook-page {
+    width: 100vw !important;
+    min-height: 100vh !important;
+    page-break-after: always;
+    break-after: page;
+  }
+
+  /* Scale the 612px-wide pages to fill letter width */
+  .packet-page > *,
+  .print-page-break {
+    width: 100vw !important;
+    height: 100vh !important;
+    transform-origin: top left;
+  }
+
+  /* Container holding all pages — remove gaps/padding */
+  #handbook-all,
+  #packet-all {
+    gap: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Hide page labels between pages */
+  .scroll-mt-20 > p:first-child {
+    display: none !important;
+  }
+}
+
+/* Safe area for sticky mobile CTA bar */
+.safe-area-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
