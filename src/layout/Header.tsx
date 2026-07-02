@@ -20,8 +20,39 @@ const serviceLinks = [
   { href: "/services/end-of-life-care", label: "End-of-Life Care" },
 ];
 
-const locationLinks = [
-  { href: "/locations/katy-tx", label: "Katy" },
+const locationGroups = [
+  {
+    region: "West Houston",
+    cities: [
+      { href: "/locations/katy-tx", label: "Katy" },
+      { href: "/locations/sugar-land-tx", label: "Sugar Land" },
+      { href: "/locations/richmond-tx", label: "Richmond" },
+    ],
+  },
+  {
+    region: "North Houston",
+    cities: [
+      { href: "/locations/the-woodlands-tx", label: "The Woodlands" },
+      { href: "/locations/cypress-tx", label: "Cypress" },
+      { href: "/locations/spring-tx", label: "Spring" },
+    ],
+  },
+  {
+    region: "South Houston",
+    cities: [
+      { href: "/locations/pearland-tx", label: "Pearland" },
+      { href: "/locations/league-city-tx", label: "League City" },
+      { href: "/locations/friendswood-tx", label: "Friendswood" },
+    ],
+  },
+  {
+    region: "East Houston",
+    cities: [
+      { href: "/locations/pasadena-tx", label: "Pasadena" },
+      { href: "/locations/baytown-tx", label: "Baytown" },
+      { href: "/locations/deer-park-tx", label: "Deer Park" },
+    ],
+  },
 ];
 
 const aboutLinks = [
@@ -181,7 +212,7 @@ export function Header() {
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: 8 }}
                       transition={{ duration: 0.15 }}
-                      className="absolute top-full left-1/2 -translate-x-1/2 pt-2 w-[520px]"
+                      className="absolute top-full left-1/2 -translate-x-1/2 pt-2 w-[640px]"
                     >
                       <div className="bg-background rounded-xl border border-border shadow-xl p-6">
                         <div className="grid grid-cols-2 gap-6">
@@ -197,22 +228,27 @@ export function Header() {
                           </div>
                           <div>
                             <p className="text-xs font-sans font-semibold text-muted-foreground uppercase tracking-widest mb-3">
-                              <MapPin size={12} className="inline mr-1" />Service Area
+                              <MapPin size={12} className="inline mr-1" />Greater Houston Areas
                             </p>
-                            <div className="space-y-1">
-                              {locationLinks.map((link) => (
-                                <Link key={link.href} href={link.href} className={`block px-3 py-2 rounded-lg text-sm font-sans transition-colors ${pathname === link.href ? "text-primary bg-primary/5" : "text-foreground hover:bg-accent hover:text-accent-foreground"}`}>
-                                  {link.label}, TX
-                                </Link>
+                            <div className="grid grid-cols-2 gap-x-4 gap-y-0">
+                              {locationGroups.map((group) => (
+                                <div key={group.region} className="mb-3">
+                                  <p className="text-[10px] font-sans font-semibold text-muted-foreground/70 uppercase tracking-widest mb-1 px-3">{group.region}</p>
+                                  {group.cities.map((link) => (
+                                    <Link key={link.href} href={link.href} className={`block px-3 py-1 rounded-lg text-sm font-sans transition-colors ${pathname === link.href ? "text-primary bg-primary/5" : "text-foreground hover:bg-accent hover:text-accent-foreground"}`}>
+                                      {link.label}
+                                    </Link>
+                                  ))}
+                                </div>
                               ))}
-                              <Link href="/locations" className="block px-3 py-2 rounded-lg text-sm font-sans text-primary hover:bg-primary/5 transition-colors font-medium">
-                                Katy, TX &amp; surrounding areas →
-                              </Link>
                             </div>
+                            <Link href="/locations" className="block px-3 py-2 rounded-lg text-sm font-sans text-primary hover:bg-primary/5 transition-colors font-medium mt-1">
+                              View all 30 service areas →
+                            </Link>
                           </div>
                         </div>
                         <div className="mt-4 pt-4 border-t border-border">
-                          <p className="text-xs text-muted-foreground font-sans text-center italic">Trusted, compassionate home care — in Katy, TX and surrounding areas</p>
+                          <p className="text-xs text-muted-foreground font-sans text-center italic">Serving Greater Houston, TX — compassionate in-home care for seniors</p>
                         </div>
                       </div>
                     </motion.div>
@@ -335,11 +371,14 @@ export function Header() {
                             </Link>
                           ))}
                           <p className="text-xs font-sans font-semibold text-muted-foreground uppercase tracking-widest mb-2 mt-4">Service Areas</p>
-                          {locationLinks.map((link) => (
+                          {locationGroups.flatMap((g) => g.cities).map((link) => (
                             <Link key={link.href} href={link.href} onClick={closeMenu} className={`block py-1.5 text-sm font-sans ${pathname === link.href ? "text-primary" : "text-muted-foreground"}`}>
                               {link.label}, TX
                             </Link>
                           ))}
+                          <Link href="/locations" onClick={closeMenu} className="block py-1.5 text-sm font-sans text-primary font-medium">
+                            View all service areas →
+                          </Link>
                         </div>
                       </motion.div>
                     )}
