@@ -172,7 +172,7 @@ const ServiceAreas = () => {
         <div className="container-wide">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
-              <img src={coverageMapImage.src} alt="Bloom Home Care service coverage area map showing Katy, TX and surrounding areas" className="rounded-xl shadow-lg w-full" loading="lazy" />
+              {/* <img src={coverageMapImage.src} alt="Bloom Home Care service coverage area map showing Katy, TX and surrounding areas" className="rounded-xl shadow-lg w-full" loading="lazy" /> */}
             </motion.div>
             <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
               <h2 className="font-serif text-3xl text-foreground mb-6">Greater Houston, TX</h2>
