@@ -11,8 +11,55 @@ import heroCaregiverImage from "@/assets/hero-caregiver.jpg";
 import coverageMapImage from "@/assets/coverage-map.png";
 import cookingTogetherImage from "@/assets/cooking-together.jpg";
 
-const cities = [
-  { name: "Katy", slug: "katy-tx", description: "Our home base. Bloom Home Care is locally operated from Katy, TX — deeply connected to this vibrant community of families.", highlight: true },
+const cityGroups = [
+  {
+    region: "West Houston",
+    cities: [
+      { name: "Katy", slug: "katy-tx", description: "Our home base. Locally operated from Katy, TX — deeply connected to this community.", highlight: true },
+      { name: "Fulshear", slug: "fulshear-tx", description: "Growing Fort Bend community with a strong family focus." },
+      { name: "Richmond", slug: "richmond-tx", description: "One of Texas's oldest cities — a community with deep roots and proud history." },
+      { name: "Rosenberg", slug: "rosenberg-tx", description: "Close-knit Fort Bend community where family runs deep." },
+      { name: "Cinco Ranch", slug: "cinco-ranch-tx", description: "Master-planned community known for quality living in Katy area." },
+      { name: "Brookshire", slug: "brookshire-tx", description: "Small-city warmth in Waller County, west of Katy." },
+    ],
+  },
+  {
+    region: "North Houston",
+    cities: [
+      { name: "Spring", slug: "spring-tx", description: "Vibrant north Houston community with families of all stages of life." },
+      { name: "The Woodlands", slug: "the-woodlands-tx", description: "One of the nation's most acclaimed master-planned communities." },
+      { name: "Conroe", slug: "conroe-tx", description: "Growing Montgomery County seat with a strong sense of identity." },
+      { name: "Tomball", slug: "tomball-tx", description: "Beloved small-town character just northwest of Houston." },
+      { name: "Cypress", slug: "cypress-tx", description: "Established northwest Houston community with strong family values." },
+      { name: "Humble", slug: "humble-tx", description: "East Harris County community with close-knit neighborhoods." },
+      { name: "Kingwood", slug: "kingwood-tx", description: "The 'Livable Forest' — Houston's beloved wooded community." },
+    ],
+  },
+  {
+    region: "East Houston",
+    cities: [
+      { name: "Pasadena", slug: "pasadena-tx", description: "Hardworking, close-knit city on the east side of Houston." },
+      { name: "Baytown", slug: "baytown-tx", description: "Waterfront community with deep roots and generational families." },
+      { name: "Channelview", slug: "channelview-tx", description: "East Harris County community with strong neighborhood ties." },
+      { name: "Deer Park", slug: "deer-park-tx", description: "Proud east Houston city where neighbors look out for each other." },
+      { name: "La Porte", slug: "la-porte-tx", description: "Historic bayfront community with decades of community pride." },
+    ],
+  },
+  {
+    region: "South Houston",
+    cities: [
+      { name: "Pearland", slug: "pearland-tx", description: "One of Houston's most vibrant and diverse growing communities." },
+      { name: "Missouri City", slug: "missouri-city-tx", description: "Thriving community spanning Fort Bend and Harris Counties." },
+      { name: "Sugar Land", slug: "sugar-land-tx", description: "Highly regarded planned city in Fort Bend County." },
+      { name: "League City", slug: "league-city-tx", description: "Fast-growing, family-friendly city on the Gulf Coast." },
+      { name: "Friendswood", slug: "friendswood-tx", description: "Warm, welcoming community known for its neighborly spirit." },
+      { name: "Alvin", slug: "alvin-tx", description: "Small Brazoria County city with big community heart." },
+      { name: "Manvel", slug: "manvel-tx", description: "One of Brazoria County's fastest-growing communities." },
+      { name: "Webster", slug: "webster-tx", description: "Connected Clear Lake area community in South Houston." },
+      { name: "Clear Lake", slug: "clear-lake-tx", description: "Distinctive waterfront community with NASA-area heritage." },
+      { name: "Galveston", slug: "galveston-tx", description: "Historic island community with a spirit unlike anywhere else in Texas." },
+    ],
+  },
 ];
 
 const allServices = [
@@ -26,7 +73,7 @@ const allServices = [
   "Care Coordination & Family Guidance",
 ];
 
-const serviceAreas = ["Katy"];
+const serviceAreas = ["Katy", "Fulshear", "Richmond", "Rosenberg", "Cinco Ranch", "Brookshire", "Spring", "The Woodlands", "Conroe", "Tomball", "Cypress", "Humble", "Kingwood", "Pasadena", "Baytown", "Channelview", "Deer Park", "La Porte", "Pearland", "Missouri City", "Sugar Land", "League City", "Friendswood", "Alvin", "Manvel", "Webster", "Clear Lake", "Galveston"];
 
 const ServiceAreas = () => {
   const [consultationOpen, setConsultationOpen] = useState(false);
@@ -66,40 +113,55 @@ const ServiceAreas = () => {
         </div>
       </section>
 
-      {/* City Cards */}
+      {/* City Cards — grouped by region */}
       <section className="section-padding">
         <div className="container-wide">
           <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="text-center mb-16">
-            <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-4">Communities we call home</h2>
-            <p className="text-muted-foreground font-sans text-lg max-w-2xl mx-auto">Every family we serve is part of the community we live in.</p>
+            <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-4">Communities we serve across Greater Houston</h2>
+            <p className="text-muted-foreground font-sans text-lg max-w-2xl mx-auto">Every family we serve is part of the community we live and work in.</p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {cities.map((city, index) => (
-              <motion.div
-                key={city.name}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.05 }}
-              >
-                <Link
-                  href={`/locations/${city.slug}`}
-                  className={`block p-6 rounded-xl border h-full hover:shadow-lg hover:-translate-y-1 transition-all duration-300 ${city.highlight ? 'bg-primary/5 border-primary/20' : 'bg-card border-border'}`}
+          <div className="space-y-14">
+            {cityGroups.map((group, gi) => (
+              <div key={group.region}>
+                <motion.p
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5 }}
+                  className="text-xs font-sans font-semibold text-primary uppercase tracking-widest mb-5"
                 >
-                  <div className="flex items-center gap-3 mb-3">
-                    <MapPin size={20} className="text-primary" />
-                    <h3 className="font-serif text-xl text-foreground">{city.name}, TX</h3>
-                  </div>
-                  <p className="text-muted-foreground font-sans leading-relaxed text-sm mb-3">{city.description}</p>
-                  <span className="inline-flex items-center gap-1 text-primary text-sm font-sans font-medium">
-                    View services <ArrowRight size={14} />
-                  </span>
-                  {city.highlight && (
-                    <span className="inline-block mt-3 px-3 py-1 bg-primary/10 text-primary text-xs font-sans rounded-full">Home Base</span>
-                  )}
-                </Link>
-              </motion.div>
+                  {group.region}
+                </motion.p>
+                <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+                  {group.cities.map((city, index) => (
+                    <motion.div
+                      key={city.slug}
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.4, delay: index * 0.04 }}
+                    >
+                      <Link
+                        href={`/locations/${city.slug}`}
+                        className={`block p-5 rounded-xl border h-full hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 ${city.highlight ? 'bg-primary/5 border-primary/20' : 'bg-card border-border'}`}
+                      >
+                        <div className="flex items-center gap-2 mb-2">
+                          <MapPin size={15} className="text-primary flex-shrink-0" />
+                          <h3 className="font-serif text-base text-foreground">{city.name}, TX</h3>
+                        </div>
+                        <p className="text-muted-foreground font-sans leading-relaxed text-xs mb-3 line-clamp-2">{city.description}</p>
+                        <span className="inline-flex items-center gap-1 text-primary text-xs font-sans font-medium">
+                          Learn more <ArrowRight size={12} />
+                        </span>
+                        {city.highlight && (
+                          <span className="block mt-2 px-2.5 py-0.5 bg-primary/10 text-primary text-xs font-sans rounded-full w-fit">Home Base</span>
+                        )}
+                      </Link>
+                    </motion.div>
+                  ))}
+                </div>
+              </div>
             ))}
           </div>
         </div>
@@ -113,14 +175,15 @@ const ServiceAreas = () => {
               <img src={coverageMapImage.src} alt="Bloom Home Care service coverage area map showing Katy, TX and surrounding areas" className="rounded-xl shadow-lg w-full" loading="lazy" />
             </motion.div>
             <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
-              <h2 className="font-serif text-3xl text-foreground mb-6">Katy, TX and surrounding areas</h2>
+              <h2 className="font-serif text-3xl text-foreground mb-6">Greater Houston, TX</h2>
               <p className="text-muted-foreground font-sans leading-relaxed mb-6">
-                Our service area spans Katy, TX and surrounding communities in Harris County.
-                Being local means faster response times, consistent caregiver availability,
-                and a deep understanding of the neighborhoods we serve.
+                Our service area spans the Greater Houston region — from Katy and Fulshear in the west,
+                to The Woodlands and Conroe in the north, Baytown and Pasadena in the east, and
+                Galveston and Pearland in the south. Being locally operated means faster response times
+                and caregivers who know your community.
               </p>
               <p className="text-muted-foreground font-sans leading-relaxed">
-                Not sure if you're in our coverage area? Give us a call — we're always happy to discuss 
+                Not sure if you're in our coverage area? Give us a call — we're always happy to discuss
                 how we can help, even if you're just outside our primary service zone.
               </p>
             </motion.div>

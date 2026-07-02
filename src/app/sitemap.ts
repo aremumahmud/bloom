@@ -33,7 +33,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.85,
   }))
 
-  const locationPages: MetadataRoute.Sitemap = ['katy-tx'].map((slug) => ({
+  const locationPages: MetadataRoute.Sitemap = [
+    'katy-tx', 'fulshear-tx', 'richmond-tx', 'rosenberg-tx', 'cinco-ranch-tx', 'brookshire-tx',
+    'spring-tx', 'the-woodlands-tx', 'conroe-tx', 'tomball-tx', 'cypress-tx', 'humble-tx', 'kingwood-tx',
+    'pasadena-tx', 'baytown-tx', 'channelview-tx', 'deer-park-tx', 'la-porte-tx',
+    'pearland-tx', 'missouri-city-tx', 'sugar-land-tx', 'league-city-tx', 'friendswood-tx',
+    'alvin-tx', 'manvel-tx', 'webster-tx', 'clear-lake-tx', 'galveston-tx',
+  ].map((slug) => ({
     url: `${BASE_URL}/locations/${slug}`,
     lastModified: now,
     changeFrequency: 'monthly' as const,
