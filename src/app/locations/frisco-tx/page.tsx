@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     description: 'Trusted home care for Frisco families. Consistent caregivers, personalized care plans, and support for aging in place. Call 281-975-6044.',
     url: 'https://bloomhomecare.org/locations/frisco-tx',
     type: 'website',
-    siteName: 'Bloom Home Care Home Care',
+    siteName: 'Bloom Home Care',
   },
   twitter: { card: 'summary', title: 'Home Care in Frisco, TX | Bloom Home Care', description: 'Trusted home care for Frisco families. Consistent caregivers, personalized care plans, and support for aging in place. Call 281-975-6044.' },
 }
@@ -19,7 +19,7 @@ const localBusinessSchema = {
   '@context': 'https://schema.org',
   '@type': 'HomeAndConstructionBusiness',
   '@id': 'https://bloomhomecare.org/locations/frisco-tx#business',
-  name: 'Bloom Home Care Home Care — Frisco, TX',
+  name: 'Bloom Home Care — Frisco, TX',
   description: 'Compassionate non-medical home care for seniors and adults in Frisco, TX.',
   url: 'https://bloomhomecare.org/locations/frisco-tx',
   telephone: '+12819756044',

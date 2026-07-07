@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     description: 'Relationship-first home care for Prosper families. Companion care, personal care, and support tailored to aging in place with dignity. Call 281-975-6044.',
     url: 'https://bloomhomecare.org/locations/prosper-tx',
     type: 'website',
-    siteName: 'Bloom Home Care Home Care',
+    siteName: 'Bloom Home Care',
   },
   twitter: { card: 'summary', title: 'Home Care in Prosper, TX | Bloom Home Care', description: 'Relationship-first home care for Prosper families. Companion care, personal care, and support tailored to aging in place with dignity. Call 281-975-6044.' },
 }
@@ -19,7 +19,7 @@ const localBusinessSchema = {
   '@context': 'https://schema.org',
   '@type': 'HomeAndConstructionBusiness',
   '@id': 'https://bloomhomecare.org/locations/prosper-tx#business',
-  name: 'Bloom Home Care Home Care — Prosper, TX',
+  name: 'Bloom Home Care — Prosper, TX',
   description: 'Compassionate non-medical home care for seniors and adults in Prosper, TX.',
   url: 'https://bloomhomecare.org/locations/prosper-tx',
   telephone: '+12819756044',

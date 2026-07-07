@@ -2,6 +2,5 @@ User-agent: *
 Allow: /
 
 Disallow: /api/
-Disallow: /_next/
 
-Sitemap: https://stillcareservices.com/sitemap.xml
+Sitemap: https://bloomhomecare.org/sitemap.xml

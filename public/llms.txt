@@ -1,0 +1,34 @@
+# Bloom Home Care
+
+> Bloom Home Care is a non-medical in-home care agency serving Greater Houston, TX. We provide compassionate, relationship-first care for seniors and adults who need support with daily living.
+
+## Services
+
+- [Personal Care](/services/personal-care) — Bathing, dressing, grooming, and ADL assistance
+- [Companion Care](/services/companion-care) — Meaningful social engagement and trusted daily presence
+- [Respite Care](/services/respite-care) — Relief for family caregivers, scheduled or emergency
+- [In-Facility Care](/services/in-facility-care) — Companion support in hospitals, rehab, and assisted living
+- [Specialized Care](/services/specialized-care) — Tailored care for Parkinson's, stroke recovery, and chronic illness
+- [End-of-Life Care](/services/end-of-life-care) — Compassionate presence and support during final stages
+- [Dementia Care](/services/dementia-care) — Patient, consistent support for memory care needs
+- [Post-Hospital Care](/services/post-hospital-care) — Safe transition and recovery care after discharge
+
+## Service Areas
+
+Bloom Home Care serves 30+ communities across Greater Houston, TX including Katy, Sugar Land, The Woodlands, Pearland, Cypress, Spring, Pasadena, Baytown, League City, Friendswood, Galveston, and more.
+
+- [All Service Areas](/locations)
+
+## About
+
+- [Our Story](/our-story) — How and why Bloom Home Care was founded
+- [Our Approach](/approach) — Relationship-first care philosophy and values
+- [FAQ](/faq) — Common questions about home care, costs, and getting started
+- [Careers](/careers) — Caregiver job opportunities in Greater Houston
+
+## Contact
+
+- Phone: 281-975-6044
+- Email: info@bloomhomecare.org
+- Available: 24/7 care support
+- Website: https://bloomhomecare.org

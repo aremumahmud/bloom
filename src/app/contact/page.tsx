@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Contact from '@/views/Contact'
 
 export const metadata: Metadata = {
-  title: 'Contact Bloom Home Care | Free Home Care Consultation in Katy, TX, TX',
+  title: 'Contact Bloom Home Care | Free Home Care Consultation in Katy, TX',
   description: 'Ready to explore home care for a loved one? Schedule a free, no-pressure consultation with Bloom Home Care. Serving Prosper, Frisco, Allen, McKinney, Celina, and greater Katy, TX. Call (469) 209-9995.',
   keywords: [
     'contact home care agency Katy, TX',
@@ -15,11 +15,11 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://bloomhomecare.org/contact' },
   openGraph: {
-    title: 'Schedule a Free Consultation | Bloom Home Care Home Care',
+    title: 'Schedule a Free Consultation | Bloom Home Care',
     description: 'Reach out to Bloom Home Care for a free, no-obligation home care consultation. We serve Prosper, Frisco, Allen, McKinney, and greater Katy, TX. Call (469) 209-9995.',
     url: 'https://bloomhomecare.org/contact',
     type: 'website',
-    siteName: 'Bloom Home Care Home Care',
+    siteName: 'Bloom Home Care',
   },
   twitter: {
     card: 'summary',
@@ -31,20 +31,21 @@ export const metadata: Metadata = {
 const contactPageSchema = {
   '@context': 'https://schema.org',
   '@type': 'ContactPage',
-  name: 'Contact Bloom Home Care Home Care',
+  name: 'Contact Bloom Home Care',
   description: 'Schedule a free home care consultation or get in touch with Bloom Home Care for any questions about our services in the Katy, TX area.',
   url: 'https://bloomhomecare.org/contact',
   mainEntity: {
     '@type': 'LocalBusiness',
     '@id': 'https://bloomhomecare.org/#business',
-    name: 'Bloom Home Care Home Care',
+    name: 'Bloom Home Care',
     telephone: '+12819756044',
     email: 'hello@bloomhomecare.org',
-    areaServed: 'Katy, TX, TX',
+    areaServed: 'Katy, TX',
     openingHoursSpecification: {
       '@type': 'OpeningHoursSpecification',
       dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
-      description: '24/7 Care Support Available',
+      opens: '00:00',
+      closes: '23:59',
     },
   },
 }

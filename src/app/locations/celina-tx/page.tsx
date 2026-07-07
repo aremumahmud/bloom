@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     description: 'Flexible, compassionate home care for Celina families. Companion care, personal care, and support tailored to your loved one. Call 281-975-6044.',
     url: 'https://bloomhomecare.org/locations/celina-tx',
     type: 'website',
-    siteName: 'Bloom Home Care Home Care',
+    siteName: 'Bloom Home Care',
   },
   twitter: { card: 'summary', title: 'Home Care in Celina, TX | Bloom Home Care', description: 'Flexible, compassionate home care for Celina families. Companion care, personal care, and support tailored to your loved one. Call 281-975-6044.' },
 }
@@ -19,7 +19,7 @@ const localBusinessSchema = {
   '@context': 'https://schema.org',
   '@type': 'HomeAndConstructionBusiness',
   '@id': 'https://bloomhomecare.org/locations/celina-tx#business',
-  name: 'Bloom Home Care Home Care — Celina, TX',
+  name: 'Bloom Home Care — Celina, TX',
   description: 'Compassionate non-medical home care for seniors and adults in Celina, TX.',
   url: 'https://bloomhomecare.org/locations/celina-tx',
   telephone: '+12819756044',

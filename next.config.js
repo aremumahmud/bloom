@@ -1,8 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
+    formats: ['image/avif', 'image/webp'],
     domains: [],
   },
+  compress: true,
   async redirects() {
     return [
       // Old /services/[city] → /locations/[city]-tx (301 permanent)

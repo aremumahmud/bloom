@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     description: 'Personalized home care for Allen families. Companion care, personal care, and support that strengthens family relationships. Call 281-975-6044.',
     url: 'https://bloomhomecare.org/locations/allen-tx',
     type: 'website',
-    siteName: 'Bloom Home Care Home Care',
+    siteName: 'Bloom Home Care',
   },
   twitter: { card: 'summary', title: 'Home Care in Allen, TX | Bloom Home Care', description: 'Personalized home care for Allen families. Companion care, personal care, and support that strengthens family relationships. Call 281-975-6044.' },
 }
@@ -19,7 +19,7 @@ const localBusinessSchema = {
   '@context': 'https://schema.org',
   '@type': 'HomeAndConstructionBusiness',
   '@id': 'https://bloomhomecare.org/locations/allen-tx#business',
-  name: 'Bloom Home Care Home Care — Allen, TX',
+  name: 'Bloom Home Care — Allen, TX',
   description: 'Compassionate non-medical home care for seniors and adults in Allen, TX.',
   url: 'https://bloomhomecare.org/locations/allen-tx',
   telephone: '+12819756044',

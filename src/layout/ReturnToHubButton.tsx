@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { ArrowLeft, Home } from "lucide-react";
 import { useState, useEffect } from "react";
 
-const SESSION_KEY = "stillcare-command-session";
+const SESSION_KEY = "bloomhomecare-command-session";
 
 export function ReturnToHubButton() {
   const path = usePathname();

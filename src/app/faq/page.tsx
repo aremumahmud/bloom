@@ -3,7 +3,7 @@ import FAQ from '@/views/FAQ'
 
 export const metadata: Metadata = {
   title: 'Home Care FAQs | Bloom Home Care — Answers for Katy, TX Families',
-  description: "Answers to your questions about non-medical home care, caregiver selection, costs, insurance, and getting started with Bloom Home Care in Prosper, Frisco, McKinney, Allen, and Katy, TX, TX.",
+  description: "Answers to your questions about non-medical home care, caregiver selection, costs, insurance, and getting started with Bloom Home Care in Prosper, Frisco, McKinney, Allen, and Katy, TX.",
   keywords: [
     'home care FAQ',
     'senior home care questions',
@@ -18,11 +18,11 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://bloomhomecare.org/faq' },
   openGraph: {
-    title: 'Home Care FAQs | Bloom Home Care Home Care',
+    title: 'Home Care FAQs | Bloom Home Care',
     description: 'Common questions about non-medical home care, caregiver quality, costs, and getting started. Serving Prosper, Frisco, McKinney, Allen, and Katy, TX.',
     url: 'https://bloomhomecare.org/faq',
     type: 'website',
-    siteName: 'Bloom Home Care Home Care',
+    siteName: 'Bloom Home Care',
   },
   twitter: {
     card: 'summary',

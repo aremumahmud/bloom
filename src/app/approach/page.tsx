@@ -3,7 +3,7 @@ import OurApproach from '@/views/OurApproach'
 
 export const metadata: Metadata = {
   title: 'Our Approach to Senior Home Care | Bloom Home Care Katy, TX',
-  description: "Discover Bloom Home Care's relationship-first approach to non-medical home care. Intentional, consistent, and deeply human care for seniors and adults across Prosper, Frisco, McKinney, Allen, and Katy, TX, TX.",
+  description: "Discover Bloom Home Care's relationship-first approach to non-medical home care. Intentional, consistent, and deeply human care for seniors and adults across Prosper, Frisco, McKinney, Allen, and Katy, TX.",
   keywords: [
     'home care approach Katy, TX',
     'relationship-first senior care',
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     description: "Bloom Home Care's care is built on presence, patience, and consistency — not checklists. Learn the values that guide everything we do for families across Katy, TX.",
     url: 'https://bloomhomecare.org/approach',
     type: 'website',
-    siteName: 'Bloom Home Care Home Care',
+    siteName: 'Bloom Home Care',
   },
   twitter: {
     card: 'summary',
@@ -38,8 +38,8 @@ const aboutPageSchema = {
   mainEntity: {
     '@type': 'Organization',
     '@id': 'https://bloomhomecare.org/#business',
-    name: 'Bloom Home Care Home Care',
-    description: 'Compassionate non-medical home care for seniors and adults in Katy, TX, TX.',
+    name: 'Bloom Home Care',
+    description: 'Compassionate non-medical home care for seniors and adults in Katy, TX.',
     url: 'https://bloomhomecare.org',
     telephone: '+12819756044',
     founder: {

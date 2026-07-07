@@ -49,7 +49,7 @@ const faqs = [
   {
     question: "Is Bloom Home Care licensed and insured?",
     answer:
-      "Yes. Bloom Home Care Home Care is fully licensed and insured to operate as a home care agency in Texas. We are privately owned and operated, and we carry liability insurance to protect both our clients and our caregivers.",
+      "Yes. Bloom Home Care is fully licensed and insured to operate as a home care agency in Texas. We are privately owned and operated, and we carry liability insurance to protect both our clients and our caregivers.",
   },
 ];
 

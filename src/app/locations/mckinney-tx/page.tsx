@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     description: 'Consistent, relationship-centered home care for McKinney families. Companion care, personal care, and post-hospital support. Call 281-975-6044.',
     url: 'https://bloomhomecare.org/locations/mckinney-tx',
     type: 'website',
-    siteName: 'Bloom Home Care Home Care',
+    siteName: 'Bloom Home Care',
   },
   twitter: { card: 'summary', title: 'Home Care in McKinney, TX | Bloom Home Care', description: 'Consistent, relationship-centered home care for McKinney families. Companion care, personal care, and post-hospital support. Call 281-975-6044.' },
 }
@@ -19,7 +19,7 @@ const localBusinessSchema = {
   '@context': 'https://schema.org',
   '@type': 'HomeAndConstructionBusiness',
   '@id': 'https://bloomhomecare.org/locations/mckinney-tx#business',
-  name: 'Bloom Home Care Home Care — McKinney, TX',
+  name: 'Bloom Home Care — McKinney, TX',
   description: 'Compassionate non-medical home care for seniors and adults in McKinney, TX.',
   url: 'https://bloomhomecare.org/locations/mckinney-tx',
   telephone: '+12819756044',

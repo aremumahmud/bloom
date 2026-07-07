@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     description: 'Companion care, personal care, dementia support, respite care, and more — delivered with dignity across Prosper, Frisco, Allen, McKinney, and Katy, TX.',
     url: 'https://bloomhomecare.org/services',
     type: 'website',
-    siteName: 'Bloom Home Care Home Care',
+    siteName: 'Bloom Home Care',
   },
   twitter: { card: 'summary', title: 'Home Care Services in Katy, TX | Bloom Home Care', description: 'Non-medical home care services delivered with dignity across Katy, TX.' },
 }
