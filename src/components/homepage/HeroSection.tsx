@@ -187,7 +187,7 @@ export function HeroSection() {
             </div>
             <div className="flex flex-col">
               <Button variant="premium-outline" size="xl" onClick={() => setCareModalOpen(true)}>
-                Request Care Support
+                Current Client Support
               </Button>
               <span className="text-xs text-muted-foreground mt-2 font-sans">
                 Already a client? We're here.

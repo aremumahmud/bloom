@@ -70,7 +70,7 @@ export function CareRequestModal({ open, onOpenChange }: CareRequestModalProps) 
     <Dialog open={open} onOpenChange={handleClose}>
       <DialogContent className="sm:max-w-md">
         <DialogHeader>
-          <DialogTitle className="font-serif text-xl">Request Care Support</DialogTitle>
+          <DialogTitle className="font-serif text-xl">Current Client Support</DialogTitle>
           <DialogDescription className="text-muted-foreground">
             Let us know how we can help.
           </DialogDescription>
