@@ -29,8 +29,8 @@ const contactInfo = [
   {
     icon: Phone,
     label: "Direct Line",
-    value: "281-971-6044",
-    href: "tel:+12819716044",
+    value: "281-971-3214",
+    href: "tel:+12819713214",
   },
   {
     icon: Mail,
