@@ -5,23 +5,27 @@ const LEADS_LIST_ID = Number(process.env.BREVO_LEADS_LIST_ID ?? 3)
 const GUIDE_URL = process.env.LEAD_MAGNET_GUIDE_URL ?? 'https://bloomhomecare.org/bloom-home-care-guide.pdf'
 
 export async function POST(req: NextRequest) {
+  let body: Record<string, string>
   try {
-    const body = await req.json()
-    const { name, email, phone } = body
+    body = await req.json()
+  } catch {
+    return NextResponse.json({ error: 'Invalid request' }, { status: 400 })
+  }
 
-    if (!email) {
-      return NextResponse.json({ error: 'Email is required' }, { status: 400 })
-    }
+  const { name, email, phone } = body
 
-    // Add to Brevo leads list
-    await addBrevoContact(
+  if (!email) {
+    return NextResponse.json({ error: 'Email is required' }, { status: 400 })
+  }
+
+  // Fire-and-forget both operations — user always sees success
+  Promise.all([
+    addBrevoContact(
       email,
       { FIRSTNAME: name || undefined, PHONE: phone || undefined },
       [LEADS_LIST_ID]
-    )
-
-    // Send guide delivery email
-    await sendTransactionalEmail({
+    ),
+    sendTransactionalEmail({
       to: [{ email, name: name || undefined }],
       subject: 'Your Free Home Care Guide from Bloom Home Care',
       htmlContent: `
@@ -50,11 +54,8 @@ export async function POST(req: NextRequest) {
           </div>
         </div>
       `,
-    })
+    }),
+  ]).catch((err) => console.error('[lead-magnet] brevo failed:', err))
 
-    return NextResponse.json({ ok: true })
-  } catch (err) {
-    console.error('[lead-magnet]', err)
-    return NextResponse.json({ error: 'Failed to process request' }, { status: 500 })
-  }
+  return NextResponse.json({ ok: true })
 }
