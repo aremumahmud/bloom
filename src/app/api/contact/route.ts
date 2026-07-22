@@ -15,10 +15,9 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: 'Missing required fields' }, { status: 400 })
   }
 
-  // Fire-and-forget both emails
-  Promise.all([
-    // Admin notification
-    sendTransactionalEmail({
+  // Send admin notification
+  try {
+    await sendTransactionalEmail({
       to: [{ email: process.env.BREVO_NOTIFICATION_EMAIL ?? 'info@bloomhomecare.org', name: 'Bloom Home Care' }],
       replyTo: { email, name },
       subject: `New Contact Form: ${name}`,
@@ -35,10 +34,14 @@ export async function POST(req: NextRequest) {
         </table>
         <p style="color:#888;font-size:12px;margin-top:24px">Reply directly to this email to respond to ${name}.</p>
       `,
-    }),
+    })
+  } catch (err) {
+    console.error('[contact] admin email failed:', err)
+  }
 
-    // User confirmation
-    sendTransactionalEmail({
+  // Send user confirmation
+  try {
+    await sendTransactionalEmail({
       to: [{ email, name }],
       subject: 'We received your message — Bloom Home Care',
       htmlContent: `
@@ -60,8 +63,10 @@ export async function POST(req: NextRequest) {
           </div>
         </div>
       `,
-    }),
-  ]).catch((err) => console.error('[contact] email failed:', err))
+    })
+  } catch (err) {
+    console.error('[contact] user confirmation email failed:', err)
+  }
 
   return NextResponse.json({ ok: true })
 }

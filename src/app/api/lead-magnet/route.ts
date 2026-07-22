@@ -18,14 +18,20 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: 'Email is required' }, { status: 400 })
   }
 
-  // Fire-and-forget both operations — user always sees success
-  Promise.all([
-    addBrevoContact(
+  // Add to Brevo leads list
+  try {
+    await addBrevoContact(
       email,
       { FIRSTNAME: name || undefined, PHONE: phone || undefined },
       [LEADS_LIST_ID]
-    ),
-    sendTransactionalEmail({
+    )
+  } catch (err) {
+    console.error('[lead-magnet] contact add failed:', err)
+  }
+
+  // Send guide delivery email
+  try {
+    await sendTransactionalEmail({
       to: [{ email, name: name || undefined }],
       subject: 'Your Free Home Care Guide from Bloom Home Care',
       htmlContent: `
@@ -54,8 +60,10 @@ export async function POST(req: NextRequest) {
           </div>
         </div>
       `,
-    }),
-  ]).catch((err) => console.error('[lead-magnet] brevo failed:', err))
+    })
+  } catch (err) {
+    console.error('[lead-magnet] guide email failed:', err)
+  }
 
   return NextResponse.json({ ok: true })
 }

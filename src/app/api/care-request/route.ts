@@ -15,9 +15,9 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: 'Missing required fields' }, { status: 400 })
   }
 
-  const emails = [
-    // Admin notification
-    sendTransactionalEmail({
+  // Send admin notification
+  try {
+    await sendTransactionalEmail({
       to: [{ email: process.env.BREVO_NOTIFICATION_EMAIL ?? 'info@bloomhomecare.org', name: 'Bloom Home Care' }],
       ...(email ? { replyTo: { email, name: clientName } } : {}),
       subject: `Urgent: New Care Request — ${clientName}`,
@@ -32,13 +32,15 @@ export async function POST(req: NextRequest) {
         </table>
         <p style="color:#888;font-size:12px;margin-top:24px">Please follow up with this client as soon as possible.</p>
       `,
-    }),
-  ]
+    })
+  } catch (err) {
+    console.error('[care-request] admin email failed:', err)
+  }
 
-  // Only send confirmation to client if they provided an email
+  // Send user confirmation if email provided
   if (email) {
-    emails.push(
-      sendTransactionalEmail({
+    try {
+      await sendTransactionalEmail({
         to: [{ email, name: clientName }],
         subject: 'We received your support request — Bloom Home Care',
         htmlContent: `
@@ -62,10 +64,10 @@ export async function POST(req: NextRequest) {
           </div>
         `,
       })
-    )
+    } catch (err) {
+      console.error('[care-request] user confirmation email failed:', err)
+    }
   }
-
-  Promise.all(emails).catch((err) => console.error('[care-request] email failed:', err))
 
   return NextResponse.json({ ok: true })
 }

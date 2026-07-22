@@ -17,12 +17,15 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: 'Email is required' }, { status: 400 })
   }
 
-  // Fire-and-forget
-  addBrevoContact(
-    email,
-    { FIRSTNAME: name || undefined },
-    [NEWSLETTER_LIST_ID]
-  ).catch((err) => console.error('[newsletter] brevo failed:', err))
+  try {
+    await addBrevoContact(
+      email,
+      { FIRSTNAME: name || undefined },
+      [NEWSLETTER_LIST_ID]
+    )
+  } catch (err) {
+    console.error('[newsletter] brevo failed:', err)
+  }
 
   return NextResponse.json({ ok: true })
 }
