@@ -2,36 +2,35 @@ import type { Metadata } from 'next'
 import OurStory from '@/views/OurStory'
 
 export const metadata: Metadata = {
-  title: 'Our Story | Bloom Home Care — Katy, TX',
-  description: 'Learn the story behind Bloom Home Care. Founded in Katy, TX from personal experience, we exist to provide compassionate, relationship-centered in-home care for seniors and adults with dignity and heart.',
+  title: 'About Bloom Home Care | Our Story and Founder',
+  description: 'Meet Jackie, the founder of Bloom Home Care, and see how our locally owned team provides non-medical home care across Katy and Greater Houston.',
   keywords: [
+    'About Bloom Home Care',
+    'Bloom Home Care founder',
+    'nurse-owned home care agency in Katy, TX',
     'Bloom Home Care story',
     'home care founded Katy TX',
-    'about Bloom Home Care',
-    'why we started home care',
-    'compassionate senior care Katy TX',
-    'home care mission Katy TX',
   ],
   alternates: { canonical: 'https://bloomhomecare.org/our-story' },
   openGraph: {
-    title: 'Our Story | Bloom Home Care — Katy, TX',
-    description: 'Bloom Home Care was founded in Katy, TX from a personal belief that every person deserves dignified, relationship-centered care at home.',
+    title: 'About Bloom Home Care | Our Story and Founder',
+    description: 'Meet Jackie, the founder of Bloom Home Care, and see how our locally owned team provides non-medical home care across Katy and Greater Houston.',
     url: 'https://bloomhomecare.org/our-story',
     type: 'website',
     siteName: 'Bloom Home Care',
   },
   twitter: {
     card: 'summary',
-    title: 'Our Story | Bloom Home Care',
-    description: 'The story behind Bloom Home Care — founded in Katy, TX with purpose, heart, and personal experience.',
+    title: 'About Bloom Home Care | Our Story and Founder',
+    description: 'Meet Jackie, the founder of Bloom Home Care, and see how our locally owned team provides non-medical home care across Katy and Greater Houston.',
   },
 }
 
 const aboutPageSchema = {
   '@context': 'https://schema.org',
   '@type': 'AboutPage',
-  name: 'Our Story — Bloom Home Care',
-  description: 'The founding story of Bloom Home Care, a locally owned non-medical home care agency in Katy, TX.',
+  name: 'About Bloom Home Care',
+  description: 'Meet Jackie Herrera, the founder of Bloom Home Care, a locally owned non-medical home care agency in Katy, TX.',
   url: 'https://bloomhomecare.org/our-story',
   mainEntity: {
     '@type': 'Organization',
@@ -39,6 +38,12 @@ const aboutPageSchema = {
     name: 'Bloom Home Care',
     url: 'https://bloomhomecare.org',
     telephone: '+12819756044',
+    founder: {
+      '@type': 'Person',
+      name: 'Jackie Herrera',
+      jobTitle: 'Founder and Director',
+      description: 'Registered Nurse (BSN, RN, CMSRN) with more than 22 years of healthcare experience.',
+    },
     foundingLocation: {
       '@type': 'Place',
       address: {

@@ -23,37 +23,37 @@ const services = [
   {
     icon: Home,
     title: "Personal Care",
-    description: "Respectful, hands-on assistance with bathing, grooming, dressing, mobility, and daily living activities — empowering independence at home.",
+    description: "From bathing and dressing to grooming and toileting, our caregivers provide personal care services with dignity and respect, helping seniors maintain independence while receiving the physical support they need.",
     href: "/services/personal-care",
   },
   {
     icon: HeartHandshake,
     title: "Companion Care",
-    description: "Meaningful companionship, social engagement, light housekeeping, errands, and emotional support — brightening each day.",
+    description: "Loneliness affects health. Our companions provide meaningful conversation, help with light housekeeping, prepare meals, and offer the social connection that helps seniors thrive. Sometimes the most important care is simply being present.",
     href: "/services/companion-care",
   },
   {
     icon: Users,
     title: "Respite Care",
-    description: "Temporary relief for family caregivers with flexible scheduling — trusted, experienced caregivers step in so you can rest and recharge.",
+    description: "Family caregivers need breaks to recharge. Whether you need someone for an afternoon, overnight, or a few weeks, our respite care gives you peace of mind knowing your loved one is safe and well cared for.",
     href: "/services/respite-care",
-  },
-  {
-    icon: Building2,
-    title: "In-Facility Care",
-    description: "Personalized one-on-one support within assisted living or nursing facilities — complementing existing care with individual attention.",
-    href: "/services/in-facility-care",
   },
   {
     icon: Stethoscope,
     title: "Specialized Care",
-    description: "Tailored support for individuals managing Alzheimer's, dementia, Parkinson's, post-surgical recovery, or chronic conditions.",
+    description: "After surgery, during recovery, or while managing a chronic illness, seniors need skilled support. Our caregivers assist with medication reminders, mobility assistance, and other specialized needs tailored to each individual.",
     href: "/services/specialized-care",
+  },
+  {
+    icon: Activity,
+    title: "Dementia Care",
+    description: "Dementia requires specialized understanding. Our caregivers are trained in dementia care techniques, patience-based communication, and creating safe, supportive environments. We help families navigate this journey with compassion.",
+    href: "/services/dementia-care",
   },
   {
     icon: Heart,
     title: "End-of-Life Care",
-    description: "Compassionate comfort care, emotional and spiritual support, and daily assistance during life's most delicate moments.",
+    description: "During the final chapters of life, comfort and dignity matter most. We provide compassionate end-of-life care that honors your loved one's wishes and supports your family through this tender time.",
     href: "/services/end-of-life-care",
   },
 ];
@@ -72,10 +72,10 @@ export function ServicesSection() {
           className="text-center mb-16"
         >
           <h2 id="services-heading" className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground mb-4">
-            In-Home Care Services in Katy, TX
+            Home Care Services in Katy, TX
           </h2>
           <p className="text-muted-foreground font-sans text-lg max-w-2xl mx-auto">
-            Comprehensive, personalized home care services — thoughtfully designed around each individual's unique needs and proudly serving Katy, TX and surrounding areas.
+            Bloom Home Care provides flexible care options tailored to your loved one's specific needs. Whether it's daily support, companionship, respite care, memory care, or end-of-life support, our approach is personalized to fit your family's situation.
           </p>
         </motion.div>
 
@@ -152,10 +152,13 @@ export function ServicesSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.5, delay: 0.9 }}
-          className="text-center mt-10"
+          className="text-center mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center"
         >
           <Button variant="premium-outline" size="lg" asChild>
-            <Link href="/services">View all in-home care services</Link>
+            <Link href="/services">View All In-Home Care Services</Link>
+          </Button>
+          <Button variant="premium" size="lg" asChild>
+            <Link href="/contact">Talk With Our Care Team Today</Link>
           </Button>
         </motion.div>
       </div>

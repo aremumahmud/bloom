@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 const localBusinessSchema = {
   '@context': 'https://schema.org',
-  '@type': 'HomeAndConstructionBusiness',
+  '@type': 'LocalBusiness',
   '@id': 'https://bloomhomecare.org/locations/katy-tx#business',
   name: 'Bloom Home Care — Katy, TX',
   description: 'Compassionate non-medical home care for seniors and adults in Katy, TX.',

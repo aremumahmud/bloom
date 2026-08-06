@@ -14,19 +14,19 @@ import readingTogetherImage from "@/assets/reading-together.jpg";
 const slides = [
   {
     image: handsImage,
-    alt: "Bloom Home Care caregiver and senior client holding hands in a warm, trusting moment — home care in Katy, TX",
+    alt: "Bloom Home Care caregiver and senior client holding hands in a warm, trusting moment — home care agency in Katy, TX",
     badge: "Bloom Home Care · Katy, TX",
-    headlineLine1: "Your Home. Your Health.",
-    headlineLine2: "Our Commitment.",
-    sub: "Trusted, personalized in-home support for seniors and adults — proudly serving Katy, TX and surrounding areas with compassion, skill, and heart.",
+    headlineLine1: "Trusted Home Care Agency",
+    headlineLine2: "in Katy, TX",
+    sub: "When your loved one needs support, you want someone you can trust completely. Bloom Home Care is a home care agency in Katy, TX, that families choose for personalized, non-medical in-home care — helping seniors stay comfortable and independent in their own homes.",
   },
   {
     image: gardenWalkImage,
     alt: "Bloom Home Care caregiver walking alongside a senior in a garden — companion care services in Katy, TX",
     badge: "Companion & Personal Care · Katy, TX",
-    headlineLine1: "Trusted Support",
-    headlineLine2: "Where You Feel Safest.",
-    sub: "From help with daily routines and uplifting companionship to trusted respite care — our certified caregivers bring both skill and heart to every visit.",
+    headlineLine1: "Neighbors Who Understand",
+    headlineLine2: "What Matters Most.",
+    sub: "We're not just another home care provider. Every caregiver we send has been carefully chosen and trained to support your family with genuine care, dignity, and respect.",
   },
   {
     image: readingTogetherImage,
@@ -34,7 +34,7 @@ const slides = [
     badge: "Personalized Care Plans · Katy, TX & Surrounding Areas",
     headlineLine1: "Every Plan Begins",
     headlineLine2: "With Listening.",
-    sub: "We take the time to truly understand each person's routines, preferences, and needs — because everyone deserves to feel safe, cared for, and at home.",
+    sub: "Whether a senior needs help with daily activities, specialized care after surgery, or companionship while recovering, Bloom Home Care is here to help.",
   },
 ];
 

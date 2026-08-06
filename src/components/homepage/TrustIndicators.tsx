@@ -10,25 +10,25 @@ const indicators = [
     icon: ShieldCheck,
     title: "Trustworthy & Compassionate Caregivers",
     description:
-      "Every Bloom Home Care caregiver is thoroughly background-checked, reference-verified, and trained — selected as much for their character and compassion as their competence.",
+      "Every caregiver is background-checked, trained, and selected for both skill and compassion. We match caregivers thoughtfully because the right fit makes all the difference.",
   },
   {
     icon: FileText,
     title: "Customized Care Plans",
     description:
-      "No two individuals are alike. We craft each care plan around your loved one's specific routines, preferences, and daily goals — then revisit it as needs evolve.",
+      "We listen first, learn about your loved one's needs and preferences, then create a personalized care plan designed specifically for them. We revisit and adjust it as needs evolve.",
   },
   {
     icon: HeartHandshake,
     title: "24/7 Availability for Emergencies",
     description:
-      "We're here when you need us most. Our team is available around the clock for emergencies, giving families true peace of mind day and night.",
+      "Our in-home care team is available around the clock for emergencies. Families get peace of mind knowing professional care is just a call away, day and night.",
   },
   {
     icon: MessageCircle,
     title: "Dedicated to Katy, TX & Surrounding Areas",
     description:
-      "We are deeply rooted in the Katy community, proudly serving local families with consistency, reliability, and genuine care for the people we serve.",
+      "We're deeply rooted in Katy, serving local families with consistency and genuine care. As a home care agency Katy, TX families trust, we're your neighbors — not a distant chain.",
   },
 ];
 
@@ -46,7 +46,7 @@ export function TrustIndicators() {
           className="text-center mb-14"
         >
           <h2 id="trust-heading" className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground mb-4">
-            Why Families Trust Bloom Home Care
+            Why Families Choose Bloom Home Care
           </h2>
           <p className="text-muted-foreground font-sans text-lg max-w-2xl mx-auto">
             Licensed &amp; insured. Serving Katy, TX and surrounding areas with care

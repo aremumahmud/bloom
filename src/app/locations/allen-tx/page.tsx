@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import LocationPage from '@/views/services/LocationPage'
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: false },
   title: 'Home Care in Allen, TX | Bloom Home Care Services',
   description: 'Dependable in-home care for seniors and adults in Allen, TX. Companion care, personal care, respite care, and post-hospital support. Locally owned and operated. Call 281-975-6044.',
   alternates: { canonical: 'https://bloomhomecare.org/locations/allen-tx' },
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
 
 const localBusinessSchema = {
   '@context': 'https://schema.org',
-  '@type': 'HomeAndConstructionBusiness',
+  '@type': 'LocalBusiness',
   '@id': 'https://bloomhomecare.org/locations/allen-tx#business',
   name: 'Bloom Home Care — Allen, TX',
   description: 'Compassionate non-medical home care for seniors and adults in Allen, TX.',

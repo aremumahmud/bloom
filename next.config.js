@@ -5,27 +5,39 @@ const nextConfig = {
     domains: [],
   },
   compress: true,
+  poweredByHeader: false,
+  // Prevent Next.js from issuing 302 redirects for trailing slashes
+  trailingSlash: false,
   async redirects() {
     return [
-      // Old /services/[city] → /locations/[city]-tx (301 permanent)
-      { source: '/services/prosper',       destination: '/locations/prosper-tx',    permanent: true },
-      { source: '/services/frisco',        destination: '/locations/frisco-tx',     permanent: true },
-      { source: '/services/mckinney',      destination: '/locations/mckinney-tx',   permanent: true },
-      { source: '/services/allen',         destination: '/locations/allen-tx',      permanent: true },
-      { source: '/services/celina',        destination: '/locations/celina-tx',     permanent: true },
-      { source: '/services/aubrey',        destination: '/locations/aubrey-tx',     permanent: true },
-      { source: '/services/little-elm',    destination: '/locations/little-elm-tx', permanent: true },
-      { source: '/services/the-colony',    destination: '/locations/the-colony-tx', permanent: true },
+      // Old /services/[city] → /locations (301 permanent)
+      { source: '/services/prosper',       destination: '/locations',               permanent: true },
+      { source: '/services/frisco',        destination: '/locations',               permanent: true },
+      { source: '/services/mckinney',      destination: '/locations',               permanent: true },
+      { source: '/services/allen',         destination: '/locations',               permanent: true },
+      { source: '/services/celina',        destination: '/locations',               permanent: true },
+      { source: '/services/aubrey',        destination: '/locations',               permanent: true },
+      { source: '/services/little-elm',    destination: '/locations',               permanent: true },
+      { source: '/services/the-colony',    destination: '/locations',               permanent: true },
       { source: '/services/service-areas', destination: '/locations',               permanent: true },
-      // Plain /locations/[city] → /locations/[city]-tx
-      { source: '/locations/prosper',      destination: '/locations/prosper-tx',    permanent: true },
-      { source: '/locations/frisco',       destination: '/locations/frisco-tx',     permanent: true },
-      { source: '/locations/mckinney',     destination: '/locations/mckinney-tx',   permanent: true },
-      { source: '/locations/allen',        destination: '/locations/allen-tx',      permanent: true },
-      { source: '/locations/celina',       destination: '/locations/celina-tx',     permanent: true },
-      { source: '/locations/aubrey',       destination: '/locations/aubrey-tx',     permanent: true },
-      { source: '/locations/little-elm',   destination: '/locations/little-elm-tx', permanent: true },
-      { source: '/locations/the-colony',   destination: '/locations/the-colony-tx', permanent: true },
+      // DFW location pages no longer served → redirect to locations hub
+      { source: '/locations/prosper-tx',   destination: '/locations',               permanent: true },
+      { source: '/locations/frisco-tx',    destination: '/locations',               permanent: true },
+      { source: '/locations/mckinney-tx',  destination: '/locations',               permanent: true },
+      { source: '/locations/allen-tx',     destination: '/locations',               permanent: true },
+      { source: '/locations/celina-tx',    destination: '/locations',               permanent: true },
+      { source: '/locations/aubrey-tx',    destination: '/locations',               permanent: true },
+      { source: '/locations/little-elm-tx',destination: '/locations',               permanent: true },
+      { source: '/locations/the-colony-tx',destination: '/locations',               permanent: true },
+      // Plain slug variants → locations hub
+      { source: '/locations/prosper',      destination: '/locations',               permanent: true },
+      { source: '/locations/frisco',       destination: '/locations',               permanent: true },
+      { source: '/locations/mckinney',     destination: '/locations',               permanent: true },
+      { source: '/locations/allen',        destination: '/locations',               permanent: true },
+      { source: '/locations/celina',       destination: '/locations',               permanent: true },
+      { source: '/locations/aubrey',       destination: '/locations',               permanent: true },
+      { source: '/locations/little-elm',   destination: '/locations',               permanent: true },
+      { source: '/locations/the-colony',   destination: '/locations',               permanent: true },
     ]
   },
 }

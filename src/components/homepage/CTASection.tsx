@@ -34,12 +34,13 @@ export function CTASection() {
             className="text-center"
           >
             <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground mb-6">
-              Schedule Your Free In-Home Care Assessment Today!
+              Schedule Your Free Home Care Consultation Today
             </h2>
 
             <p className="text-lg text-muted-foreground font-sans mb-10 max-w-xl mx-auto">
-              Discover how we can help your loved one live independently and comfortably at home.
-              Contact Bloom Home Care to get started — proudly serving Katy, TX and surrounding areas.
+              Choosing the right home care agency in Katy, TX is one of the most important decisions your family
+              will make. We want to make it easy. Our team listens first, then helps you understand your options
+              — no pressure, no rush. Call us or submit a request online to get started.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">

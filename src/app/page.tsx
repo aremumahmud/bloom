@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import { HomePage } from '@/views/homepage'
 
 export const metadata: Metadata = {
-  title: 'Bloom Home Care | Senior & Adult Home Care in Katy, TX',
-  description: 'Bloom Home Care provides compassionate, non-medical home care for seniors and adults in Katy, TX. Companion care, personal care, respite care & more. Locally owned. Call 281-975-6044.',
+  title: 'Home Care Agency Katy, TX | Bloom Home Care',
+  description: 'Trusted home care agency in Katy, TX, providing compassionate in-home care for seniors, personal care, and dementia support. Request a free consultation.',
   keywords: [
     'home care Katy TX',
     'senior home care Katy TX',
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 
 const localBusinessSchema = {
   '@context': 'https://schema.org',
-  '@type': 'HomeAndConstructionBusiness',
+  '@type': 'LocalBusiness',
   '@id': 'https://bloomhomecare.org/#business',
   name: 'Bloom Home Care',
   description: 'Compassionate non-medical home care services for seniors and adults in Katy, TX and surrounding areas.',

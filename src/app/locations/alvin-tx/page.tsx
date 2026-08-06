@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 }
 
 const schema = {
-  '@context': 'https://schema.org', '@type': 'HomeAndConstructionBusiness',
+  '@context': 'https://schema.org', '@type': 'LocalBusiness',
   name: 'Bloom Home Care — Alvin, TX', url: 'https://bloomhomecare.org/locations/alvin-tx',
   telephone: '+12819756044', address: { '@type': 'PostalAddress', addressLocality: 'Alvin', addressRegion: 'TX', addressCountry: 'US' },
   areaServed: { '@type': 'City', name: 'Alvin', containedInPlace: { '@type': 'State', name: 'Texas' } },

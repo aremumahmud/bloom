@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 }
 
 const schema = {
-  '@context': 'https://schema.org', '@type': 'HomeAndConstructionBusiness',
+  '@context': 'https://schema.org', '@type': 'LocalBusiness',
   name: 'Bloom Home Care — Humble, TX', url: 'https://bloomhomecare.org/locations/humble-tx',
   telephone: '+12819756044', address: { '@type': 'PostalAddress', addressLocality: 'Humble', addressRegion: 'TX', addressCountry: 'US' },
   areaServed: { '@type': 'City', name: 'Humble', containedInPlace: { '@type': 'State', name: 'Texas' } },

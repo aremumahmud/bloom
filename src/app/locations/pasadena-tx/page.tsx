@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 }
 
 const schema = {
-  '@context': 'https://schema.org', '@type': 'HomeAndConstructionBusiness',
+  '@context': 'https://schema.org', '@type': 'LocalBusiness',
   name: 'Bloom Home Care — Pasadena, TX', url: 'https://bloomhomecare.org/locations/pasadena-tx',
   telephone: '+12819756044', address: { '@type': 'PostalAddress', addressLocality: 'Pasadena', addressRegion: 'TX', addressCountry: 'US' },
   areaServed: { '@type': 'City', name: 'Pasadena', containedInPlace: { '@type': 'State', name: 'Texas' } },

@@ -14,22 +14,27 @@ const approaches = [
   {
     icon: Clock,
     text: "We slow down when it matters",
+    detail: "In a rush-driven world, we take our time — when meeting your loved one, when listening to your concerns, when making care adjustments. Rushing through these moments misses what's essential.",
   },
   {
     icon: Ear,
     text: "We listen closely",
+    detail: "We don't assume we know what your family needs. We ask questions, pay attention to what's said and unsaid, and listen for the real concerns beneath the surface. Good listening is the foundation of good care.",
   },
   {
     icon: Target,
     text: "We act with intention",
+    detail: "Every decision about your loved one's care is purposeful. From caregiver matching to care plan adjustments, we think through consequences and act with clear purpose. Nothing happens by accident in our care approach.",
   },
   {
     icon: RefreshCw,
     text: "We show up consistently",
+    detail: "Reliability matters more than perfection. Your loved one and your family need to know that we'll be there, day after day, consistently showing up and following through on our commitments.",
   },
   {
     icon: Heart,
     text: "We treat people as people — not tasks",
+    detail: "Your loved one is not a checklist. They're someone's parent, grandparent, or spouse with a lifetime of stories, preferences, and dignity. We approach every person as the whole human being they are.",
   },
 ];
 
@@ -58,14 +63,19 @@ export function ApproachSection() {
                   initial={{ opacity: 0, x: -20 }}
                   animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="flex items-center gap-4"
+                  className="flex items-start gap-4"
                 >
-                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-sage-light flex items-center justify-center">
+                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-sage-light flex items-center justify-center mt-1">
                     <item.icon size={18} className="text-primary" />
                   </div>
-                  <span className="text-lg text-muted-foreground font-sans">
-                    {item.text}
-                  </span>
+                  <div>
+                    <p className="text-base font-semibold text-foreground font-sans mb-1">
+                      {item.text}
+                    </p>
+                    <p className="text-sm text-muted-foreground font-sans leading-relaxed">
+                      {item.detail}
+                    </p>
+                  </div>
                 </motion.li>
               ))}
             </ul>

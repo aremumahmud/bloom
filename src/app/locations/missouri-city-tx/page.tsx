@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 }
 
 const schema = {
-  '@context': 'https://schema.org', '@type': 'HomeAndConstructionBusiness',
+  '@context': 'https://schema.org', '@type': 'LocalBusiness',
   name: 'Bloom Home Care — Missouri City, TX', url: 'https://bloomhomecare.org/locations/missouri-city-tx',
   telephone: '+12819756044', address: { '@type': 'PostalAddress', addressLocality: 'Missouri City', addressRegion: 'TX', addressCountry: 'US' },
   areaServed: { '@type': 'City', name: 'Missouri City', containedInPlace: { '@type': 'State', name: 'Texas' } },

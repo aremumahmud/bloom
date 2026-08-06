@@ -12,44 +12,39 @@ import {
 
 const faqs = [
   {
-    question: "What areas does Bloom Home Care serve?",
+    question: "What is a home care agency?",
     answer:
-      "We provide non-medical home care services throughout Katy, TX and surrounding areas in Harris County. If you don't see your city listed, please reach out — we may still be able to help.",
+      "A home care agency provides non-medical personal care and companionship services in a person's home. Unlike hiring an independent caregiver on your own, a licensed home care agency handles background checks, scheduling, insurance, and supervision. At Bloom Home Care, we are licensed in Texas and carry full liability coverage — so your family is protected at every step.",
   },
   {
-    question: "What types of home care services does Bloom Home Care offer?",
+    question: "What does a home care agency in Katy, TX actually do?",
     answer:
-      "Bloom Home Care provides a full range of non-medical home care services, including companion care, personal care and ADL assistance, meal preparation, light housekeeping, medication reminders, post-hospital transitional care, in-facility support, specialized care for conditions like Alzheimer's and dementia, end-of-life comfort care, and respite care for family caregivers. All care is non-medical — we do not provide skilled nursing or medical services.",
+      "In practical terms, we send trained, background-checked caregivers to help your loved one with daily life at home — things like bathing, dressing, medication reminders, meal preparation, light housekeeping, and companionship. We also support family caregivers with respite care and work with clients coming home after a hospital stay.",
   },
   {
-    question: "How does payment work with Bloom Home Care?",
+    question: "How is Bloom Home Care different from a staffing agency?",
     answer:
-      "We keep billing straightforward. We accept credit and debit cards, ACH bank transfers, and personal checks. We can also assist families in preparing documentation to support long-term care insurance reimbursement claims. We do not currently accept Medicare or Medicaid.",
+      "A staffing agency places workers and steps back. Bloom Home Care is an ongoing partner in your loved one's care. We supervise our caregivers, create and adjust care plans, conduct regular check-ins with families, and remain involved as needs evolve. As a nurse-founded agency, clinical judgment and compassionate standards are built into everything we do.",
   },
   {
-    question: "How do I get started with home care?",
+    question: "What types of care does Bloom Home Care offer?",
     answer:
-      "Getting started is simple and pressure-free. Call us at 281-975-6044 or submit a consultation request online. We'll schedule a time to listen, learn about your situation, and explore what care might look like — with no obligation. From there, we'll build a personalized care plan and match your loved one with the right caregiver.",
+      "We offer personal care (bathing, dressing, grooming, toileting), companion care, respite care for family caregivers, dementia and memory care, end-of-life comfort care, and in-facility companion support for those in assisted living or nursing communities. All care is non-medical — we do not provide skilled nursing or medical services.",
   },
   {
-    question: "Do you provide 24/7 home care support?",
+    question: "How do I know if home care is right for my loved one?",
     answer:
-      "Yes. We offer flexible scheduling to fit your family's needs — whether that's a few hours a week for companion care, daily visits, or full-time 24/7 care. We work around your schedule and adapt as needs change over time.",
+      "If your loved one struggles with daily tasks, lives alone and feels isolated, has recently been discharged from the hospital, or if you as a family caregiver are feeling burned out — home care may be exactly the right fit. The best way to find out is to talk with our team. We'll help you think through the situation honestly and without pressure.",
   },
   {
-    question: "How are your caregivers selected and trained?",
+    question: "How much does home care cost in Katy, TX?",
     answer:
-      "Every Bloom Home Care caregiver undergoes a thorough background check, reference verification, and skills evaluation before joining our team. We select caregivers as much for their character, compassion, and reliability as for their professional experience. Ongoing training and close supervision ensure consistent, high-quality care.",
+      "Home care costs vary based on the level of care, number of hours, and schedule. We encourage families to contact us for a free consultation so we can give you accurate information based on your specific situation. We do not currently accept Medicare or Medicaid, though we can provide documentation to support long-term care insurance reimbursement claims.",
   },
   {
-    question: "Can Bloom Home Care help someone living in an assisted living facility?",
+    question: "How do I start home care services with Bloom Home Care?",
     answer:
-      "Absolutely. We provide supplemental in-facility care for clients who are already living in assisted living communities, memory care facilities, or nursing homes in the Katy, TX area. Our caregivers can provide additional one-on-one companionship, personal care, and support beyond what facility staff are able to offer.",
-  },
-  {
-    question: "Is Bloom Home Care licensed and insured?",
-    answer:
-      "Yes. Bloom Home Care is fully licensed and insured to operate as a home care agency in Texas. We are privately owned and operated, and we carry liability insurance to protect both our clients and our caregivers.",
+      "Simply reach out — by phone, online form, or email. Our team will schedule a no-obligation consultation, listen to your loved one's needs, and walk you through what care would look like. If it's a good fit, we'll build a personalized care plan, match a caregiver, and set a start date. From first call to first visit, we aim to make the process as smooth as possible.",
   },
 ];
 

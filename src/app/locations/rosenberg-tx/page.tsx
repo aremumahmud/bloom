@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 }
 
 const schema = {
-  '@context': 'https://schema.org', '@type': 'HomeAndConstructionBusiness',
+  '@context': 'https://schema.org', '@type': 'LocalBusiness',
   name: 'Bloom Home Care — Rosenberg, TX', url: 'https://bloomhomecare.org/locations/rosenberg-tx',
   telephone: '+12819756044', address: { '@type': 'PostalAddress', addressLocality: 'Rosenberg', addressRegion: 'TX', addressCountry: 'US' },
   areaServed: { '@type': 'City', name: 'Rosenberg', containedInPlace: { '@type': 'State', name: 'Texas' } },

@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import LocationPage from '@/views/services/LocationPage'
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: false },
   title: 'Home Care in Little Elm, TX | Bloom Home Care Services',
   description: 'Compassionate in-home care for seniors and adults in Little Elm, TX. Companion care, personal care, respite care, and post-hospital support. Call 281-975-6044.',
   alternates: { canonical: 'https://bloomhomecare.org/locations/little-elm-tx' },
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
 
 const localBusinessSchema = {
   '@context': 'https://schema.org',
-  '@type': 'HomeAndConstructionBusiness',
+  '@type': 'LocalBusiness',
   '@id': 'https://bloomhomecare.org/locations/little-elm-tx#business',
   name: 'Bloom Home Care — Little Elm, TX',
   description: 'Compassionate non-medical home care for seniors and adults in Little Elm, TX.',

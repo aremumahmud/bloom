@@ -3,6 +3,8 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
 import caregiverElderlyImage from "@/assets/caregiver-elderly-moment.jpg";
 
 const steps = [
@@ -10,19 +12,19 @@ const steps = [
     number: "1",
     title: "Reach Out",
     description:
-      "Call us or fill out a quick form. Someone from our Katy, TX team responds within one business day — no automated systems, no runaround.",
+      "Call us or fill out a quick form. Someone from our Katy, TX team responds within one business day — no automated systems, no runaround. We listen carefully to understand your loved one's needs and what your family is looking for.",
   },
   {
     number: "2",
     title: "We Get to Know You",
     description:
-      "We listen carefully to understand your loved one's needs, daily routines, and preferences. Care is personal — it should feel that way from the very start.",
+      "We listen carefully to understand your loved one's needs, daily routines, and preferences. Care is personal — it should feel that way from the very start. We match the right caregiver, set the right schedule, and establish communication so everyone stays informed and supported.",
   },
   {
     number: "3",
     title: "Care Begins",
     description:
-      "Your matched caregiver arrives. From day one, you'll feel the difference of consistent, relationship-centered support in the comfort of home.",
+      "Your matched caregiver arrives. From day one, you'll feel the difference of consistent, relationship-centered support in the comfort of your home. We stay in close contact, check in regularly, and adjust the plan as needs change. You're never on your own — we're your partner throughout the journey.",
   },
 ];
 
@@ -81,6 +83,16 @@ export function HowItWorksSection() {
                 ))}
               </div>
             </div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+              transition={{ duration: 0.5, delay: 0.7 }}
+              className="mt-10"
+            >
+              <Button variant="premium" size="lg" asChild>
+                <Link href="/contact">Start Your Care Journey Now</Link>
+              </Button>
+            </motion.div>
           </motion.div>
 
           {/* Right — photo */}

@@ -33,25 +33,31 @@ export function FounderSection() {
           {/* Text */}
           <div className="md:col-span-2 space-y-5">
             <h2 className="font-serif text-2xl md:text-3xl text-foreground">
-              Built on Personal Experience. Driven by Purpose.
+              Nurse-Led Home Care in Katy, TX
             </h2>
-            <div className="space-y-4 text-muted-foreground font-sans leading-relaxed">
+            <div className="space-y-4 text-muted-foreground font-sans leading-relaxed text-sm md:text-base">
               <p>
-                Bloom Home Care was founded to bring calm, intentional,
-                relationship-centered home care to families across Katy, TX and surrounding areas.
+                Jackie Herrera, BSN, RN, CMSRN, brings over 22 years of nursing experience to Bloom Home Care.
+                A proud graduate of Prairie View A&amp;M University, Jackie has built a career defined by clinical
+                excellence and a deep commitment to human dignity in care.
               </p>
               <p>
-                Inspired by personal experience navigating care for a loved one,
-                Bloom Home Care was built on the belief that every person deserves to be supported
-                with dignity, warmth, and genuine human presence — especially when it matters most.
+                Before founding Bloom Home Care, Jackie helped launch and grow two separate home care agencies,
+                overseeing operations and clinical programs from the ground up. She also managed a 28-bed hospital
+                unit — giving her firsthand understanding of the systems gaps that leave families without consistent
+                support after discharge.
+              </p>
+              <p>
+                Bloom Home Care is nurse-owned and nurse-led, meaning clinical judgment and compassionate standards
+                are embedded in everything we do — from how we hire caregivers to how we build care plans.
               </p>
             </div>
             <blockquote className="border-l-2 border-primary pl-4 italic text-foreground font-sans text-base leading-relaxed">
-              "We started Bloom Home Care because we know what it feels like to want the absolute best
-              for someone you love — and to need someone you can truly trust to show up for them."
+              "I've spent over two decades at the bedside and behind the scenes of healthcare. I started Bloom
+              because I knew there was a better way — one that actually centers the person, not just the task."
             </blockquote>
             <p className="text-foreground font-sans text-sm font-medium">
-              — Founders, Bloom Home Care
+              — Jackie Herrera, BSN, RN, CMSRN, Founder
             </p>
           </div>
         </motion.div>

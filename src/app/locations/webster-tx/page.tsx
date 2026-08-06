@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 }
 
 const schema = {
-  '@context': 'https://schema.org', '@type': 'HomeAndConstructionBusiness',
+  '@context': 'https://schema.org', '@type': 'LocalBusiness',
   name: 'Bloom Home Care — Webster, TX', url: 'https://bloomhomecare.org/locations/webster-tx',
   telephone: '+12819756044', address: { '@type': 'PostalAddress', addressLocality: 'Webster', addressRegion: 'TX', addressCountry: 'US' },
   areaServed: { '@type': 'City', name: 'Webster', containedInPlace: { '@type': 'State', name: 'Texas' } },

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 }
 
 const schema = {
-  '@context': 'https://schema.org', '@type': 'HomeAndConstructionBusiness',
+  '@context': 'https://schema.org', '@type': 'LocalBusiness',
   name: 'Bloom Home Care — Baytown, TX', url: 'https://bloomhomecare.org/locations/baytown-tx',
   telephone: '+12819756044', address: { '@type': 'PostalAddress', addressLocality: 'Baytown', addressRegion: 'TX', addressCountry: 'US' },
   areaServed: { '@type': 'City', name: 'Baytown', containedInPlace: { '@type': 'State', name: 'Texas' } },

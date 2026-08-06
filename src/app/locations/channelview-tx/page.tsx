@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 }
 
 const schema = {
-  '@context': 'https://schema.org', '@type': 'HomeAndConstructionBusiness',
+  '@context': 'https://schema.org', '@type': 'LocalBusiness',
   name: 'Bloom Home Care — Channelview, TX', url: 'https://bloomhomecare.org/locations/channelview-tx',
   telephone: '+12819756044', address: { '@type': 'PostalAddress', addressLocality: 'Channelview', addressRegion: 'TX', addressCountry: 'US' },
   areaServed: { '@type': 'City', name: 'Channelview', containedInPlace: { '@type': 'State', name: 'Texas' } },

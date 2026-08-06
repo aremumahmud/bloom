@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import LocationPage from '@/views/services/LocationPage'
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: false },
   title: 'Home Care in Celina, TX | Bloom Home Care Services',
   description: 'Non-medical in-home care for seniors and adults in Celina, TX. Companion care, personal care, respite care, and post-hospital support. Flexible scheduling. Call 281-975-6044.',
   alternates: { canonical: 'https://bloomhomecare.org/locations/celina-tx' },
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
 
 const localBusinessSchema = {
   '@context': 'https://schema.org',
-  '@type': 'HomeAndConstructionBusiness',
+  '@type': 'LocalBusiness',
   '@id': 'https://bloomhomecare.org/locations/celina-tx#business',
   name: 'Bloom Home Care — Celina, TX',
   description: 'Compassionate non-medical home care for seniors and adults in Celina, TX.',

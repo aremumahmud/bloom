@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 }
 
 const schema = {
-  '@context': 'https://schema.org', '@type': 'HomeAndConstructionBusiness',
+  '@context': 'https://schema.org', '@type': 'LocalBusiness',
   name: 'Bloom Home Care — Deer Park, TX', url: 'https://bloomhomecare.org/locations/deer-park-tx',
   telephone: '+12819756044', address: { '@type': 'PostalAddress', addressLocality: 'Deer Park', addressRegion: 'TX', addressCountry: 'US' },
   areaServed: { '@type': 'City', name: 'Deer Park', containedInPlace: { '@type': 'State', name: 'Texas' } },

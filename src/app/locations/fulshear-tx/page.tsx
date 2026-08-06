@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 }
 
 const schema = {
-  '@context': 'https://schema.org', '@type': 'HomeAndConstructionBusiness',
+  '@context': 'https://schema.org', '@type': 'LocalBusiness',
   name: 'Bloom Home Care — Fulshear, TX', url: 'https://bloomhomecare.org/locations/fulshear-tx',
   telephone: '+12819756044', address: { '@type': 'PostalAddress', addressLocality: 'Fulshear', addressRegion: 'TX', addressCountry: 'US' },
   areaServed: { '@type': 'City', name: 'Fulshear', containedInPlace: { '@type': 'State', name: 'Texas' } },

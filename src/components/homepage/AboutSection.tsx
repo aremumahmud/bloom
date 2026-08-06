@@ -54,22 +54,26 @@ export function AboutSection() {
               id="about-heading"
               className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground mb-6 leading-tight"
             >
-              Senior Home Care in Katy, TX —<br className="hidden lg:block" />
-              Bloom Home Care
+              Senior Home Care in Katy, TX<br className="hidden lg:block" />
+              That Feels Like Family
             </h2>
 
             <div className="space-y-5 text-muted-foreground font-sans text-base md:text-lg leading-relaxed mb-8">
               <p>
-                At Bloom Home Care, we deliver thoughtful, personalized in-home support designed
-                around each person's individual needs. From help with daily routines and uplifting
-                companionship to trusted respite care, our certified caregivers bring both skill
-                and heart to every visit.
+                Bloom Home Care was founded on a simple belief: aging at home shouldn't mean doing it alone.
+                When seniors receive the right support in their own homes, they stay healthier, happier, and
+                more independent. That's what we've been helping families achieve.
               </p>
               <p>
-                We've built our name on reliability, empathy, and a genuine commitment to
-                well-being. Proudly serving Katy, TX and nearby areas, we help families feel
-                confident and supported — because everyone deserves to feel safe, cared for,
-                and at home.
+                Families looking for senior home care in Katy, TX can trust Bloom Home Care for thoughtful
+                care plans, compassionate caregivers, and support that respects each person's daily routine.
+                We've worked with hundreds of families across Katy, Cypress, Spring, The Woodlands, and
+                Sugar Land.
+              </p>
+              <p>
+                Our team knows that trust is earned through consistency, kindness, and genuine commitment.
+                Every day, our caregivers show up with the understanding that they're not just providing
+                a service — they're becoming part of someone's life. We take that responsibility seriously.
               </p>
               <p className="text-primary font-medium italic text-base">
                 "Your Home. Your Health. Our Commitment."

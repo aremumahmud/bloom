@@ -8,23 +8,23 @@ import { Home, Stethoscope, Users, HandHeart } from "lucide-react";
 const audiences = [
   {
     icon: Home,
-    title: "Seniors Aging at Home",
-    description: "Support for older adults who want to remain comfortable, safe, and independent in their own home.",
+    title: "Seniors Who Want to Age in Place",
+    description: "Seniors who want to remain in the home they've built their lives in — not a facility — deserve the support to do that safely and with dignity. We help make that possible.",
   },
   {
     icon: Stethoscope,
-    title: "Adults Recovering from Surgery or Illness",
-    description: "Steady, patient assistance during recovery — from mobility support to meal preparation.",
+    title: "Adults Recovering from Illness or Surgery",
+    description: "A hospital discharge is not the end of care. Recovering at home is safer and more comfortable with the right support in place — from mobility assistance to medication reminders.",
   },
   {
     icon: Users,
-    title: "Families Needing Respite Support",
-    description: "Reliable relief for family caregivers so they can rest, knowing their loved one is in thoughtful hands.",
+    title: "Family Caregivers Who Need a Break",
+    description: "Caring for a loved one is deeply meaningful — and relentlessly exhausting. Respite care gives family caregivers dedicated time to rest, recharge, and attend to their own lives without guilt.",
   },
   {
     icon: HandHeart,
-    title: "Individuals Seeking Companionship",
-    description: "Meaningful companionship and daily assistance for those who benefit from consistent, caring presence.",
+    title: "Individuals Living with Dementia or Memory Loss",
+    description: "Memory loss changes daily life for individuals and their families. Our caregivers offer patient, trained, compassionate support for those living with dementia and Alzheimer's disease.",
   },
 ];
 

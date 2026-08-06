@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 }
 
 const schema = {
-  '@context': 'https://schema.org', '@type': 'HomeAndConstructionBusiness',
+  '@context': 'https://schema.org', '@type': 'LocalBusiness',
   name: 'Bloom Home Care — Clear Lake, TX', url: 'https://bloomhomecare.org/locations/clear-lake-tx',
   telephone: '+12819756044', address: { '@type': 'PostalAddress', addressLocality: 'Clear Lake', addressRegion: 'TX', addressCountry: 'US' },
   areaServed: { '@type': 'City', name: 'Clear Lake', containedInPlace: { '@type': 'State', name: 'Texas' } },

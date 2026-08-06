@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 }
 
 const schema = {
-  '@context': 'https://schema.org', '@type': 'HomeAndConstructionBusiness',
+  '@context': 'https://schema.org', '@type': 'LocalBusiness',
   name: 'Bloom Home Care — The Woodlands, TX', url: 'https://bloomhomecare.org/locations/the-woodlands-tx',
   telephone: '+12819756044', address: { '@type': 'PostalAddress', addressLocality: 'The Woodlands', addressRegion: 'TX', addressCountry: 'US' },
   areaServed: { '@type': 'City', name: 'The Woodlands', containedInPlace: { '@type': 'State', name: 'Texas' } },

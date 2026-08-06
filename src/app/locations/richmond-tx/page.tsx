@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 }
 
 const schema = {
-  '@context': 'https://schema.org', '@type': 'HomeAndConstructionBusiness',
+  '@context': 'https://schema.org', '@type': 'LocalBusiness',
   name: 'Bloom Home Care — Richmond, TX', url: 'https://bloomhomecare.org/locations/richmond-tx',
   telephone: '+12819756044', address: { '@type': 'PostalAddress', addressLocality: 'Richmond', addressRegion: 'TX', addressCountry: 'US' },
   areaServed: { '@type': 'City', name: 'Richmond', containedInPlace: { '@type': 'State', name: 'Texas' } },

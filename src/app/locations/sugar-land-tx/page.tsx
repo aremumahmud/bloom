@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 }
 
 const schema = {
-  '@context': 'https://schema.org', '@type': 'HomeAndConstructionBusiness',
+  '@context': 'https://schema.org', '@type': 'LocalBusiness',
   name: 'Bloom Home Care — Sugar Land, TX', url: 'https://bloomhomecare.org/locations/sugar-land-tx',
   telephone: '+12819756044', address: { '@type': 'PostalAddress', addressLocality: 'Sugar Land', addressRegion: 'TX', addressCountry: 'US' },
   areaServed: { '@type': 'City', name: 'Sugar Land', containedInPlace: { '@type': 'State', name: 'Texas' } },

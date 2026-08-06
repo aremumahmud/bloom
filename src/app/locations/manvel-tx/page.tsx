@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 }
 
 const schema = {
-  '@context': 'https://schema.org', '@type': 'HomeAndConstructionBusiness',
+  '@context': 'https://schema.org', '@type': 'LocalBusiness',
   name: 'Bloom Home Care — Manvel, TX', url: 'https://bloomhomecare.org/locations/manvel-tx',
   telephone: '+12819756044', address: { '@type': 'PostalAddress', addressLocality: 'Manvel', addressRegion: 'TX', addressCountry: 'US' },
   areaServed: { '@type': 'City', name: 'Manvel', containedInPlace: { '@type': 'State', name: 'Texas' } },
