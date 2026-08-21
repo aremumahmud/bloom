@@ -41,7 +41,7 @@ const services = [
   {
     icon: Stethoscope,
     title: "Specialized Care",
-    description: "After surgery, during recovery, or while managing a chronic illness, seniors need skilled support. Our caregivers assist with medication reminders, mobility assistance, and other specialized needs tailored to each individual.",
+    description: "After surgery, during recovery, or while managing a chronic illness, seniors need skilled support. Our caregivers assist with medication reminders, wound care support, mobility assistance, and other specialized needs.",
     href: "/services/specialized-care",
   },
   {
@@ -152,13 +152,16 @@ export function ServicesSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.5, delay: 0.9 }}
-          className="text-center mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center"
+          className="text-center mt-10"
         >
           <Button variant="premium-outline" size="lg" asChild>
             <Link href="/services">View All In-Home Care Services</Link>
           </Button>
+          <p className="font-sans text-foreground mt-8 mb-4">
+            Ready to Learn More About Our Services?
+          </p>
           <Button variant="premium" size="lg" asChild>
-            <Link href="/contact">Talk With Our Care Team Today</Link>
+            <Link href="/contact">Talk With Our Care Team Today!</Link>
           </Button>
         </motion.div>
       </div>

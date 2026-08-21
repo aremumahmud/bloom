@@ -12,39 +12,39 @@ import {
 
 const faqs = [
   {
-    question: "What is a home care agency?",
+    question: "What services does a home care agency in Katy, TX, provide?",
     answer:
-      "A home care agency provides non-medical personal care and companionship services in a person's home. Unlike hiring an independent caregiver on your own, a licensed home care agency handles background checks, scheduling, insurance, and supervision. At Bloom Home Care, we are licensed in Texas and carry full liability coverage — so your family is protected at every step.",
+      "A home care agency Katy, TX, families choose should provide support with daily living, companionship, personal care, respite care, dementia care, and flexible care plans based on each person's needs. Bloom Home Care helps seniors and adults stay safe, comfortable, and supported at home.",
   },
   {
-    question: "What does a home care agency in Katy, TX actually do?",
+    question: "How much does home care cost in Katy, TX, and does Medicare pay for it?",
     answer:
-      "In practical terms, we send trained, background-checked caregivers to help your loved one with daily life at home — things like bathing, dressing, medication reminders, meal preparation, light housekeeping, and companionship. We also support family caregivers with respite care and work with clients coming home after a hospital stay.",
+      "The cost of home care depends on the type of care, number of hours, schedule, and level of support needed. Medicare may cover some doctor-ordered home health services, but it usually does not cover non-medical personal care, homemaker services, or 24-hour care when those are the only services needed.",
   },
   {
-    question: "How is Bloom Home Care different from a staffing agency?",
+    question: "How quickly can home care services begin?",
     answer:
-      "A staffing agency places workers and steps back. Bloom Home Care is an ongoing partner in your loved one's care. We supervise our caregivers, create and adjust care plans, conduct regular check-ins with families, and remain involved as needs evolve. As a nurse-founded agency, clinical judgment and compassionate standards are built into everything we do.",
+      "Care can often begin after a consultation, care assessment, and caregiver match. The exact timeline depends on your loved one's needs, schedule, and caregiver availability. Bloom Home Care works with families to begin support as quickly and carefully as possible.",
   },
   {
-    question: "What types of care does Bloom Home Care offer?",
+    question: "Does Bloom Home Care provide 24/7 or overnight home care support?",
     answer:
-      "We offer personal care (bathing, dressing, grooming, toileting), companion care, respite care for family caregivers, dementia and memory care, end-of-life comfort care, and in-facility companion support for those in assisted living or nursing communities. All care is non-medical — we do not provide skilled nursing or medical services.",
+      "Yes, Bloom Home Care can discuss overnight or 24/7 home care support based on your loved one's needs and caregiver availability. This may help seniors who need supervision, mobility support, personal care, reassurance, or a steady presence during the day and night.",
   },
   {
-    question: "How do I know if home care is right for my loved one?",
+    question: "Are caregivers screened, trained, and matched to each client?",
     answer:
-      "If your loved one struggles with daily tasks, lives alone and feels isolated, has recently been discharged from the hospital, or if you as a family caregiver are feeling burned out — home care may be exactly the right fit. The best way to find out is to talk with our team. We'll help you think through the situation honestly and without pressure.",
+      "Yes. Every caregiver clears a criminal-history check and the required employee-registry screening, plus reference verification, before working with any client. Bloom Home Care understands that trust matters when inviting someone into your home, so caregiver matching is based on care needs, personality, schedule, and family preferences.",
   },
   {
-    question: "How much does home care cost in Katy, TX?",
+    question: "Does Bloom Home Care provide Alzheimer's and dementia care?",
     answer:
-      "Home care costs vary based on the level of care, number of hours, and schedule. We encourage families to contact us for a free consultation so we can give you accurate information based on your specific situation. We do not currently accept Medicare or Medicaid, though we can provide documentation to support long-term care insurance reimbursement claims.",
+      "Yes, Bloom Home Care provides support for individuals living with Alzheimer's, dementia, and memory-related changes. Care focuses on familiar routines, safety, patience, calm communication, and compassionate support for both the client and the family.",
   },
   {
-    question: "How do I start home care services with Bloom Home Care?",
+    question: "Does Bloom Home Care provide home care outside Katy?",
     answer:
-      "Simply reach out — by phone, online form, or email. Our team will schedule a no-obligation consultation, listen to your loved one's needs, and walk you through what care would look like. If it's a good fit, we'll build a personalized care plan, match a caregiver, and set a start date. From first call to first visit, we aim to make the process as smooth as possible.",
+      "Yes. Katy is the main service area, but Bloom Home Care also supports nearby communities where care is available. Families often search for care in Cypress, Spring, The Woodlands, Sugar Land, Cinco Ranch, Fulshear, Richmond, Brookshire, West Houston, and surrounding areas.",
   },
 ];
 

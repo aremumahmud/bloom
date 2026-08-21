@@ -27,7 +27,12 @@ const localBusinessSchema = {
   address: { '@type': 'PostalAddress', addressLocality: 'Katy', addressRegion: 'TX', addressCountry: 'US' },
   areaServed: { '@type': 'City', name: 'Katy', containedInPlace: { '@type': 'State', name: 'Texas' } },
   parentOrganization: { '@id': 'https://bloomhomecare.org/#business' },
-  serviceType: ['Companion Care', 'Personal Care', 'Respite Care', 'Post-Hospital Care', 'Dementia Care', 'Specialized Care', 'In-Facility Care', 'End-of-Life Care'],
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    name: 'Home Care Services',
+    itemListElement: ['Companion Care', 'Personal Care', 'Respite Care', 'Post-Hospital Care', 'Dementia Care', 'Specialized Care', 'In-Facility Care', 'End-of-Life Care']
+      .map((name) => ({ '@type': 'Offer', itemOffered: { '@type': 'Service', name } })),
+  },
 }
 
 const breadcrumbSchema = {

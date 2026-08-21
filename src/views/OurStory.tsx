@@ -572,9 +572,9 @@ const OurStory = () => {
             transition={{ duration: 0.6 }}
             className="space-y-5 max-w-xl mx-auto"
           >
-            <p className="text-primary font-sans text-sm tracking-widest uppercase">
+            <h2 className="text-primary font-sans text-sm tracking-widest uppercase">
               Talk With Our Care Team
-            </p>
+            </h2>
             <p className="text-muted-foreground font-sans leading-relaxed">
               Choosing home care is a big decision. With Bloom, it comes with nurse-owned
               experience, careful caregiver matching, and clear communication at every step.

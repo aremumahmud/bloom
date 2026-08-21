@@ -28,7 +28,7 @@ const indicators = [
     icon: MessageCircle,
     title: "Dedicated to Katy, TX & Surrounding Areas",
     description:
-      "We're deeply rooted in Katy, serving local families with consistency and genuine care. As a home care agency Katy, TX families trust, we're your neighbors — not a distant chain.",
+      "We're deeply rooted in Katy, serving local families with consistency and genuine care. As a home care agency Katy, TX, families trust, we're your neighbors, not a distant chain.",
   },
 ];
 

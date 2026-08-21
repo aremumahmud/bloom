@@ -3,6 +3,8 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
 import founderPortrait from "@/assets/founder-portrait.jpg";
 
 export function FounderSection() {
@@ -23,7 +25,7 @@ export function FounderSection() {
             <div className="w-52 h-64 rounded-2xl overflow-hidden shadow-md">
               <img
                 src={founderPortrait.src}
-                alt="Founder of Bloom Home Care"
+                alt="Jackeline Herrera, BSN, RN, CMSRN, Founder of Bloom Home Care"
                 loading="lazy"
                 className="w-full h-full object-cover object-top"
               />
@@ -33,32 +35,46 @@ export function FounderSection() {
           {/* Text */}
           <div className="md:col-span-2 space-y-5">
             <h2 className="font-serif text-2xl md:text-3xl text-foreground">
-              Nurse-Led Home Care in Katy, TX
+              Meet the Founder Behind Bloom Home Care
             </h2>
             <div className="space-y-4 text-muted-foreground font-sans leading-relaxed text-sm md:text-base">
               <p>
-                Jackie Herrera, BSN, RN, CMSRN, brings over 22 years of nursing experience to Bloom Home Care.
-                A proud graduate of Prairie View A&amp;M University, Jackie has built a career defined by clinical
-                excellence and a deep commitment to human dignity in care.
+                Bloom Home Care was founded by Jackeline "Jackie" Herrera, BSN, RN, CMSRN, a registered nurse
+                with more than 22 years of experience across home health, hospital care, and healthcare
+                leadership. Jackie earned her Bachelor of Science in Nursing from Prairie View A&amp;M University
+                and holds the nationally recognized Certified Medical-Surgical Registered Nurse (CMSRN) credential.
               </p>
               <p>
-                Before founding Bloom Home Care, Jackie helped launch and grow two separate home care agencies,
-                overseeing operations and clinical programs from the ground up. She also managed a 28-bed hospital
-                unit — giving her firsthand understanding of the systems gaps that leave families without consistent
-                support after discharge.
+                Over the years, she founded and operated two home health agencies and went on to lead a busy
+                28-bed hospital unit as Nurse Manager, overseeing more than 60 caregivers along with daily
+                operations, patient safety, and quality of care. That rare combination of business ownership,
+                bedside nursing, and clinical leadership shapes the standard of care behind Bloom Home Care today.
               </p>
               <p>
-                Bloom Home Care is nurse-owned and nurse-led, meaning clinical judgment and compassionate standards
-                are embedded in everything we do — from how we hire caregivers to how we build care plans.
+                Through all of it, Jackie kept noticing the same gap. Many patients were well enough to leave
+                the hospital but not quite ready to manage everyday life on their own, and families were doing
+                their best to support aging parents while balancing careers, children, and sometimes hundreds
+                of miles of distance. What these families needed was not more medical treatment. They needed a
+                caregiver they could truly trust.
+              </p>
+              <p>
+                That belief became Bloom Home Care, a home care agency in Katy, TX, that is proudly nurse-owned
+                and nurse-led. For Jackie, the goal was never to open just another agency. It was to build the
+                kind of agency she would confidently trust with her own family.
               </p>
             </div>
             <blockquote className="border-l-2 border-primary pl-4 italic text-foreground font-sans text-base leading-relaxed">
-              "I've spent over two decades at the bedside and behind the scenes of healthcare. I started Bloom
-              because I knew there was a better way — one that actually centers the person, not just the task."
+              "Before we make any decision, we ask ourselves one question: if these were my own parents, what
+              would I want their care to look like? That question guides everything we do."
             </blockquote>
             <p className="text-foreground font-sans text-sm font-medium">
-              — Jackie Herrera, BSN, RN, CMSRN, Founder
+              Jackie Herrera, Founder and Director, Bloom Home Care
             </p>
+            <div className="pt-2">
+              <Button variant="subtle" size="lg" asChild>
+                <Link href="/our-story">Learn More About Our Story</Link>
+              </Button>
+            </div>
           </div>
         </motion.div>
       </div>

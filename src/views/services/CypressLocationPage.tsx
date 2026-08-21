@@ -105,7 +105,7 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
         className="w-full flex items-center justify-between px-6 py-5 text-left bg-background hover:bg-accent/40 transition-colors gap-4"
         aria-expanded={open}
       >
-        <span className="font-sans font-medium text-foreground text-sm md:text-base">{question}</span>
+        <h3 className="font-sans font-medium text-foreground text-sm md:text-base m-0">{question}</h3>
         {open ? <ChevronUp size={18} className="text-primary flex-shrink-0" /> : <ChevronDown size={18} className="text-muted-foreground flex-shrink-0" />}
       </button>
       <div className={`px-6 py-5 border-t border-border bg-card ${open ? "block" : "hidden"}`}>

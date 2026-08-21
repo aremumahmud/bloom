@@ -8,23 +8,23 @@ import { Home, Stethoscope, Users, HandHeart } from "lucide-react";
 const audiences = [
   {
     icon: Home,
-    title: "Seniors Who Want to Age in Place",
-    description: "Seniors who want to remain in the home they've built their lives in — not a facility — deserve the support to do that safely and with dignity. We help make that possible.",
-  },
-  {
-    icon: Stethoscope,
-    title: "Adults Recovering from Illness or Surgery",
-    description: "A hospital discharge is not the end of care. Recovering at home is safer and more comfortable with the right support in place — from mobility assistance to medication reminders.",
+    title: "Older Adults Aging at Home",
+    description: "Seniors who want to stay in their own homes as they age but need support with daily activities. Our senior home care Katy, TX, services are especially helpful for older adults who want to remain at home while receiving support with daily routines, companionship, and personal care.",
   },
   {
     icon: Users,
-    title: "Family Caregivers Who Need a Break",
-    description: "Caring for a loved one is deeply meaningful — and relentlessly exhausting. Respite care gives family caregivers dedicated time to rest, recharge, and attend to their own lives without guilt.",
+    title: "Families Seeking Daily Support",
+    description: "We support families managing aging parents or spouses alongside work and other responsibilities. We become your partner, handling caregiving so you can focus on being a family member rather than a full-time caregiver.",
   },
   {
     icon: HandHeart,
-    title: "Individuals Living with Dementia or Memory Loss",
-    description: "Memory loss changes daily life for individuals and their families. Our caregivers offer patient, trained, compassionate support for those living with dementia and Alzheimer's disease.",
+    title: "Individuals Living With Memory Conditions",
+    description: "Those diagnosed with Alzheimer's, dementia, or other memory conditions need specialized, patient-centered care. Our team understands these conditions and provides support that's tailored to their unique needs.",
+  },
+  {
+    icon: Stethoscope,
+    title: "Adults Recovering From Surgery or Illness",
+    description: "After hospitalization or medical events, recovery at home often works better than recovery in institutional settings. We provide skilled support during this critical recovery period, helping people heal safely and return to independence.",
   },
 ];
 

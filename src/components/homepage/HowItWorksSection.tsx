@@ -12,19 +12,19 @@ const steps = [
     number: "1",
     title: "Reach Out",
     description:
-      "Call us or fill out a quick form. Someone from our Katy, TX team responds within one business day — no automated systems, no runaround. We listen carefully to understand your loved one's needs and what your family is looking for.",
+      "Call us or fill out a quick form. Someone from our Katy, TX, team responds within one business day. No automated systems, no runaround. We listen carefully to understand your loved one's needs and what your family is looking for.",
   },
   {
     number: "2",
     title: "We Get to Know You",
     description:
-      "We listen carefully to understand your loved one's needs, daily routines, and preferences. Care is personal — it should feel that way from the very start. We match the right caregiver, set the right schedule, and establish communication so everyone stays informed and supported.",
+      "We listen carefully to understand your loved one's needs, daily routines, and preferences. Care is personal. It should feel that way from the very start. We match the right caregiver, set the right schedule, and establish communication so everyone stays informed and supported.",
   },
   {
     number: "3",
     title: "Care Begins",
     description:
-      "Your matched caregiver arrives. From day one, you'll feel the difference of consistent, relationship-centered support in the comfort of your home. We stay in close contact, check in regularly, and adjust the plan as needs change. You're never on your own — we're your partner throughout the journey.",
+      "Your matched caregiver arrives. From day one, you'll feel the difference of consistent, relationship-centered support in the comfort of your home. We stay in close contact, check in regularly, and adjust the plan as needs change. You're never on your own; we're your partner throughout the journey.",
   },
 ];
 

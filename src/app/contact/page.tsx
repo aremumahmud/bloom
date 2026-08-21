@@ -40,6 +40,7 @@ const contactPageSchema = {
     name: 'Bloom Home Care',
     telephone: '+12819756044',
     email: 'hello@bloomhomecare.org',
+    address: { '@type': 'PostalAddress', addressLocality: 'Katy', addressRegion: 'TX', addressCountry: 'US' },
     areaServed: 'Katy, TX',
     openingHoursSpecification: {
       '@type': 'OpeningHoursSpecification',

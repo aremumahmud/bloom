@@ -50,7 +50,7 @@ export function TestimonialsSection() {
             id="testimonials-heading"
             className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground mb-4"
           >
-            What Families Are Saying About Bloom Home Care
+            The Trust We've Earned
           </h2>
           <p className="text-muted-foreground font-sans text-lg max-w-xl mx-auto">
             Trusted by families across Katy, TX and surrounding areas.

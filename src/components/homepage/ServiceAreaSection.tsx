@@ -11,31 +11,31 @@ const areas = [
   {
     name: "Katy, TX",
     href: "/locations/katy-tx",
-    description: "Our home base. Serving families across Katy and the surrounding 77449, 77450, and 77494 zip codes with consistent, relationship-centered care.",
+    description: "Our primary service area where we've built deep community roots and local expertise. We're proud to serve families throughout Katy with personalized, compassionate care.",
     isPrimary: true,
   },
   {
     name: "Cypress, TX",
     href: "/locations/cypress-tx",
-    description: "Providing in-home care to families in Cypress, including the FM 1960 and Barker Cypress corridors.",
+    description: "Serving families in Cypress with the same commitment to quality, relationship-centered care we provide in Katy. Personalized support for your loved one's unique needs.",
     isPrimary: false,
   },
   {
     name: "Spring, TX",
     href: "/locations/spring-tx",
-    description: "Serving families in Spring, TX with the same care and reliability we bring to every community we work in.",
+    description: "Providing flexible, compassionate in-home care for seniors and adults in Spring. We customize our services to fit your family's specific situation and preferences.",
     isPrimary: false,
   },
   {
     name: "The Woodlands, TX",
     href: "/locations/the-woodlands-tx",
-    description: "Home care support in The Woodlands — consistent, caregiver-matched, and tailored to your family's schedule.",
+    description: "Delivering personalized care in The Woodlands with the same dedication to dignity, independence, and comfort you'll find throughout our service areas.",
     isPrimary: false,
   },
   {
     name: "Sugar Land, TX",
     href: "/locations/sugar-land-tx",
-    description: "Bringing our nurse-led home care approach to families across Fort Bend County, including Sugar Land and Missouri City.",
+    description: "Serving families in Sugar Land with experienced caregivers trained to provide compassionate, flexible support tailored to each person's unique needs.",
     isPrimary: false,
   },
 ];
@@ -65,12 +65,11 @@ export function ServiceAreaSection() {
             id="service-area-heading"
             className="font-serif text-3xl md:text-4xl text-foreground mb-4"
           >
-            Proudly Serving Katy, TX &amp; Surrounding Areas
+            Proudly Serving Katy and Surrounding Communities
           </h2>
           <p className="text-muted-foreground font-sans text-lg max-w-2xl mx-auto">
-            Bloom Home Care provides compassionate in-home care services throughout Katy, TX
-            and nearby communities — bringing consistent, trusted support close to home
-            where families need it most.
+            Bloom Home Care proudly serves families across the greater Houston area. Katy is our home base,
+            and we're committed to providing the same quality, compassionate care to nearby communities.
           </p>
         </motion.div>
 

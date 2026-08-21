@@ -53,16 +53,20 @@ const localBusinessSchema = {
   areaServed: [
     { '@type': 'City', name: 'Katy', 'containedInPlace': { '@type': 'State', name: 'Texas' } },
   ],
-  serviceType: [
-    'Companion Care',
-    'Personal Care',
-    'Meal Preparation',
-    'Medication Reminders',
-    'Transitional Care',
-    'Respite Care',
-    'End-of-Life Care',
-    'In-Facility Support',
-  ],
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    name: 'Home Care Services',
+    itemListElement: [
+      'Companion Care',
+      'Personal Care',
+      'Meal Preparation',
+      'Medication Reminders',
+      'Transitional Care',
+      'Respite Care',
+      'End-of-Life Care',
+      'In-Facility Support',
+    ].map((name) => ({ '@type': 'Offer', itemOffered: { '@type': 'Service', name } })),
+  },
   sameAs: [
     'https://www.instagram.com/bloomhomecare/',
     'https://www.facebook.com/bloomhomecare',

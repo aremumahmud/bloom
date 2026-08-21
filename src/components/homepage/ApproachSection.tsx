@@ -14,7 +14,7 @@ const approaches = [
   {
     icon: Clock,
     text: "We slow down when it matters",
-    detail: "In a rush-driven world, we take our time — when meeting your loved one, when listening to your concerns, when making care adjustments. Rushing through these moments misses what's essential.",
+    detail: "In a rush-driven world, we take our time. When meeting your loved one for the first time, when listening to your concerns, when making care adjustments, we pause and give full attention. Rushing through these moments misses what's essential.",
   },
   {
     icon: Ear,
@@ -33,7 +33,7 @@ const approaches = [
   },
   {
     icon: Heart,
-    text: "We treat people as people — not tasks",
+    text: "We treat people as people, not tasks",
     detail: "Your loved one is not a checklist. They're someone's parent, grandparent, or spouse with a lifetime of stories, preferences, and dignity. We approach every person as the whole human being they are.",
   },
 ];
@@ -52,10 +52,15 @@ export function ApproachSection() {
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -40 }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-8">
+            <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-4">
               Our Approach to Home Care in Katy, TX
             </h2>
-            
+            <p className="text-muted-foreground font-sans text-base leading-relaxed mb-8">
+              We believe that quality care comes from understanding what truly matters to families. As a home
+              care agency in Katy, TX, families invite into their homes, we focus on care that feels personal,
+              respectful, and easy to adjust as needs change.
+            </p>
+
             <ul className="space-y-5">
               {approaches.map((item, index) => (
                 <motion.li
@@ -69,9 +74,9 @@ export function ApproachSection() {
                     <item.icon size={18} className="text-primary" />
                   </div>
                   <div>
-                    <p className="text-base font-semibold text-foreground font-sans mb-1">
+                    <h3 className="text-base font-semibold text-foreground font-sans mb-1">
                       {item.text}
-                    </p>
+                    </h3>
                     <p className="text-sm text-muted-foreground font-sans leading-relaxed">
                       {item.detail}
                     </p>

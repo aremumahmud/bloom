@@ -28,7 +28,11 @@ const localBusinessSchema = {
   address: { '@type': 'PostalAddress', addressLocality: 'Aubrey', addressRegion: 'TX', addressCountry: 'US' },
   areaServed: { '@type': 'City', name: 'Aubrey', containedInPlace: { '@type': 'State', name: 'Texas' } },
   parentOrganization: { '@id': 'https://bloomhomecare.org/#business' },
-  serviceType: ['Companion Care', 'Personal Care', 'Respite Care', 'Post-Hospital Care', 'Dementia Care'],
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    name: 'Home Care Services',
+    itemListElement: ['Companion Care', 'Personal Care', 'Respite Care', 'Post-Hospital Care', 'Dementia Care'].map((name) => ({ '@type': 'Offer', itemOffered: { '@type': 'Service', name } })),
+  },
 }
 
 const breadcrumbSchema = {

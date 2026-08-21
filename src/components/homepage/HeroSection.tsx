@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect, useCallback } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { CareRequestModal } from "@/components/homepage/CareRequestModal";
 import { ConsultationModal } from "@/components/homepage/ConsultationModal";
@@ -11,31 +11,26 @@ import handsImage from "@/assets/hands-connection.jpg";
 import gardenWalkImage from "@/assets/garden-walk.jpg";
 import readingTogetherImage from "@/assets/reading-together.jpg";
 
+// Background images only — the hero copy below is fixed and does not rotate per slide.
 const slides = [
   {
     image: handsImage,
-    alt: "Bloom Home Care caregiver and senior client holding hands in a warm, trusting moment — home care agency in Houston, TX",
-    badge: "Bloom Home Care · Houston, TX",
-    headlineLine1: "Trusted Home Care Agency",
-    headlineLine2: "in Houston, TX",
-    sub: "When your loved one needs support, you want someone you can trust completely. Bloom Home Care is a home care agency in Houston, TX, that families choose for personalized, non-medical in-home care — helping seniors stay comfortable and independent in their own homes.",
+    alt: "Bloom Home Care caregiver and senior client holding hands in a warm, trusting moment — home care agency in Katy, TX",
   },
   {
     image: gardenWalkImage,
-    alt: "Bloom Home Care caregiver walking alongside a senior in a garden — companion care services in Houston, TX",
-    badge: "Companion & Personal Care · Houston, TX",
-    headlineLine1: "Neighbors Who Understand",
-    headlineLine2: "What Matters Most.",
-    sub: "We're not just another home care provider. Every caregiver we send has been carefully chosen and trained to support your family with genuine care, dignity, and respect.",
+    alt: "Bloom Home Care caregiver walking alongside a senior in a garden — companion care services in Katy, TX",
   },
   {
     image: readingTogetherImage,
-    alt: "Caregiver and senior reading together at home — personalized in-home care plans in Houston, TX",
-    badge: "Personalized Care Plans · Houston, TX & Surrounding Areas",
-    headlineLine1: "Every Plan Begins",
-    headlineLine2: "With Listening.",
-    sub: "Whether a senior needs help with daily activities, specialized care after surgery, or companionship while recovering, Bloom Home Care is here to help.",
+    alt: "Caregiver and senior reading together at home — personalized in-home care plans in Katy, TX",
   },
+];
+
+const heroParagraphs = [
+  "When your loved one needs support, you want someone you can trust completely. Bloom Home Care is a home care agency in Katy, TX, that families choose for personalized, non-medical in-home care, helping seniors stay comfortable and independent in their own homes while giving families peace of mind.",
+  "We're not just another home care provider. We're neighbors who understand what matters most: dignity, independence, and the comfort of familiar surroundings. Every caregiver we send has been carefully chosen and trained to support your family with genuine care and respect.",
+  "Whether a senior needs help with daily activities, specialized care after surgery, or companionship while recovering from illness, Bloom Home Care is here to help.",
 ];
 
 // Stagger container — re-mounts per slide to re-trigger children
@@ -88,8 +83,6 @@ export function HeroSection() {
     }
   };
 
-  const slide = slides[current];
-
   return (
     <section
       className="relative min-h-[92vh] flex items-center pt-20 overflow-hidden"
@@ -130,45 +123,43 @@ export function HeroSection() {
       <div className="container-wide relative z-[10] py-14 md:py-0">
         <div className="max-w-2xl">
 
+          {/* Badge — static, sits above the H1 as an eyebrow label */}
+          <motion.p
+            initial="hidden"
+            animate="visible"
+            variants={fadeIn}
+            className="text-primary font-sans text-xs md:text-sm tracking-widest uppercase mb-4"
+          >
+            Bloom Home Care · Katy, TX
+          </motion.p>
+
+          {/* Static H1 — stays fixed across slides for a single, stable page heading */}
+          <motion.h1
+            id="hero-heading"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.65, ease: [0.22, 1, 0.36, 1] }}
+            className="font-serif text-4xl sm:text-5xl lg:text-6xl text-foreground leading-tight mb-5"
+          >
+            Trusted Home Care Agency in Katy, TX
+          </motion.h1>
+
           {/* Text block — re-key forces re-animation on slide change */}
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={`text-${current}`}
-              variants={textContainer}
-              initial="hidden"
-              animate="visible"
-              exit={{ opacity: 0, y: -12, transition: { duration: 0.3 } }}
-            >
-              {/* Badge */}
+          <motion.div
+            variants={textContainer}
+            initial="hidden"
+            animate="visible"
+          >
+            {heroParagraphs.map((paragraph, i) => (
               <motion.p
-                variants={fadeIn}
-                className="text-primary font-sans text-xs md:text-sm tracking-widest uppercase mb-4"
-              >
-                {slide.badge}
-              </motion.p>
-
-              {/* Headline */}
-              <motion.h1
-                id="hero-heading"
-                className="font-serif text-4xl sm:text-5xl lg:text-6xl text-foreground leading-tight mb-5"
-              >
-                <motion.span variants={fadeUp} className="block">
-                  {slide.headlineLine1}
-                </motion.span>
-                <motion.span variants={fadeUp} className="block text-primary">
-                  {slide.headlineLine2}
-                </motion.span>
-              </motion.h1>
-
-              {/* Sub */}
-              <motion.p
+                key={i}
                 variants={fadeUp}
-                className="text-base md:text-xl text-muted-foreground font-sans leading-relaxed mb-8 max-w-xl"
+                className="text-base md:text-xl text-muted-foreground font-sans leading-relaxed mb-4 max-w-xl last:mb-8"
               >
-                {slide.sub}
+                {paragraph}
               </motion.p>
-            </motion.div>
-          </AnimatePresence>
+            ))}
+          </motion.div>
 
           {/* CTAs — static, don't re-animate */}
           <motion.div
@@ -187,7 +178,7 @@ export function HeroSection() {
             </div>
             <div className="flex flex-col">
               <Button variant="premium-outline" size="xl" onClick={() => setCareModalOpen(true)}>
-                Current Client Support
+                Request Care Support
               </Button>
               <span className="text-xs text-muted-foreground mt-2 font-sans">
                 Already a client? We're here.

@@ -60,20 +60,23 @@ export function AboutSection() {
 
             <div className="space-y-5 text-muted-foreground font-sans text-base md:text-lg leading-relaxed mb-8">
               <p>
-                Bloom Home Care was founded on a simple belief: aging at home shouldn't mean doing it alone.
+                Bloom Home Care was founded on a simple belief that aging at home shouldn't mean doing it alone.
                 When seniors receive the right support in their own homes, they stay healthier, happier, and
-                more independent. That's what we've been helping families achieve.
+                more independent. That's what we've been helping families achieve for years.
               </p>
               <p>
-                Families looking for senior home care in Katy, TX can trust Bloom Home Care for thoughtful
+                Families looking for senior home care Katy TX, can trust Bloom Home Care for thoughtful
                 care plans, compassionate caregivers, and support that respects each person's daily routine.
+              </p>
+              <p>
                 We've worked with hundreds of families across Katy, Cypress, Spring, The Woodlands, and
-                Sugar Land.
+                Sugar Land. Each family is unique, and each person deserves care that's personalized to their
+                specific needs and preferences. That's why we don't use a one-size-fits-all approach.
               </p>
               <p>
                 Our team knows that trust is earned through consistency, kindness, and genuine commitment.
                 Every day, our caregivers show up with the understanding that they're not just providing
-                a service — they're becoming part of someone's life. We take that responsibility seriously.
+                a service; they're becoming part of someone's life. We take that responsibility seriously.
               </p>
               <p className="text-primary font-medium italic text-base">
                 "Your Home. Your Health. Our Commitment."

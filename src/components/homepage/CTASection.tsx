@@ -37,10 +37,15 @@ export function CTASection() {
               Schedule Your Free Home Care Consultation Today
             </h2>
 
+            <p className="text-lg text-muted-foreground font-sans mb-4 max-w-xl mx-auto">
+              If your loved one needs support staying at home safely and independently, we're here to help.
+              A consultation is free with no obligation. We'll listen to your situation, answer your questions,
+              and create a personalized plan if Bloom Home Care is a good fit for your family.
+            </p>
+
             <p className="text-lg text-muted-foreground font-sans mb-10 max-w-xl mx-auto">
-              Choosing the right home care agency in Katy, TX is one of the most important decisions your family
-              will make. We want to make it easy. Our team listens first, then helps you understand your options
-              — no pressure, no rush. Call us or submit a request online to get started.
+              If you are looking for a home care agency Katy, TX, that families can trust, Bloom Home Care is
+              here to listen, guide, and help you take the next step with confidence.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">

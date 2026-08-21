@@ -74,6 +74,7 @@ const jobPostingSchema = {
   employmentType: ['FULL_TIME', 'PART_TIME'],
   directApply: true,
   url: 'https://bloomhomecare.org/careers',
+  datePosted: new Date().toISOString().split('T')[0],
 }
 
 const breadcrumbSchema = {

@@ -8,6 +8,7 @@ import { ServicesSection } from "@/components/homepage/ServicesSection";
 import { ApproachSection } from "@/components/homepage/ApproachSection";
 import { CareCollageSection } from "@/components/homepage/CareCollageSection";
 import { WhoWeServeSection } from "@/components/homepage/WhoWeServeSection";
+import { TestimonialsSection } from "@/components/homepage/TestimonialsSection";
 import { FounderSection } from "@/components/homepage/FounderSection";
 import { ServiceAreaSection } from "@/components/homepage/ServiceAreaSection";
 import { LeadMagnetSection } from "@/components/homepage/LeadMagnetSection";
@@ -34,7 +35,9 @@ const Index = () => {
       <CareCollageSection />
       {/* 8. Who we serve — audience targeting */}
       <WhoWeServeSection />
-      {/* 9. Founder — personal story + credibility */}
+      {/* 9. Google Reviews — "The Trust We've Earned" */}
+      <TestimonialsSection />
+      {/* 10. Founder — personal story + credibility */}
       <FounderSection />
       {/* 11. Service areas — local SEO */}
       <ServiceAreaSection />
