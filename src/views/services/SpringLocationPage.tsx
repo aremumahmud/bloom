@@ -9,6 +9,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { ConsultationModal } from "@/components/homepage/ConsultationModal";
+import { TestimonialsSection } from "@/components/homepage/TestimonialsSection";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { CTASection } from "@/components/homepage/CTASection";
 
@@ -561,6 +562,9 @@ export default function SpringLocationPage() {
         </div>
       </section>
 
+      {/* ── Reviews ──────────────────────────────────────────────────────── */}
+      <TestimonialsSection />
+
       {/* ── FAQ ──────────────────────────────────────────────────────────── */}
       <section className="section-padding bg-card" aria-labelledby="faq-spring">
         <div className="container-narrow">
@@ -575,7 +579,7 @@ export default function SpringLocationPage() {
             {faqs.map((faq) => (
               <details key={faq.question} className="group border border-border rounded-xl overflow-hidden bg-background">
                 <summary className="w-full flex items-center justify-between px-6 py-5 cursor-pointer list-none font-sans font-medium text-foreground text-sm md:text-base">
-                  {faq.question}
+                  <h3 className="font-sans font-medium text-foreground text-sm md:text-base m-0">{faq.question}</h3>
                   <span className="text-muted-foreground group-open:rotate-180 transition-transform ml-4 flex-shrink-0">▾</span>
                 </summary>
                 <div className="px-6 py-5 border-t border-border">
