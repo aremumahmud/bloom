@@ -161,7 +161,7 @@ const BlogPost = ({ post, relatedPosts }: Props) => {
                         asChild
                         variant="premium"
                         size="lg"
-                        className="not-prose block w-fit mx-auto mt-3 !text-primary-foreground"
+                        className="not-prose flex w-fit mx-auto mt-3 !text-primary-foreground"
                       >
                         <Link href={href || '/contact'}>{children}</Link>
                       </Button>
