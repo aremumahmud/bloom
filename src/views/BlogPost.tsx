@@ -154,9 +154,15 @@ const BlogPost = ({ post, relatedPosts }: Props) => {
                 },
                 a: ({ href, children, ...props }) => {
                   const text = Array.isArray(children) ? children.join('') : String(children ?? '');
-                  if (text.includes('speak with the Bloom Home Care team')) {
+                  const ctaLabels = ['Contact Bloom Home Care', 'Request a Free Assessment'];
+                  if (ctaLabels.includes(text.trim())) {
                     return (
-                      <Button asChild variant="premium" size="default" className="mx-1 align-middle">
+                      <Button
+                        asChild
+                        variant="premium"
+                        size="lg"
+                        className="not-prose block w-fit mx-auto mt-3 !text-primary-foreground"
+                      >
                         <Link href={href || '/contact'}>{children}</Link>
                       </Button>
                     );
