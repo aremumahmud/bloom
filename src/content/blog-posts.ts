@@ -108,7 +108,7 @@ Understanding the home care cost in Katy, TX makes the next conversation easier,
 
 The usual starting point is a free in-home assessment that turns a general range into a specific plan and price. There is no obligation to move forward afterward.
 
-Families who want a clear picture of the cost of care can [request a free in-home assessment](/contact) and written rate information from the Bloom Home Care team. Questions are welcome and carry no obligation, and the phone line at 281-975-6044 is answered 24 hours a day.
+> Families who want a clear picture of the cost of care can [request a free in-home assessment](/contact) and written rate information from the Bloom Home Care team. Questions are welcome and carry no obligation, and the phone line at 281-975-6044 is answered 24 hours a day.
 
 ---
 
@@ -282,7 +282,7 @@ The signs a senior needs home care rarely arrive with a clear answer attached. N
 
 The usual next step is a free in-home assessment. The nursing director or another qualified supervisor visits, spends about an hour going through daily routines, personal care needs, mobility, safety, and scheduling, and the family receives a proposed care plan, schedule, and written rate information afterward.
 
-Families who are unsure whether an older adult needs help at home can [speak with the Bloom Home Care team](/contact) about the situation and the care options available. Asking questions carries no obligation, and the phone line at 281-975-6044 is answered 24 hours a day.
+> Families who are unsure whether an older adult needs help at home can [speak with the Bloom Home Care team](/contact) about the situation and the care options available. Asking questions carries no obligation, and the phone line at 281-975-6044 is answered 24 hours a day.
 
 ---
 

@@ -127,7 +127,11 @@ const BlogPost = ({ post, relatedPosts }: Props) => {
 
             prose-img:rounded-2xl prose-img:my-12 prose-img:shadow-md prose-img:max-w-xl prose-img:mx-auto
 
-            prose-blockquote:border-primary/30 prose-blockquote:text-muted-foreground prose-blockquote:italic prose-blockquote:my-8
+            prose-blockquote:not-italic prose-blockquote:font-sans prose-blockquote:text-foreground
+            prose-blockquote:border prose-blockquote:border-primary/20 prose-blockquote:rounded-2xl
+            prose-blockquote:bg-primary/5 prose-blockquote:px-6 prose-blockquote:py-5 prose-blockquote:my-10
+            prose-blockquote:before:content-none prose-blockquote:after:content-none
+            prose-blockquote:[&>p]:m-0
 
             prose-hr:my-14 prose-hr:border-border
             [&_em]:text-foreground
@@ -147,6 +151,17 @@ const BlogPost = ({ post, relatedPosts }: Props) => {
                     return <strong {...props} style={{ fontSize: '16px' }} className="text-foreground font-bold">{children}</strong>;
                   }
                   return <strong {...props}>{children}</strong>;
+                },
+                a: ({ href, children, ...props }) => {
+                  const text = Array.isArray(children) ? children.join('') : String(children ?? '');
+                  if (text.includes('speak with the Bloom Home Care team')) {
+                    return (
+                      <Button asChild variant="premium" size="default" className="mx-1 align-middle">
+                        <Link href={href || '/contact'}>{children}</Link>
+                      </Button>
+                    );
+                  }
+                  return <a href={href} {...props}>{children}</a>;
                 },
               }}
             >
