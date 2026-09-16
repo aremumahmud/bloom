@@ -3,6 +3,7 @@ import { format } from "date-fns";
 import { ArrowLeft, Calendar, ArrowRight } from "lucide-react";
 import ReactMarkdown from "react-markdown";
 import { Button } from "@/components/ui/button";
+import { CTASection } from "@/components/homepage/CTASection";
 
 const serviceLinks = [
   { keywords: ["companion", "companionship", "loneliness", "isolation", "social"], path: "/services/companion-care", label: "Companion Care" },
@@ -54,6 +55,7 @@ const BlogPost = ({ post, relatedPosts }: Props) => {
   const relevantServices = getRelevantServices(post.content, post.tags);
 
   return (
+    <>
     <article className="section-padding">
       <div className="container-wide max-w-4xl mx-auto">
         <Link
@@ -103,18 +105,31 @@ const BlogPost = ({ post, relatedPosts }: Props) => {
 
         <div className="max-w-2xl mx-auto">
           <div className="prose max-w-none font-sans text-foreground
-            prose-headings:font-serif prose-headings:font-bold prose-headings:text-primary
-            prose-headings:underline prose-headings:decoration-primary/40 prose-headings:decoration-2 prose-headings:underline-offset-8
-            prose-h2:text-[1.55rem] prose-h2:md:text-[1.75rem] prose-h2:mt-20 prose-h2:mb-6 prose-h2:pt-6
-            prose-h3:text-xl prose-h3:mt-16 prose-h3:mb-5
-            prose-p:text-muted-foreground prose-p:leading-[1.95] prose-p:mb-10 prose-p:text-[1rem]
-            prose-li:text-muted-foreground prose-li:leading-[1.9] prose-li:text-[1rem] prose-li:mb-2
-            prose-ul:my-8 prose-ul:space-y-1 prose-ol:my-8 prose-ol:space-y-1
-            prose-a:text-primary
-            prose-strong:text-foreground prose-strong:text-[1rem]
-            prose-img:rounded-2xl prose-img:my-14 prose-img:shadow-md prose-img:max-w-xl prose-img:mx-auto
-            prose-blockquote:border-primary/30 prose-blockquote:text-muted-foreground prose-blockquote:italic prose-blockquote:my-10
-            prose-hr:my-16 prose-hr:border-border
+
+            prose-h2:font-serif prose-h2:font-bold prose-h2:text-primary
+            prose-h2:text-[1.55rem] prose-h2:md:text-[1.75rem] prose-h2:leading-tight
+            prose-h2:mt-16 prose-h2:mb-6 prose-h2:pt-8 prose-h2:border-t prose-h2:border-border
+
+            prose-h3:font-serif prose-h3:font-semibold prose-h3:text-foreground
+            prose-h3:text-lg prose-h3:md:text-xl prose-h3:leading-snug
+            prose-h3:mt-10 prose-h3:mb-3
+
+            prose-p:text-muted-foreground prose-p:leading-[1.8] prose-p:mb-6 prose-p:text-[1rem]
+
+            prose-ul:list-disc prose-ul:pl-6 prose-ul:my-6 prose-ul:space-y-2
+            prose-ol:list-decimal prose-ol:pl-6 prose-ol:my-6 prose-ol:space-y-2
+            prose-li:text-muted-foreground prose-li:leading-[1.7] prose-li:text-[1rem] prose-li:pl-1
+            prose-li:marker:text-primary
+
+            prose-a:text-primary prose-a:font-medium prose-a:no-underline hover:prose-a:underline
+
+            prose-strong:text-foreground prose-strong:font-semibold prose-strong:text-[1rem]
+
+            prose-img:rounded-2xl prose-img:my-12 prose-img:shadow-md prose-img:max-w-xl prose-img:mx-auto
+
+            prose-blockquote:border-primary/30 prose-blockquote:text-muted-foreground prose-blockquote:italic prose-blockquote:my-8
+
+            prose-hr:my-14 prose-hr:border-border
             [&_em]:text-foreground
           ">
             <ReactMarkdown
@@ -191,6 +206,8 @@ const BlogPost = ({ post, relatedPosts }: Props) => {
         )}
       </div>
     </article>
+    <CTASection />
+    </>
   );
 };
 

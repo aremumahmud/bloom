@@ -1,4 +1,5 @@
 import { MetadataRoute } from 'next'
+import { getAllBlogPosts } from '@/content/blog-posts'
 
 const BASE_URL = 'https://bloomhomecare.org'
 
@@ -14,7 +15,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/faq`,              lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE_URL}/careers`,          lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${BASE_URL}/contact`,          lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/blog`,             lastModified: now, changeFrequency: 'weekly',  priority: 0.7 },
   ]
+
+  const blogPages: MetadataRoute.Sitemap = getAllBlogPosts().map((post) => ({
+    url: `${BASE_URL}/blog/${post.slug}`,
+    lastModified: new Date(post.published_at),
+    changeFrequency: 'monthly' as const,
+    priority: 0.7,
+  }))
 
   const servicePages: MetadataRoute.Sitemap = [
     'companion-care',
@@ -45,5 +54,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }))
 
-  return [...staticPages, ...servicePages, ...locationPages]
+  return [...staticPages, ...servicePages, ...locationPages, ...blogPages]
 }

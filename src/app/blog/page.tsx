@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 import Blog from '@/views/Blog'
+import { getAllBlogPosts } from '@/content/blog-posts'
 
 export const metadata: Metadata = {
-  robots: { index: false, follow: false },
   title: 'Bloom Home Care Journal | Home Care Insights for Houston Families',
   description: "Read Bloom Home Care's blog for expert guidance on home care, aging in place, caregiver resources, and supporting loved ones across Prosper, Frisco, McKinney, Allen, and Katy, TX.",
   keywords: [
@@ -60,11 +60,12 @@ const breadcrumbSchema = {
 }
 
 export default function Page() {
+  const posts = getAllBlogPosts()
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <Blog />
+      <Blog posts={posts} />
     </>
   )
 }
