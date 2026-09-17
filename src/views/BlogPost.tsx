@@ -26,6 +26,8 @@ interface Post {
   published_at: string | null;
   tags: string[] | null;
   content: string;
+  lastReviewed?: string;
+  disclaimer?: string;
 }
 
 interface RelatedPost {
@@ -87,7 +89,7 @@ const BlogPost = ({ post, relatedPosts }: Props) => {
           {post.published_at && (
             <div className="flex items-center gap-2 text-sm text-muted-foreground font-sans mb-8">
               <Calendar size={14} />
-              {format(new Date(post.published_at), "MMMM d, yyyy")}
+              Published {format(new Date(post.published_at), "MMMM d, yyyy")}
             </div>
           )}
         </div>
@@ -100,6 +102,26 @@ const BlogPost = ({ post, relatedPosts }: Props) => {
               className="w-full h-auto max-h-[30rem] object-cover"
               fetchPriority="high"
             />
+          </div>
+        )}
+
+        {post.lastReviewed && (
+          <div className="max-w-2xl mx-auto mb-10 pb-8 border-b border-border">
+            <p className="text-sm text-muted-foreground font-sans leading-relaxed mb-2">
+              Reviewed by{" "}
+              <Link href="/our-story" className="text-primary font-medium hover:underline">
+                Jackeline Herrera
+              </Link>
+              , RN, Director, Bloom Home Care. Last reviewed: {post.lastReviewed}.
+            </p>
+            <p className="text-sm text-muted-foreground font-sans leading-relaxed mb-2">
+              Bloom Home Care is licensed by Texas Health and Human Services as a Home and Community Support Services Agency, license number 024086.
+            </p>
+            {post.disclaimer && (
+              <p className="text-sm text-muted-foreground font-sans italic leading-relaxed">
+                {post.disclaimer}
+              </p>
+            )}
           </div>
         )}
 
@@ -130,8 +152,8 @@ const BlogPost = ({ post, relatedPosts }: Props) => {
             prose-blockquote:not-italic prose-blockquote:font-sans prose-blockquote:text-foreground
             prose-blockquote:border prose-blockquote:border-primary/20 prose-blockquote:rounded-2xl
             prose-blockquote:bg-primary/5 prose-blockquote:px-6 prose-blockquote:py-5 prose-blockquote:my-10
-            prose-blockquote:before:content-none prose-blockquote:after:content-none
             prose-blockquote:[&>p]:m-0
+            [&_blockquote_p]:before:content-none [&_blockquote_p]:after:content-none
 
             prose-hr:my-14 prose-hr:border-border
             [&_em]:text-foreground

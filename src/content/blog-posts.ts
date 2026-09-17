@@ -5,12 +5,16 @@ export interface BlogPostData {
   excerpt: string;
   cover_image_url: string | null;
   published_at: string;
+  datePublishedISO: string;
+  dateModifiedISO: string;
   tags: string[];
   content: string;
   seoTitle: string;
   metaTitle: string;
   metaDescription: string;
   reviewedBy: string;
+  lastReviewed: string;
+  disclaimer: string;
 }
 
 export const blogPosts: BlogPostData[] = [
@@ -25,14 +29,14 @@ export const blogPosts: BlogPostData[] = [
     excerpt:
       "There is no single sticker price for home care in Katy. Here's what shapes the cost, typical hourly ranges, and how families budget for in-home senior care.",
     cover_image_url: "/blog/home-care-cost-in-katy-tx.jpg",
-    published_at: "2026-08-01",
+    published_at: "2026-09-17",
+    datePublishedISO: "2026-09-17T00:00:00-05:00",
+    dateModifiedISO: "2026-09-17T00:00:00-05:00",
     tags: ["Cost of Care", "Katy, TX", "Family Planning"],
     reviewedBy: "Jackeline Herrera, RN, Director, Bloom Home Care",
-    content: `*Reviewed by Jackeline Herrera, RN, Director, Bloom Home Care  |  Last updated August 2026*
-
-*Bloom Home Care is licensed by Texas Health and Human Services as a Home and Community Support Services Agency, license number 024086.*
-
-Cost is one of the first questions families ask when they start looking into care for an aging parent, and it is a fair one. Home care is usually paid for out of pocket, so knowing what to expect makes planning much easier. This guide walks through the home care cost in Katy, TX, what shapes the price, and how families budget for the support they need.
+    lastReviewed: "August 2026",
+    disclaimer: "The figures in this article are general market estimates for planning only. They are not a price quote or financial advice, and actual costs vary by care needs, schedule, and provider. Bloom Home Care provides exact, current rates in a written quote.",
+    content: `Cost is one of the first questions families ask when they start looking into care for an aging parent, and it is a fair one. Home care is usually paid for out of pocket, so knowing what to expect makes planning much easier. This guide walks through the home care cost in Katy, TX, what shapes the price, and how families budget for the support they need.
 
 There is no single sticker price. The question of how much does home care cost in Katy usually has a range for an answer rather than one figure, because the final number depends on how many hours of help are needed, the type of care, and the schedule. The sections below explain each of these in plain terms, along with the ways families cover the cost.
 
@@ -58,7 +62,7 @@ Around-the-clock care costs considerably more because coverage is needed through
 
 ## Why the Hourly Rate Covers More Than Wages
 
-Families sometimes compare an agency's hourly rate with the wage a private caregiver might accept and wonder about the difference. The gap comes from everything an agency handles behind the scenes. The hourly rate quoted by an established [home care agency Katy TX](/locations/katy-tx) usually covers far more than wages alone. It also includes payroll taxes, insurance, background checks, training, scheduling, and supervision, along with backup coverage when a regular caregiver is sick or away.
+Families sometimes compare an agency's hourly rate with the wage a private caregiver might accept and wonder about the difference. The gap comes from everything an agency handles behind the scenes. The hourly rate quoted by an established [home care agency Katy TX](/) usually covers far more than wages alone. It also includes payroll taxes, insurance, background checks, training, scheduling, and supervision, along with backup coverage when a regular caregiver is sick or away.
 
 Hiring a caregiver directly can look cheaper at first, but it makes the family the employer, responsible for taxes, insurance, and finding a replacement when the caregiver is unavailable. Weighing the full cost of a caregiver in Katy, TX means looking at those responsibilities too, not only the hourly figure.
 
@@ -110,15 +114,7 @@ The usual starting point is a free in-home assessment that turns a general range
 
 > Families who want a clear picture of the cost of care can request a free in-home assessment and written rate information from the Bloom Home Care team. Questions are welcome and carry no obligation, and the phone line at 281-975-6044 is answered 24 hours a day.
 >
-> [Request a Free Assessment](/contact)
-
----
-
-*Reviewed by Jackeline Herrera, RN, Director, Bloom Home Care. Last updated August 2026.*
-
-*Bloom Home Care is licensed by Texas Health and Human Services as a Home and Community Support Services Agency, license number 024086.*
-
-*The figures in this article are general market estimates for planning only. They are not a price quote or financial advice, and actual costs vary by care needs, schedule, and provider. Bloom Home Care provides exact, current rates in a written quote.*`,
+> [Request a Free Assessment](/contact)`,
   },
   {
     id: "signs-a-senior-needs-home-care",
@@ -131,9 +127,13 @@ The usual starting point is a free in-home assessment that turns a general range
     excerpt:
       "Hygiene slips, meals get skipped, pills sit untouched. Here are the 10 signs families notice first, and how to tell a rough week from a real pattern.",
     cover_image_url: "/blog/signs-a-senior-needs-home-care.jpg",
-    published_at: "2026-08-08",
+    published_at: "2026-09-16",
+    datePublishedISO: "2026-09-16T00:00:00-05:00",
+    dateModifiedISO: "2026-09-17T00:00:00-05:00",
     tags: ["Caregiver Resources", "Aging in Place", "Family Planning"],
     reviewedBy: "Jackeline Herrera, RN, Director, Bloom Home Care",
+    lastReviewed: "August 2026",
+    disclaimer: "This article provides general information about aging and home care and is not medical advice.",
     content: `The clearest signs a senior needs home care show up in ordinary routines rather than in dramatic moments. Hygiene slips. Meals get skipped. Pills sit untouched in the bottle. Laundry piles up in a home that always stays tidy. Walking becomes slower and less steady.
 
 None of these changes means a crisis is underway. Together, they usually mean an older adult is working harder than before to manage daily life, and that a little support could make each day safer and easier.
@@ -166,7 +166,7 @@ Everyday activities start to take more effort, and the small hesitations tell th
 
 ### 3. Unsteady Walking, Near Misses, and Falls
 
-Falls are one of the most serious risks in senior care. The [CDC](https://www.cdc.gov/falls/) reports that about one in four adults age 65 and older falls each year, and the injuries that follow often change what a person can safely manage alone. The warning signs tend to appear well before any fall. A senior may begin holding onto furniture while moving through the house, walk with a slower or wider gait, show unexplained bruises, or start refusing to leave home because the risk feels too high.
+Falls are one of the most serious risks in senior care. The [CDC reports that about one in four adults age 65 and older falls each year](https://www.cdc.gov/falls/), and the injuries that follow often change what a person can safely manage alone. The warning signs tend to appear well before any fall. A senior may begin holding onto furniture while moving through the house, walk with a slower or wider gait, show unexplained bruises, or start refusing to leave home because the risk feels too high.
 
 ### 4. Missed Medications and Medication Confusion
 
@@ -206,7 +206,7 @@ Three questions help separate a rough patch from a real shift. The first is whet
 
 Most families reach this point gradually rather than overnight. The common turning points for when to consider home care for elderly relatives tend to share a theme. A hospital stay or a fall can suddenly change what a senior is able to manage alone. A new diagnosis such as dementia, Parkinson's disease, or heart failure often signals that more help is on the way. The death of a spouse who had quietly handled the cooking, driving, or medication reminders can leave a serious gap almost overnight. Sometimes the turning point is a family caregiver who can no longer keep up with the schedule, and sometimes it is simply a senior who wants to stay at home and needs support to do it safely.
 
-Home care does not have to be an all-or-nothing decision. Many families across Houston begin with just a few hours a week from a [home care agency in Katy, TX](/locations/katy-tx) for bathing help, meal preparation, and rides to appointments, then adjust the schedule as needs change.
+Home care does not have to be an all-or-nothing decision. Many families across Houston begin with just a few hours a week from a [home care agency in Katy, TX](/) for bathing help, meal preparation, and rides to appointments, then adjust the schedule as needs change.
 
 Not sure whether it is time? Bloom Home Care offers a free in-home assessment to help Houston families understand what level of support may be appropriate.
 
@@ -214,7 +214,7 @@ Not sure whether it is time? Bloom Home Care offers a free in-home assessment to
 
 Non-medical home care, also called personal care or companion care, supports daily living rather than treating a medical condition. A caregiver typically helps with bathing, dressing, grooming, and toileting, along with meal planning, cooking, and help with eating. The same visit might include light housekeeping and laundry, medication reminders, which are not the same as administering medication, and transportation to appointments, errands, and social outings. Many families also value the companionship and supervision this brings for someone who should not be alone, together with steady mobility support and fall prevention inside the home.
 
-This kind of care does not include diagnosis, wound care, injections, or physical therapy. Those are skilled services delivered through home health care, which a physician orders. [Medicare](https://www.medicare.gov/coverage/home-health-services) may cover home health services when a doctor certifies a skilled need, though Medicare does not pay for personal care on its own when no skilled need exists.
+This kind of care does not include diagnosis, wound care, injections, or physical therapy. Those are skilled services delivered through home health care, which a physician orders. Medicare may cover home health services when a doctor certifies a skilled need, though [Medicare does not pay for personal care on its own](https://www.medicare.gov/coverage/home-health-services) when no skilled need exists.
 
 ## Signs That Call for Medical Attention Rather Than Home Care
 
@@ -286,15 +286,7 @@ The usual next step is a free in-home assessment. The nursing director or anothe
 
 > Families who are unsure whether an older adult needs help at home can speak with the Bloom Home Care team about the situation and the care options available. Asking questions carries no obligation, and the phone line at 281-975-6044 is answered 24 hours a day.
 >
-> [Contact Bloom Home Care](/contact)
-
----
-
-*Reviewed by Jackeline Herrera, RN, Director, Bloom Home Care. Last updated August 2026.*
-
-*Bloom Home Care is licensed by Texas Health and Human Services as a Home and Community Support Services Agency, license number 024086.*
-
-*This article offers general information about aging and home care. It is not medical advice and does not replace an evaluation by a licensed clinician.*`,
+> [Contact Bloom Home Care](/contact)`,
   },
 ];
 

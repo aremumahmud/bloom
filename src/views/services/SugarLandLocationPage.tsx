@@ -160,7 +160,7 @@ export default function SugarLandLocationPage() {
               Home Care Agency in Sugar Land, TX
             </h1>
 
-            <div className="space-y-5 text-lg md:text-xl text-muted-foreground font-sans max-w-2xl leading-relaxed mb-10">
+            <div className="space-y-5 text-base md:text-lg text-muted-foreground font-sans max-w-2xl leading-relaxed mb-10">
               <p>
                 Bloom Home Care is a licensed home care agency serving Sugar Land, TX and the surrounding Fort Bend County communities. Our screened, trained caregivers help older adults and adults with disabilities stay safe and independent at home, on schedules ranging from a few hours a week to around-the-clock care. Call 281-975-6044 to book a free in-home assessment.
               </p>

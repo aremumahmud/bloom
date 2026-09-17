@@ -166,7 +166,7 @@ export default function WoodlandsLocationPage() {
               Home Care Agency in The Woodlands, TX
             </h1>
 
-            <div className="space-y-5 text-lg md:text-xl text-muted-foreground font-sans max-w-2xl leading-relaxed mb-10">
+            <div className="space-y-5 text-base md:text-lg text-muted-foreground font-sans max-w-2xl leading-relaxed mb-10">
               <p>
                 Bloom Home Care is a licensed home care agency providing compassionate home care and senior care services that help older adults age safely in place throughout The Woodlands and surrounding communities in Montgomery County. Our screened, trained caregivers help older adults and people with disabilities live safely and comfortably in their own homes, on schedules that run from a few hours a week to full 24-hour care. Call 281-975-6044 to set up a free in-home assessment.
               </p>

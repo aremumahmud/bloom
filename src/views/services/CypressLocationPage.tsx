@@ -160,7 +160,7 @@ export default function CypressLocationPage() {
               Home Care Agency in Cypress, TX
             </h1>
 
-            <div className="space-y-5 text-lg md:text-xl text-muted-foreground font-sans max-w-2xl leading-relaxed mb-10">
+            <div className="space-y-5 text-base md:text-lg text-muted-foreground font-sans max-w-2xl leading-relaxed mb-10">
               <p>
                 Bloom Home Care is a licensed home care agency serving Cypress, TX and the surrounding northwest Houston area. Our screened, trained caregivers help seniors and adults with disabilities stay safe and independent at home, on schedules that run from a few hours a week to full 24-hour care. Call 281-975-6044 to set up a free in-home assessment.
               </p>

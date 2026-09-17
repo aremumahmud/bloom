@@ -228,7 +228,7 @@ export default function SpringLocationPage() {
               Home Care Agency in Spring, TX
             </h1>
 
-            <p className="text-lg md:text-xl text-muted-foreground font-sans max-w-2xl leading-relaxed mb-5">
+            <p className="text-base md:text-lg text-muted-foreground font-sans max-w-2xl leading-relaxed mb-5">
               Bloom Home Care is a licensed home care agency serving Spring, TX and the communities across north Houston. Our screened, trained caregivers help older adults and people living with disabilities stay safe and independent in their own homes, with care ranging from just a few hours a week to 24 hour support. Call 281-975-6044 to arrange a free in-home assessment.
             </p>
 
