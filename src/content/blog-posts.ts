@@ -13,7 +13,6 @@ export interface BlogPostData {
   metaTitle: string;
   metaDescription: string;
   reviewedBy: string;
-  lastReviewed: string;
   disclaimer: string;
 }
 
@@ -33,8 +32,7 @@ export const blogPosts: BlogPostData[] = [
     datePublishedISO: "2026-09-17T00:00:00-05:00",
     dateModifiedISO: "2026-09-17T00:00:00-05:00",
     tags: ["Cost of Care", "Katy, TX", "Family Planning"],
-    reviewedBy: "Jackeline Herrera, RN, Director, Bloom Home Care",
-    lastReviewed: "August 2026",
+    reviewedBy: "Jackeline Herrera",
     disclaimer: "The figures in this article are general market estimates for planning only. They are not a price quote or financial advice, and actual costs vary by care needs, schedule, and provider. Bloom Home Care provides exact, current rates in a written quote.",
     content: `Cost is one of the first questions families ask when they start looking into care for an aging parent, and it is a fair one. Home care is usually paid for out of pocket, so knowing what to expect makes planning much easier. This guide walks through the home care cost in Katy, TX, what shapes the price, and how families budget for the support they need.
 
@@ -131,8 +129,7 @@ The usual starting point is a free in-home assessment that turns a general range
     datePublishedISO: "2026-09-16T00:00:00-05:00",
     dateModifiedISO: "2026-09-17T00:00:00-05:00",
     tags: ["Caregiver Resources", "Aging in Place", "Family Planning"],
-    reviewedBy: "Jackeline Herrera, RN, Director, Bloom Home Care",
-    lastReviewed: "August 2026",
+    reviewedBy: "Jackeline Herrera",
     disclaimer: "This article provides general information about aging and home care and is not medical advice.",
     content: `The clearest signs a senior needs home care show up in ordinary routines rather than in dramatic moments. Hygiene slips. Meals get skipped. Pills sit untouched in the bottle. Laundry piles up in a home that always stays tidy. Walking becomes slower and less steady.
 
@@ -287,6 +284,301 @@ The usual next step is a free in-home assessment. The nursing director or anothe
 > Families who are unsure whether an older adult needs help at home can speak with the Bloom Home Care team about the situation and the care options available. Asking questions carries no obligation, and the phone line at 281-975-6044 is answered 24 hours a day.
 >
 > [Contact Bloom Home Care](/contact)`,
+  },
+  {
+    id: "what-to-expect-home-care-consultation",
+    slug: "what-to-expect-home-care-consultation",
+    title: "What to Expect During Your First Home Care Consultation: A Family Guide",
+    seoTitle: "What to Expect During Your First Home Care Consultation: A Family Guide",
+    metaTitle: "Home Care Consultation: What to Expect | Bloom Home Care",
+    metaDescription:
+      "Wondering what happens during a home care consultation? A family guide to preparing, what to expect during the visit, questions to ask, and next steps.",
+    excerpt:
+      "A relaxed, no-pressure meeting is usually the first real step toward home care. Here's exactly what happens, what to prepare, and the questions worth asking.",
+    cover_image_url: "/blog/what-to-expect-home-care-consultation.jpg",
+    published_at: "2026-10-13",
+    datePublishedISO: "2026-10-13T00:00:00-05:00",
+    dateModifiedISO: "2026-10-13T00:00:00-05:00",
+    tags: ["Home Care Consultation", "Family Planning", "Caregiver Resources"],
+    reviewedBy: "Jackeline Herrera",
+    disclaimer: "This article offers general information about home care and is not medical or legal advice. Confirm details such as pricing, licensing, and services directly with the provider you choose.",
+    content: `If your family is thinking about home care for an older parent or relative, the first real step is usually a conversation. A home care consultation is that conversation: a relaxed, no-pressure meeting where you talk through what your loved one needs and learn how care could help. This family guide explains exactly what to expect, so you can walk in prepared and leave with a clearer plan.
+
+There is nothing to be nervous about. The visit is as much about answering your questions as anything else, and you are never obligated to move forward. Here is how it works, from the first hello to the personalized care plan that follows.
+
+## What Is a Home Care Consultation?
+
+A home care consultation is a meeting between your family and a care professional, usually held in your loved one's home. Its purpose is simple: to understand your family's daily challenges, explain how non-medical home care can help, and answer your questions. Many agencies offer this first visit at no cost and with no obligation, which makes it a low-pressure way to explore your options and decide what feels right.
+
+The consultation is an opportunity to discuss your questions and explore care options. The assessment takes a closer look at your loved one's daily needs, preferences, and safety concerns so we can develop a personalized care plan. These may take place during the same visit. Before services begin, we complete the assessment, agree on the care plan and schedule, and complete the required service paperwork.
+
+[Schedule a Free Home Care Consultation](/contact)
+
+## Why the First Consultation Matters
+
+The first consultation sets the tone for everything that follows. It replaces guesswork with a clear picture of what your loved one needs and what good support would look like. A thoughtful conversation early on helps avoid mismatched expectations later, whether that is the type of help, the number of hours, or the personality of the caregiver.
+
+It also gives your family a feel for the provider. You learn how they listen, how they solve problems, and whether they treat your loved one with genuine warmth and respect. That impression is often as telling as any brochure, and it helps you choose with confidence rather than pressure.
+
+## What Happens During a Home Care Consultation?
+
+Every consultation is a little different, but most follow a similar, unhurried path. The care professional listens first, then works with you to shape a plan. Because the visit takes place at home, families across Greater Houston can arrange it easily, and if you are looking for a [home care agency in The Woodlands, TX](/locations/the-woodlands-tx), a coordinator can meet you in your loved one's living room rather than an office.
+
+### Your loved one's daily routine
+
+Expect the conversation to start with everyday life. When does your loved one wake and sleep, how are meals handled, and what does a typical day involve? Understanding the routine helps the provider see where support fits in naturally, without disrupting the rhythms your loved one already values.
+
+### Where help is needed most
+
+From there, the focus turns to the gaps. Maybe mornings are hard, cooking has become a struggle, or getting to appointments no longer feels safe. Naming these moments honestly helps everyone understand where a caregiver would make the biggest difference.
+
+### Personal care needs
+
+Personal care is a sensitive but important topic. The provider will ask, gently, about help with bathing, dressing, grooming, and using the bathroom. Being clear about what your loved one is comfortable with allows care to be planned in a way that protects their dignity.
+
+### Companionship and social connection
+
+Home care is about more than tasks. Many families notice a loved one has become isolated or withdrawn, so expect questions about hobbies, interests, and social connection. Companionship, shared activities, and simply having someone to talk with can lift a person's spirits as much as any practical help.
+
+### Dementia and memory care
+
+If your loved one is living with dementia or another form of memory loss, the consultation will explore this carefully. The provider will ask about routines, safety, and the moments that tend to be difficult, and will explain how a caregiver experienced in supporting someone living with memory loss brings patience and consistency to each day.
+
+### Recovery after a hospital stay or surgery
+
+Coming home after a hospital stay or surgery can be an uncertain time. Non-medical home care can ease that transition with help around the home, transportation to follow-up visits, meal preparation, and medication reminders. This support complements the care of your loved one's doctors and nurses rather than replacing it.
+
+### Your family's schedule and expectations
+
+Finally, the conversation turns to your family. How much support are you providing now, what does your schedule allow, and what do you hope care will change? Understanding your expectations helps the provider build a schedule that fills the gaps your family cannot cover and gives everyone some breathing room.
+
+## Questions the Home Care Agency May Ask You
+
+To plan well, the provider needs to understand your loved one, so expect a range of thoughtful questions. Coming with a few answers in mind makes the visit smoother. Common questions include:
+
+- What does your loved one need help with day to day?
+- Are there any safety concerns at home, such as falls or wandering?
+- What is your loved one's health background, and who are their doctors?
+- What are their routines, interests, and preferences?
+- How many hours of support are you looking for, and on which days?
+- Who in the family should be kept informed, and how?
+
+## Questions Families Should Ask a Home Care Agency
+
+The consultation works both ways, and it is your chance to learn whether this provider is the right fit. Come with your own questions, and pay attention to how openly they are answered. Helpful questions include:
+
+- How do you screen, train, and supervise your caregivers?
+- Is the agency licensed, insured, and bonded?
+- How do you match a caregiver to a client, and what happens if the fit is not right?
+- What happens if our regular caregiver is unavailable?
+- How will you keep our family updated on how things are going?
+- How are services scheduled, and how much notice do you need for changes?
+
+Licensing is worth confirming in particular. In Texas, home care providers are licensed as [Home and Community Support Services Agencies through Texas Health and Human Services](https://www.hhs.texas.gov/doing-business-hhs/provider-portals/long-term-care-providers/home-community-support-services-agencies-hcssa), so it is reasonable to ask for an agency's license details during your visit. Clear, open answers are a good sign, while vague or evasive ones are worth noting.
+
+## How Bloom Home Care Creates a Personalized Care Plan
+
+At Bloom Home Care, the consultation leads to a care plan built around your loved one rather than a standard package. Based on what you discuss, the plan sets out the type of care, how many hours, and how often, along with the specific tasks a caregiver will help with. It might be a few hours of companionship each week, help with personal care in the mornings, or fuller daily support, depending on what your family needs.
+
+Just as importantly, the plan is a living document. It names who to contact, how updates will reach you, and when the plan will be reviewed. As your loved one's needs change, the plan changes with them, so care always fits the moment rather than a form filled out months ago.
+
+## How Caregiver Matching Works
+
+A care plan only works with the right caregiver behind it, so Bloom Home Care puts real thought into matching. The goal is a caregiver whose skills fit your loved one's needs and whose personality suits their temperament, because the relationship between the two is at the heart of good home care.
+
+Location matters too. A caregiver who lives near your loved one can arrive reliably and settle into a consistent routine. When you work with a [home care agency in Spring, TX](/locations/spring-tx), matching takes proximity into account, so your caregiver can dependably reach your neighborhood and become a familiar, steady presence.
+
+## What Happens After the Consultation?
+
+There is usually no pressure to decide on the spot. After the visit, you will typically receive a summary of what was discussed and a proposed care plan, giving your family time to talk it over and ask any follow-up questions.
+
+If you decide to go ahead, care can usually begin within a short time. Bloom Home Care serves families throughout the region, including those searching for a [home care agency in Sugar Land, TX](/locations/sugar-land-tx), and can often have a matched caregiver in the home within days, following the plan you built together. If you are not ready, that is perfectly fine, and you will still leave with a clearer picture of your options.
+
+## How to Prepare for Your Home Care Consultation
+
+A little preparation makes the visit more useful, though you do not need anything formal. Before the consultation, it helps to gather a few things and think about what matters most:
+
+- A simple list of the daily tasks your loved one finds difficult
+- A current list of medications and the names of their doctors
+- Any worries about safety, memory, mobility, or being alone during the day
+- The questions you most want answered
+- A time when the family members involved in the decision can be there
+
+It also helps to include your loved one in the conversation. Their comfort and preferences matter more than anything, and their input makes the plan stronger.
+
+## When Is It Time to Consider Home Care?
+
+Many families wonder whether they have reached this point. There is no single answer, but a few signs often suggest that extra support would help. These include difficulty with everyday tasks like bathing, dressing, or cooking, growing concerns about safety or falls, missed medications, or a loved one becoming isolated and withdrawn.
+
+The strain on family caregivers matters too. If keeping up with a loved one's needs is affecting your own health, work, or wellbeing, a consultation is a low-pressure way to learn what help is available. It costs nothing to ask, and it often brings real relief simply to understand the options.
+
+## Frequently Asked Questions
+
+### How long does a home care consultation take?
+
+Most last about an hour, though it can be shorter or longer depending on your loved one's needs and how many questions you have. The goal is to cover what matters, not to rush.
+
+### Is a home care consultation free?
+
+Many agencies, including Bloom Home Care, offer the first consultation at no cost and with no obligation. It is always worth confirming when you schedule.
+
+### Who should be there during the consultation?
+
+It helps to include your loved one and the family members involved in the decision, so fewer details get lost and the plan reflects everyone's input.
+
+### Do I have to commit to care afterward?
+
+No. A consultation is meant to inform your decision, not force one. You are free to take your time, compare providers, or wait until you are ready.
+
+### Can my loved one take part in the consultation?
+
+Yes, and it is a good idea. Including them helps them feel respected and gives the care professional a clearer sense of their preferences and personality.
+
+## Schedule a Free Home Care Consultation
+
+A home care consultation is simply a warm, honest conversation about how to help someone you love live safely and comfortably at home. Come with your questions, involve your family, and use it to decide what feels right for you.
+
+Bloom Home Care provides non-medical home care across the Greater Houston area, including Spring, The Woodlands, and Sugar Land. Our team offers a free in-home assessment, listens to your family's needs, and explains how personalized care could work, with no obligation to move forward.
+
+> Ready to talk it through? You can reach Bloom Home Care to schedule your free in-home consultation. The phone line at 281-975-6044 is answered 24 hours a day, so help is here whenever you are ready.
+>
+> [Schedule Your Free Consultation](/contact)`,
+  },
+  {
+    id: "questions-to-ask-before-hiring-a-caregiver",
+    slug: "questions-to-ask-before-hiring-a-caregiver",
+    title: "What Should You Ask Before Hiring a Home Caregiver?",
+    seoTitle: "Questions to Ask Before Hiring a Caregiver: A Practical Interview Guide",
+    metaTitle: "Questions to Ask Before Hiring a Caregiver | Bloom",
+    metaDescription:
+      "The key questions to ask before hiring a caregiver, plus what strong answers sound like and how to choose the right home caregiver for your parent.",
+    excerpt:
+      "The interview is where most of the decision gets made. Here are the questions that matter, what a strong answer sounds like, and the warning signs to watch for.",
+    cover_image_url: "/blog/questions-to-ask-before-hiring-a-caregiver.jpg",
+    published_at: "2026-10-13",
+    datePublishedISO: "2026-10-13T00:00:00-05:00",
+    dateModifiedISO: "2026-10-13T00:00:00-05:00",
+    tags: ["Hiring a Caregiver", "Family Planning", "Caregiver Resources"],
+    reviewedBy: "Jackeline Herrera",
+    disclaimer: "This article offers general information about hiring home care and is not medical or legal advice. Confirm licensing, insurance, and screening details directly with any provider you are considering.",
+    content: `Choosing someone to care for your parent at home is a personal decision, and the interview is where most of that decision gets made. The right conversation shows you whether a caregiver has the experience, judgment, and warmth to be trusted in your family's home. Knowing the questions to ask before hiring a caregiver turns a nervous first meeting into a clear, useful screening.
+
+This guide gives you the questions that matter, explains what a strong answer sounds like, and points out what should give you pause. Whether you are hiring a caregiver for elderly parents through an agency or on your own, the goal is the same: to feel confident that the person you choose is a good match for your loved one's needs and personality.
+
+## Start Here: The Most Important Questions to Ask
+
+The most useful questions to ask when hiring a caregiver fall into a few groups. Families will want to understand the caregiver's experience and training, especially with the parent's specific needs, along with availability, punctuality, and what happens when a shift cannot be covered. It also helps to confirm exactly which tasks the caregiver will handle, how background checks and references are managed, and whether insurance and bonding are in place. When care is arranged through a licensed agency, many of these protections are built in, while a private hire places more of the responsibility on the family.
+
+## Why the Right Questions Matter
+
+A short conversation upfront can prevent months of friction later. Care works best when expectations are clear from the start, from the tasks involved to the schedule and the level of experience needed. Asking directly also shows how a caregiver communicates and handles problems, which matters as much as any credential. The [National Institute on Aging](https://www.nia.nih.gov/health/aging-place/aging-place-growing-older-home) offers helpful guidance on getting in-home help, and much of it comes back to asking clear questions before care begins.
+
+## Experience and Qualifications
+
+Experience is the foundation, so start there. You want to know not only how long someone has been a caregiver, but whether they have handled situations like your parent's. A caregiver who has previously supported someone with dementia, Parkinson's disease, diabetes, or similar needs may be more familiar with the routines, communication challenges, and day-to-day support your parent requires.
+
+- How many years have you worked as a caregiver, and in what kinds of homes or settings?
+- What experience do you have supporting someone living with dementia, Parkinson's disease, or diabetes?
+- Have you completed any caregiver training, and are you currently certified in CPR and first aid?
+- Can you share references from past families or employers that I can contact?
+
+Listen for real examples. A strong caregiver can describe a specific situation, such as helping someone through evening confusion, rather than speaking only in generalities. Willingness to provide references, and honesty about tasks they are not comfortable with, is a good sign. Confirming CPR and first aid certification is worth doing, while keeping in mind that a non-medical caregiver supports daily life rather than providing medical treatment.
+
+## Daily Care, Routine, and Independence
+
+Most of a caregiver's day goes to ordinary tasks, so be specific about what your parent needs. Comfort levels vary, and it is better to learn that now than after the first shift. These questions to ask a home caregiver cover the everyday work and, just as importantly, how they approach it.
+
+- Which personal care tasks are you comfortable helping with, such as bathing, dressing, grooming, and using the bathroom?
+- How do you help someone move safely around the home and lower the risk of a fall?
+- Can you prepare meals that follow the diet my parent's doctor has recommended?
+- Are you comfortable giving medication reminders and keeping the family informed?
+- How do you encourage my parent to keep doing what they still can on their own?
+
+That last question matters more than it first appears. Good care supports independence rather than taking over, so a thoughtful caregiver will talk about offering choices and keeping your parent involved in daily routines. On medication, be clear about the difference between reminders, which many non-medical caregivers provide, and giving or adjusting medication, which is a medical task for a nurse or your parent's physician.
+
+## Safety and Emergencies
+
+How a caregiver handles the unexpected is one of the most important things to understand. You are not looking for a medical expert. You are looking for someone who stays calm, acts sensibly, and knows when to call for help.
+
+- What would you do first if my parent had a fall?
+- How would you handle a situation that looked like a medical emergency?
+- What would you do if my parent refused a meal, a medication reminder, or help with personal care?
+- If driving is part of the role, do you have a valid license, a clean driving record, and reliable transportation?
+
+A reassuring answer usually includes checking for injury, staying with your parent, calling 911 when it is needed, and letting the family know. For refusals, listen for patience and creativity rather than force, since pushing rarely works and can wear down trust. If your caregiver will drive your parent to appointments or errands, confirm the license and driving record before the role begins.
+
+## Reliability, Scheduling, and Communication
+
+Even a wonderful caregiver is not much help if the schedule falls apart, so test reliability directly. Gaps in coverage tend to show up at the worst possible moments.
+
+- What days and hours are you available, and does that match the schedule we need?
+- How much notice do you need before a schedule change?
+- What happens if you are sick or cannot work a scheduled shift?
+- How will you keep our family updated about how my parent is doing?
+
+The answer to the missed-shift question is especially telling. A private caregiver may not have anyone to step in, which can leave your family scrambling, while an agency may be able to send a substitute. Ask directly how coverage works before you commit. It also helps to agree early on how updates will reach you, whether by a quick text, a shared notebook, or a regular phone call.
+
+## Hiring Privately or Through a Home Care Agency
+
+One of the bigger choices you will make is whether to hire a caregiver directly or work through an agency, and it changes several of the answers above. Hiring privately can feel more personal and may cost less per hour, but it makes you the employer. That can mean handling screening, background checks, scheduling, insurance questions, and coverage when your caregiver is unavailable, along with any tax responsibilities that apply to household employees.
+
+Working through an agency shifts much of that work to the provider. Depending on the arrangement, a [home care agency in Cypress, TX](/locations/cypress-tx) or another licensed provider may handle screening, supervision, scheduling, and backup coverage, and it can match a caregiver to your parent's needs and personality. Neither path is automatically better. The right choice depends on how much you want to manage yourself and how much support your family needs, so it helps to ask each option the same questions and compare the answers.
+
+## Questions to Ask a Home Care Agency
+
+If you go the agency route, the agency itself deserves the same scrutiny as an individual caregiver. A few direct questions will show you how it operates and how it will support your family.
+
+- How do you screen and background-check your caregivers?
+- Is the agency licensed to operate in Texas, and can you share your license details?
+- Who supervises the caregiver, and how often do they check in?
+- How do you match a caregiver to a client, and what happens if the fit is not right?
+- How do you handle missed shifts, and is backup coverage available?
+
+In Texas, home care providers are licensed as Home and Community Support Services Agencies through Texas Health and Human Services, so you can ask for an agency's license number and confirm it. A well-run agency will answer these questions openly. If you are looking locally, a [home care agency in Spring, TX](/locations/spring-tx) can walk you through how it screens, supervises, and supports its caregivers in a single conversation. Vague answers, or reluctance to share details, are worth noting.
+
+## Reading the Answers: Reassuring Signs and Warning Signs
+
+By the end of the interview, the pattern of answers usually tells you more than any single response. Reassuring signs include specific stories from past care, comfort with the exact tasks your parent needs, a calm and practical approach to emergencies, and genuine interest in your parent as a person. A caregiver who asks you thoughtful questions in return is often a good sign.
+
+A few things should give you pause. Be cautious if a caregiver is vague or evasive about experience, unwilling to provide references, uncomfortable with a background check, quick to speak poorly of past clients, or eager to promise far more than seems realistic. None of these on its own proves there is a problem, but together they are worth taking seriously before you decide.
+
+## Making the Final Choice
+
+Once the questions are answered, deciding how to choose a home caregiver comes down to fit as much as qualifications. Look for the person whose experience matches your parent's needs, who communicates clearly, and who your parent seems genuinely comfortable around. Personality matters, because this is someone your loved one will spend real time with.
+
+Involve your parent in the decision whenever you can, since care works best when they feel respected rather than managed. A short trial period is a practical next step, letting you see how the caregiver works in the home before a longer commitment. Trust what you observe, and give yourself permission to keep looking if the fit is not right.
+
+## Frequently Asked Questions
+
+### What is the single most important question to ask a caregiver?
+
+There is no one magic question, but asking a caregiver to describe how they handled a difficult moment in a past role tells you a great deal. It reveals experience, judgment, and temperament in a way that yes-or-no questions cannot.
+
+### Should you run a background check when hiring a caregiver privately?
+
+Yes. A background check is a reasonable step when you hire someone directly, along with checking references and a driving record if the role includes transportation. When you work through an agency, ask how it screens and background-checks its caregivers so you know what is already covered.
+
+### Do home caregivers need to be certified?
+
+Requirements vary, and non-medical companion care generally does not call for the same credentials as clinical roles. Even so, it is fair to ask about any training a caregiver has completed and whether they hold current CPR and first aid certification. Confirm specific requirements with the agency or provider you are considering.
+
+### How many caregivers should you interview before deciding?
+
+There is no set number. Meeting two or three gives you a useful comparison without dragging out the process. What matters more than the count is asking each person the same core questions, so you can weigh the answers side by side.
+
+### How do you know if a caregiver is the right fit for your parent?
+
+Watch how your parent responds during the first meeting and the trial period. The right caregiver listens, adapts to your parent's routine, and shows patience and respect. If your parent seems at ease and the practical needs are met, that is usually a strong sign.
+
+## A Confident Next Step With Bloom Home Care
+
+The questions to ask before hiring a caregiver give you something more useful than a resume. They give you a feel for how someone will treat your parent day to day. Take your time, compare answers, and trust what you see.
+
+Bloom Home Care provides non-medical home care across the Greater Houston area, including companionship, personal care, help with daily activities, meal support, light housekeeping, transportation, mobility assistance, and medication reminders. If you would like help thinking through your parent's needs and which questions to prioritize, the Bloom team is glad to talk it through and to answer the same questions you would put to any caregiver.
+
+> You can reach the Bloom Home Care team to talk about your parent's needs and arrange a free in-home assessment. There is no obligation, and the phone line at 281-975-6044 is answered 24 hours a day.
+>
+> [Talk With Bloom Home Care](/contact)`,
   },
 ];
 

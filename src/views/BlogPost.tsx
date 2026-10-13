@@ -26,7 +26,6 @@ interface Post {
   published_at: string | null;
   tags: string[] | null;
   content: string;
-  lastReviewed?: string;
   disclaimer?: string;
 }
 
@@ -105,14 +104,14 @@ const BlogPost = ({ post, relatedPosts }: Props) => {
           </div>
         )}
 
-        {post.lastReviewed && (
+        {post.disclaimer && (
           <div className="max-w-2xl mx-auto mb-10 pb-8 border-b border-border">
             <p className="text-sm text-muted-foreground font-sans leading-relaxed mb-2">
               Reviewed by{" "}
               <Link href="/our-story" className="text-primary font-medium hover:underline">
                 Jackeline Herrera
               </Link>
-              , RN, Director, Bloom Home Care. Last reviewed: {post.lastReviewed}.
+              , RN, BSN, Administrator, Bloom Home Care.
             </p>
             <p className="text-sm text-muted-foreground font-sans leading-relaxed mb-2">
               Bloom Home Care is licensed by Texas Health and Human Services as a Home and Community Support Services Agency, license number 024086.
@@ -176,7 +175,13 @@ const BlogPost = ({ post, relatedPosts }: Props) => {
                 },
                 a: ({ href, children, ...props }) => {
                   const text = Array.isArray(children) ? children.join('') : String(children ?? '');
-                  const ctaLabels = ['Contact Bloom Home Care', 'Request a Free Assessment'];
+                  const ctaLabels = [
+                    'Contact Bloom Home Care',
+                    'Request a Free Assessment',
+                    'Schedule a Free Home Care Consultation',
+                    'Schedule Your Free Consultation',
+                    'Talk With Bloom Home Care',
+                  ];
                   if (ctaLabels.includes(text.trim())) {
                     return (
                       <Button
