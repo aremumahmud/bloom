@@ -5,6 +5,10 @@ import ReactMarkdown from "react-markdown";
 import { Button } from "@/components/ui/button";
 import { CTASection } from "@/components/homepage/CTASection";
 
+const NOFOLLOW_LINKS = [
+  "https://www.nia.nih.gov/health/caregiving/does-older-adult-your-life-need-help",
+];
+
 const serviceLinks = [
   { keywords: ["companion", "companionship", "loneliness", "isolation", "social"], path: "/services/companion-care", label: "Companion Care" },
   { keywords: ["personal care", "bathing", "dressing", "adl", "daily living", "hygiene"], path: "/services/personal-care", label: "Personal Care" },
@@ -192,6 +196,19 @@ const BlogPost = ({ post, relatedPosts }: Props) => {
                       >
                         <Link href={href || '/contact'}>{children}</Link>
                       </Button>
+                    );
+                  }
+                  if (href?.startsWith('http')) {
+                    const nofollow = NOFOLLOW_LINKS.includes(href);
+                    return (
+                      <a
+                        href={href}
+                        target="_blank"
+                        rel={nofollow ? 'nofollow noopener' : 'noopener'}
+                        {...props}
+                      >
+                        {children}
+                      </a>
                     );
                   }
                   return <a href={href} {...props}>{children}</a>;
