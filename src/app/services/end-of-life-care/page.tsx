@@ -3,7 +3,7 @@ import EndOfLifeCare from '@/views/services/EndOfLifeCare'
 
 export const metadata: Metadata = {
   title: 'End-of-Life Companion Care in Katy, TX | Bloom Home Care',
-  description: 'Compassionate end-of-life companion care for families in Prosper, Frisco, McKinney, Allen, and Katy, TX. Dignified presence, family support, and peaceful comfort during life\'s final chapter. Call (469) 209-9995.',
+  description: 'Compassionate end-of-life companion care for families in Prosper, Frisco, McKinney, Allen, and Katy, TX. Dignified presence, family support, and peaceful comfort during life\'s final chapter. Call 281-975-6044.',
   keywords: ['end of life care Katy, TX', 'palliative companion care Texas', 'comfort care home Prosper TX', 'end of life support Frisco', 'hospice companion care McKinney', 'dignified end of life care'],
   alternates: { canonical: 'https://bloomhomecare.org/services/end-of-life-care' },
   openGraph: { title: 'End-of-Life Companion Care in Katy, TX | Bloom Home Care', description: 'Compassionate, dignified companion care during life\'s final chapter for families across Prosper, Frisco, McKinney, Allen, and Katy, TX.', url: 'https://bloomhomecare.org/services/end-of-life-care', type: 'website', siteName: 'Bloom Home Care' },

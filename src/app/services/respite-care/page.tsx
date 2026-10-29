@@ -3,7 +3,7 @@ import RespiteCare from '@/views/services/RespiteCare'
 
 export const metadata: Metadata = {
   title: 'Respite Care for Family Caregivers in Katy, TX | Bloom Home Care',
-  description: 'Respite care relief for family caregivers in Prosper, Frisco, McKinney, Allen, and Katy, TX. Scheduled and emergency respite so you can recharge. No long-term contracts. Call (469) 209-9995.',
+  description: 'Respite care relief for family caregivers in Prosper, Frisco, McKinney, Allen, and Katy, TX. Scheduled and emergency respite so you can recharge. No long-term contracts. Call 281-975-6044.',
   keywords: ['respite care Katy, TX', 'caregiver relief Prosper TX', 'family caregiver break Frisco', 'respite care Collin County', 'temporary home care McKinney', 'caregiver burnout relief Texas'],
   alternates: { canonical: 'https://bloomhomecare.org/services/respite-care' },
   openGraph: { title: 'Respite Care for Family Caregivers in Katy, TX | Bloom Home Care', description: 'Scheduled and emergency respite care so family caregivers can rest and recharge across Prosper, Frisco, McKinney, and Allen, TX.', url: 'https://bloomhomecare.org/services/respite-care', type: 'website', siteName: 'Bloom Home Care' },

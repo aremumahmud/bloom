@@ -3,7 +3,7 @@ import PersonalCare from '@/views/services/PersonalCare'
 
 export const metadata: Metadata = {
   title: 'Personal Care Services in Katy, TX | Bloom Home Care',
-  description: 'Dignified personal care and ADL assistance for seniors and adults in Prosper, Frisco, McKinney, Allen, and Katy, TX. Bathing, dressing, grooming, and mobility support. Call (469) 209-9995.',
+  description: 'Dignified personal care and ADL assistance for seniors and adults in Prosper, Frisco, McKinney, Allen, and Katy, TX. Bathing, dressing, grooming, and mobility support. Call 281-975-6044.',
   keywords: ['personal care Katy, TX', 'ADL assistance seniors', 'bathing dressing grooming care', 'personal care aide Prosper TX', 'activities of daily living Frisco', 'in-home personal care McKinney'],
   alternates: { canonical: 'https://bloomhomecare.org/services/personal-care' },
   openGraph: { title: 'Personal Care Services in Katy, TX | Bloom Home Care', description: 'Dignified personal care and daily living assistance for seniors across Prosper, Frisco, McKinney, Allen, and Katy, TX.', url: 'https://bloomhomecare.org/services/personal-care', type: 'website', siteName: 'Bloom Home Care' },

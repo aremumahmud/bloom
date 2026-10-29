@@ -3,7 +3,7 @@ import InFacilityCare from '@/views/services/InFacilityCare'
 
 export const metadata: Metadata = {
   title: 'In-Facility Companion Care in Katy, TX | Bloom Home Care',
-  description: 'In-facility companion care and support for seniors in hospitals, rehab centers, and assisted living in Prosper, Frisco, McKinney, Allen, and Katy, TX. Familiar face, consistent presence. Call (469) 209-9995.',
+  description: 'In-facility companion care and support for seniors in hospitals, rehab centers, and assisted living in Prosper, Frisco, McKinney, Allen, and Katy, TX. Familiar face, consistent presence. Call 281-975-6044.',
   keywords: ['in-facility care Katy, TX', 'hospital companion care Texas', 'assisted living companion Prosper TX', 'rehab facility support Frisco', 'nursing home companion McKinney', 'in-facility caregiver Allen TX'],
   alternates: { canonical: 'https://bloomhomecare.org/services/in-facility-care' },
   openGraph: { title: 'In-Facility Companion Care in Katy, TX | Bloom Home Care', description: 'Familiar, consistent companion care for seniors in hospitals, rehab, and assisted living facilities across Katy, TX.', url: 'https://bloomhomecare.org/services/in-facility-care', type: 'website', siteName: 'Bloom Home Care' },

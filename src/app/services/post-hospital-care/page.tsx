@@ -3,7 +3,7 @@ import PostHospitalCare from '@/views/services/PostHospitalCare'
 
 export const metadata: Metadata = {
   title: 'Post-Hospital & Recovery Care in Katy, TX | Bloom Home Care',
-  description: 'Transitional care after hospital discharge for seniors and adults in Prosper, Frisco, McKinney, Allen, and Katy, TX. Reduce readmission risk with in-home support. Call (469) 209-9995.',
+  description: 'Transitional care after hospital discharge for seniors and adults in Prosper, Frisco, McKinney, Allen, and Katy, TX. Reduce readmission risk with in-home support. Call 281-975-6044.',
   keywords: ['post-hospital care Katy, TX', 'recovery care at home Prosper TX', 'hospital discharge support Frisco', 'transitional care McKinney TX', 'reduce hospital readmission', 'surgery recovery home care Allen'],
   alternates: { canonical: 'https://bloomhomecare.org/services/post-hospital-care' },
   openGraph: { title: 'Post-Hospital Recovery Care in Katy, TX | Bloom Home Care', description: 'Safe, supportive recovery care after hospital discharge for seniors across Prosper, Frisco, McKinney, Allen, and Katy, TX.', url: 'https://bloomhomecare.org/services/post-hospital-care', type: 'website', siteName: 'Bloom Home Care' },

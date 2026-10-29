@@ -27,12 +27,6 @@ const contactInfo = [
     href: "tel:+12819756044",
   },
   {
-    icon: Phone,
-    label: "Direct Line",
-    value: "281-971-3214",
-    href: "tel:+12819713214",
-  },
-  {
     icon: Mail,
     label: "Email",
     value: "info@bloomhomecare.org",
