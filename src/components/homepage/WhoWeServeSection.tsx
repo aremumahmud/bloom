@@ -24,7 +24,7 @@ const audiences = [
   {
     icon: Stethoscope,
     title: "Adults Recovering From Surgery or Illness",
-    description: "After hospitalization or medical events, recovery at home often works better than recovery in institutional settings. We provide skilled support during this critical recovery period, helping people heal safely and return to independence.",
+    description: "After a hospital stay, surgery, or illness, extra help at home can make everyday routines easier to manage. Our caregivers provide non-medical support with personal care, meals, mobility, transportation, medication reminders, and daily activities while clients recover at their own pace.",
   },
 ];
 

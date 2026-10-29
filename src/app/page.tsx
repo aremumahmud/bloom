@@ -3,7 +3,7 @@ import { HomePage } from '@/views/homepage'
 
 export const metadata: Metadata = {
   title: 'Home Care Agency Katy, TX | Bloom Home Care',
-  description: 'Trusted home care agency in Katy, TX, providing compassionate in-home care for seniors, personal care, and dementia support. Request a free consultation.',
+  description: 'Nurse-owned and nurse-led non-medical home care in Katy, TX. Personal care, companion care, dementia support, respite care, and post-hospital support for local families.',
   keywords: [
     'home care Katy TX',
     'senior home care Katy TX',
@@ -46,8 +46,10 @@ const localBusinessSchema = {
   image: 'https://bloomhomecare.org/og-image.jpg',
   address: {
     '@type': 'PostalAddress',
+    streetAddress: '4338 San Pellegrino Pl',
     addressLocality: 'Katy',
     addressRegion: 'TX',
+    postalCode: '77493',
     addressCountry: 'US',
   },
   areaServed: [
@@ -71,6 +73,13 @@ const localBusinessSchema = {
     'https://www.instagram.com/bloomhomecare/',
     'https://www.facebook.com/bloomhomecare',
   ],
+  employee: {
+    '@type': 'Person',
+    name: 'Jackeline Herrera',
+    url: 'https://bloomhomecare.org/our-story',
+    jobTitle: 'RN, BSN, Administrator',
+    worksFor: { '@id': 'https://bloomhomecare.org/#business' },
+  },
 }
 
 const websiteSchema = {

@@ -40,9 +40,9 @@ const services = [
   },
   {
     icon: Stethoscope,
-    title: "Specialized Care",
-    description: "After surgery, during recovery, or while managing a chronic illness, seniors need skilled support. Our caregivers assist with medication reminders, wound care support, mobility assistance, and other specialized needs.",
-    href: "/services/specialized-care",
+    title: "Post-Hospital & Recovery Support",
+    description: "Returning home after a hospital stay, surgery, or illness can make everyday tasks harder. Our caregivers provide non-medical recovery support with daily activities, meal preparation, mobility assistance, transportation, medication reminders, and household routines while helping clients regain confidence and independence at home.",
+    href: "/services/post-hospital-care",
   },
   {
     icon: Activity,

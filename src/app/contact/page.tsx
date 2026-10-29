@@ -40,7 +40,7 @@ const contactPageSchema = {
     name: 'Bloom Home Care',
     telephone: '+12819756044',
     email: 'hello@bloomhomecare.org',
-    address: { '@type': 'PostalAddress', addressLocality: 'Katy', addressRegion: 'TX', addressCountry: 'US' },
+    address: { '@type': 'PostalAddress', streetAddress: '4338 San Pellegrino Pl', addressLocality: 'Katy', addressRegion: 'TX', postalCode: '77493', addressCountry: 'US' },
     areaServed: 'Katy, TX',
     openingHoursSpecification: {
       '@type': 'OpeningHoursSpecification',

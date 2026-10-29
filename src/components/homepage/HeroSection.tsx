@@ -195,11 +195,19 @@ export function HeroSection() {
           >
             <div className="flex items-center gap-2 text-muted-foreground font-sans text-xs md:text-sm">
               <ShieldCheck size={15} className="text-primary flex-shrink-0" />
+              <span>Nurse-Owned &amp; Nurse-Led</span>
+            </div>
+            <div className="flex items-center gap-2 text-muted-foreground font-sans text-xs md:text-sm">
+              <ShieldCheck size={15} className="text-primary flex-shrink-0" />
               <span>Licensed &amp; Insured</span>
             </div>
             <div className="flex items-center gap-2 text-muted-foreground font-sans text-xs md:text-sm">
               <ShieldCheck size={15} className="text-primary flex-shrink-0" />
               <span>Background-Checked Caregivers</span>
+            </div>
+            <div className="flex items-center gap-2 text-muted-foreground font-sans text-xs md:text-sm">
+              <ShieldCheck size={15} className="text-primary flex-shrink-0" />
+              <span>Serving Katy &amp; Greater Houston</span>
             </div>
             <a
               href="tel:+12819756044"

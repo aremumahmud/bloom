@@ -19,6 +19,12 @@ import { Phone, Mail, MapPin, Clock, CheckCircle, Instagram, Facebook } from "lu
 import { useToast } from "@/hooks/use-toast";
 import handsImage from "@/assets/hands-connection.jpg";
 
+const ADDRESS = "4338 San Pellegrino Pl, Katy, TX 77493, United States";
+// TODO: swap for the exact embed URL from Bloom's official Google Business
+// Profile listing once provided — see KatyLocalProofSection.tsx for the
+// matching homepage embed and the same caveat.
+const MAP_EMBED_SRC = `https://www.google.com/maps?q=${encodeURIComponent(ADDRESS)}&output=embed`;
+
 const contactInfo = [
   {
     icon: Phone,
@@ -31,6 +37,11 @@ const contactInfo = [
     label: "Email",
     value: "info@bloomhomecare.org",
     href: "mailto:info@bloomhomecare.org",
+  },
+  {
+    icon: MapPin,
+    label: "Address",
+    value: ADDRESS,
   },
   {
     icon: MapPin,
@@ -332,6 +343,19 @@ const Contact = () => {
                     </div>
                   </div>
                 ))}
+              </div>
+
+              {/* Map — Bloom Home Care's verified Katy, TX location */}
+              <div className="rounded-2xl overflow-hidden border border-border shadow-sm mb-12 aspect-[4/3]">
+                <iframe
+                  src={MAP_EMBED_SRC}
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Bloom Home Care location in Katy, TX"
+                />
               </div>
 
               {/* Social Links */}

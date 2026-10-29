@@ -3,13 +3,15 @@
 import { HeroSection } from "@/components/homepage/HeroSection";
 import { AboutSection } from "@/components/homepage/AboutSection";
 import { TrustIndicators } from "@/components/homepage/TrustIndicators";
+import { FounderSection } from "@/components/homepage/FounderSection";
+import { GoogleReviewsSection } from "@/components/homepage/GoogleReviewsSection";
+import { KatyLocalProofSection } from "@/components/homepage/KatyLocalProofSection";
+import { HomeCareResourcesSection } from "@/components/homepage/HomeCareResourcesSection";
 import { HowItWorksSection } from "@/components/homepage/HowItWorksSection";
 import { ServicesSection } from "@/components/homepage/ServicesSection";
 import { ApproachSection } from "@/components/homepage/ApproachSection";
 import { CareCollageSection } from "@/components/homepage/CareCollageSection";
 import { WhoWeServeSection } from "@/components/homepage/WhoWeServeSection";
-import { TestimonialsSection } from "@/components/homepage/TestimonialsSection";
-import { FounderSection } from "@/components/homepage/FounderSection";
 import { ServiceAreaSection } from "@/components/homepage/ServiceAreaSection";
 import { LeadMagnetSection } from "@/components/homepage/LeadMagnetSection";
 import { NewsletterSection } from "@/components/homepage/NewsletterSection";
@@ -25,30 +27,38 @@ const Index = () => {
       <AboutSection />
       {/* 3. Trust signals — why choose Bloom Home Care */}
       <TrustIndicators />
-      {/* 4. How it works — process reassurance */}
-      <HowItWorksSection />
-      {/* 5. Services — what we offer */}
-      <ServicesSection />
-      {/* 6. Approach — philosophy + values */}
-      <ApproachSection />
-      {/* 7. Visual storytelling */}
-      <CareCollageSection />
-      {/* 8. Who we serve — audience targeting */}
-      <WhoWeServeSection />
-      {/* 9. Google Reviews — "The Trust We've Earned" */}
-      <TestimonialsSection />
-      {/* 10. Founder — personal story + credibility */}
+      {/* 4. Founder — personal story + credibility */}
       <FounderSection />
-      {/* 11. Service areas — local SEO */}
+      {/* 5. Google Reviews — "Trusted by Katy Families" */}
+      <GoogleReviewsSection />
+      {/* 6. Katy local proof — address, map, local CTA */}
+      <KatyLocalProofSection />
+      {/* 7. Home care resources — blog article cards */}
+      <HomeCareResourcesSection />
+      {/* 8. How it works — process reassurance */}
+      <HowItWorksSection />
+      {/* 9. Services — what we offer */}
+      <ServicesSection />
+      {/* 10. Approach — philosophy + values */}
+      <ApproachSection />
+      {/* 11. Visual storytelling */}
+      <CareCollageSection />
+      {/* 12. Who we serve — audience targeting */}
+      <WhoWeServeSection />
+      {/* 13. Service areas — local SEO */}
       <ServiceAreaSection />
-      {/* 12. Lead magnet — guide download */}
+      {/* 14. Lead magnet — guide download */}
       <LeadMagnetSection />
-      {/* 13. Newsletter */}
+      {/* 15. Newsletter */}
       <NewsletterSection />
-      {/* 14. FAQ — rich snippet SEO */}
+      {/* 16. FAQ — rich snippet SEO */}
       <HomeFAQSection />
-      {/* 15. Final CTA */}
-      <CTASection />
+      {/* 17. Final CTA */}
+      <CTASection
+        heading="Ready to Talk About Home Care?"
+        description="Tell us what your family needs, and our team will help you understand your options for personalized, non-medical home care in Katy, TX and Greater Houston."
+        ctaLabel="Schedule a Free Consultation"
+      />
     </main>
   );
 };

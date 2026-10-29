@@ -9,7 +9,17 @@ import { ArrowRight, Instagram, Facebook, Phone } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { ConsultationModal } from "@/components/homepage/ConsultationModal";
 
-export function CTASection() {
+interface CTASectionProps {
+  heading?: string;
+  description?: string;
+  ctaLabel?: string;
+}
+
+export function CTASection({
+  heading = "Schedule Your Free Home Care Consultation Today",
+  description,
+  ctaLabel = "Request a Free Consultation",
+}: CTASectionProps = {}) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
   const isMobile = useIsMobile();
@@ -34,23 +44,31 @@ export function CTASection() {
             className="text-center"
           >
             <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground mb-6">
-              Schedule Your Free Home Care Consultation Today
+              {heading}
             </h2>
 
-            <p className="text-lg text-muted-foreground font-sans mb-4 max-w-xl mx-auto">
-              If your loved one needs support staying at home safely and independently, we're here to help.
-              A consultation is free with no obligation. We'll listen to your situation, answer your questions,
-              and create a personalized plan if Bloom Home Care is a good fit for your family.
-            </p>
+            {description ? (
+              <p className="text-lg text-muted-foreground font-sans mb-10 max-w-xl mx-auto">
+                {description}
+              </p>
+            ) : (
+              <>
+                <p className="text-lg text-muted-foreground font-sans mb-4 max-w-xl mx-auto">
+                  If your loved one needs support staying at home safely and independently, we're here to help.
+                  A consultation is free with no obligation. We'll listen to your situation, answer your questions,
+                  and create a personalized plan if Bloom Home Care is a good fit for your family.
+                </p>
 
-            <p className="text-lg text-muted-foreground font-sans mb-10 max-w-xl mx-auto">
-              If you are looking for a home care agency Katy, TX, that families can trust, Bloom Home Care is
-              here to listen, guide, and help you take the next step with confidence.
-            </p>
+                <p className="text-lg text-muted-foreground font-sans mb-10 max-w-xl mx-auto">
+                  If you are looking for a home care agency Katy, TX, that families can trust, Bloom Home Care is
+                  here to listen, guide, and help you take the next step with confidence.
+                </p>
+              </>
+            )}
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
               <Button variant="premium" size="xl" onClick={handleCTAClick} className="group">
-                Request a Free Consultation
+                {ctaLabel}
                 <ArrowRight size={18} className="transition-transform group-hover:translate-x-1" />
               </Button>
               <a

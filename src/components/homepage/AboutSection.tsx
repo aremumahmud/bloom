@@ -54,29 +54,26 @@ export function AboutSection() {
               id="about-heading"
               className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground mb-6 leading-tight"
             >
-              Senior Home Care in Katy, TX<br className="hidden lg:block" />
+              Senior Home Care in Katy, TX{" "}
+              <br className="hidden lg:block" />
               That Feels Like Family
             </h2>
 
             <div className="space-y-5 text-muted-foreground font-sans text-base md:text-lg leading-relaxed mb-8">
               <p>
-                Bloom Home Care was founded on a simple belief that aging at home shouldn't mean doing it alone.
-                When seniors receive the right support in their own homes, they stay healthier, happier, and
-                more independent. That's what we've been helping families achieve for years.
+                Bloom Home Care provides personalized, non-medical home care for seniors and adults in Katy, TX.
+                Our caregivers help with personal care, companionship, meal preparation, mobility, medication
+                reminders, transportation, dementia support, respite care, and everyday routines that make
+                living at home safer and more comfortable.
               </p>
               <p>
-                Families looking for senior home care Katy TX, can trust Bloom Home Care for thoughtful
-                care plans, compassionate caregivers, and support that respects each person's daily routine.
+                Care plans are built around each person's needs, schedule, preferences, and level of
+                independence. As a nurse-owned and nurse-led home care agency, Bloom Home Care brings practical
+                healthcare experience to the way caregivers are selected, matched, and supported.
               </p>
               <p>
-                We've worked with hundreds of families across Katy, Cypress, Spring, The Woodlands, and
-                Sugar Land. Each family is unique, and each person deserves care that's personalized to their
-                specific needs and preferences. That's why we don't use a one-size-fits-all approach.
-              </p>
-              <p>
-                Our team knows that trust is earned through consistency, kindness, and genuine commitment.
-                Every day, our caregivers show up with the understanding that they're not just providing
-                a service; they're becoming part of someone's life. We take that responsibility seriously.
+                We serve families in Katy and nearby Greater Houston communities, with care that can adjust
+                as needs change.
               </p>
               <p className="text-primary font-medium italic text-base">
                 "Your Home. Your Health. Our Commitment."
