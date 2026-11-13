@@ -22,7 +22,7 @@ export function FounderSection() {
         >
           {/* Portrait */}
           <div className="flex justify-center md:justify-end">
-            <div className="w-52 h-64 rounded-2xl overflow-hidden shadow-md">
+            <div className="w-full max-w-[22rem] aspect-[4/5] rounded-2xl overflow-hidden shadow-md">
               <img
                 src={founderPortrait.src}
                 alt="Jackeline Herrera, BSN, RN, CMSRN, Founder of Bloom Home Care"

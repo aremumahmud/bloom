@@ -4,24 +4,28 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import Link from "next/link";
-import { ArrowRight, BookOpen } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 const resources = [
   {
     title: "Home Care Cost in Katy, TX",
     href: "/blog/home-care-cost-in-katy-tx",
+    image: "/blog/home-care-cost-in-katy-tx.jpg",
   },
   {
     title: "What to Expect During Your First Home Care Consultation",
     href: "/blog/what-to-expect-home-care-consultation",
+    image: "/blog/what-to-expect-home-care-consultation.jpg",
   },
   {
     title: "What Should You Ask Before Hiring a Home Caregiver?",
     href: "/blog/questions-to-ask-before-hiring-a-caregiver",
+    image: "/blog/questions-to-ask-before-hiring-a-caregiver.jpg",
   },
   {
     title: "Signs a Senior May Need Home Care",
     href: "/blog/signs-a-senior-needs-home-care",
+    image: "/blog/signs-a-senior-needs-home-care.jpg",
   },
 ];
 
@@ -59,16 +63,25 @@ export function HomeCareResourcesSection() {
             >
               <Link
                 href={resource.href}
-                className="group flex flex-col gap-3 p-6 h-full rounded-xl border border-border bg-card hover:border-primary/30 hover:shadow-md transition-all duration-300"
+                className="group flex flex-col h-full rounded-xl border border-border bg-card overflow-hidden hover:border-primary/30 hover:shadow-md transition-all duration-300"
               >
-                <BookOpen size={20} className="text-primary flex-shrink-0" aria-hidden="true" />
-                <p className="font-sans font-semibold text-foreground text-sm leading-snug flex-1">
-                  {resource.title}
-                </p>
-                <span className="inline-flex items-center gap-1 text-primary font-sans text-xs font-medium">
-                  Read More
-                  <ArrowRight size={13} className="transition-transform group-hover:translate-x-1" />
-                </span>
+                <div className="aspect-[16/10] overflow-hidden bg-muted">
+                  <img
+                    src={resource.image}
+                    alt={resource.title}
+                    loading="lazy"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div className="flex flex-col gap-3 p-5 flex-1">
+                  <p className="font-sans font-semibold text-foreground text-sm leading-snug flex-1">
+                    {resource.title}
+                  </p>
+                  <span className="inline-flex items-center gap-1 text-primary font-sans text-xs font-medium">
+                    Read More
+                    <ArrowRight size={13} className="transition-transform group-hover:translate-x-1" />
+                  </span>
+                </div>
               </Link>
             </motion.div>
           ))}
