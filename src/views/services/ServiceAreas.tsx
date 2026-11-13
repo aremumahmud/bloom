@@ -230,7 +230,7 @@ const ServiceAreas = () => {
               <Button variant="premium" size="lg" onClick={handleCTA}>
                 <Phone size={16} className="mr-2" />Speak With a Care Coordinator
               </Button>
-              <p className="text-sm text-muted-foreground font-sans mt-4 tracking-wide">Licensed & Insured · Privately Owned & Operated</p>
+              <p className="text-sm text-muted-foreground font-sans mt-4 tracking-wide">Licensed · Privately Owned & Operated</p>
             </motion.div>
             <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="order-1 md:order-2">
               <img src={cookingTogetherImage.src} alt="Caregiver and client cooking a meal together" className="rounded-xl shadow-lg w-full aspect-[4/3] object-cover" loading="lazy" />

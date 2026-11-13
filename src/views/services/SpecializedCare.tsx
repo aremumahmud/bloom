@@ -208,7 +208,7 @@ const SpecializedCare = () => {
               <Button variant="premium" size="lg" onClick={handleCTA}>Speak With a Care Coordinator</Button>
               <Link href="/services"><Button variant="outline" size="lg">View All Services<ArrowRight size={16} className="ml-2" /></Button></Link>
             </div>
-            <p className="text-sm text-muted-foreground font-sans mt-6 tracking-wide">Licensed & Insured · Privately Owned & Operated</p>
+            <p className="text-sm text-muted-foreground font-sans mt-6 tracking-wide">Licensed · Privately Owned & Operated</p>
           </motion.div>
         </div>
       </section>

@@ -243,9 +243,9 @@ const locations: Record<string, LocationData> = {
           "Companion care focuses on social engagement, conversation, light household tasks, and keeping your loved one active and stimulated. Personal care includes hands-on assistance with daily activities such as bathing, dressing, grooming, and mobility support. Many clients receive both.",
       },
       {
-        question: "Is Bloom Home Care licensed and insured in Texas?",
+        question: "Is Bloom Home Care licensed in Texas?",
         answer:
-          "Yes. Bloom Home Care is fully licensed and insured in the state of Texas and operates in compliance with all applicable regulations for non-medical home care agencies. All of our caregivers are background-checked, trained, and bonded.",
+          "Yes. Bloom Home Care is fully licensed in the state of Texas and operates in compliance with all applicable regulations for non-medical home care agencies. All of our caregivers are background-checked, trained, and bonded.",
       },
     ],
     nearbyAreas: [
@@ -377,7 +377,7 @@ const locations: Record<string, LocationData> = {
       {
         question: "How is Bloom Home Care different from hiring an independent caregiver?",
         answer:
-          "With Bloom Home Care, your caregiver is background-checked, trained, insured, and supported by an agency team. You have accountability, backup coverage when needed, and a care coordinator you can reach directly. Independent arrangements lack all of that — and the risk falls entirely on your family.",
+          "With Bloom Home Care, your caregiver is background-checked, trained, and supported by an agency team. You have accountability, backup coverage when needed, and a care coordinator you can reach directly. Independent arrangements lack all of that — and the risk falls entirely on your family.",
       },
     ],
     nearbyAreas: [
@@ -641,7 +641,7 @@ const locations: Record<string, LocationData> = {
       { question: "Does Bloom Home Care serve Tomball, TX?", answer: "Yes. We serve all of Tomball, including the 77375 and 77377 zip codes and surrounding areas. Call us to confirm coverage for your specific address." },
       { question: "How quickly can care start in Tomball?", answer: "For most families, care begins within 24 to 72 hours of your initial consultation. Urgent situations, including post-hospital discharge, are given priority." },
       { question: "What services are available in Tomball?", answer: "We offer companion care, personal care, respite care, post-hospital recovery support, meal preparation, medication reminders, light housekeeping, and transportation accompaniment." },
-      { question: "Are your Tomball caregivers background-checked?", answer: "Yes. Every Bloom Home Care caregiver undergoes thorough background screening, is fully insured, and receives training before being placed with any client." },
+      { question: "Are your Tomball caregivers background-checked?", answer: "Yes. Every Bloom Home Care caregiver undergoes thorough background screening and receives training before being placed with any client." },
     ],
     nearbyAreas: [
       { name: "Spring", slug: "spring-tx" },
@@ -787,7 +787,7 @@ const locations: Record<string, LocationData> = {
       { question: "Does Bloom Home Care serve Channelview, TX?", answer: "Yes. We serve Channelview and surrounding East Houston communities within the 77530 zip code and surrounding areas." },
       { question: "How quickly can care begin in Channelview?", answer: "For most families, care begins within 24 to 72 hours of your initial consultation. We prioritize urgent and post-hospital situations." },
       { question: "What services are available in Channelview?", answer: "We offer companion care, personal care, respite care, post-hospital support, meal preparation, medication reminders, and light housekeeping — all non-medical and tailored to each client." },
-      { question: "Are your caregivers vetted and insured?", answer: "Yes. Every Bloom Home Care caregiver is thoroughly background-checked, trained, and fully insured before being placed with any client." },
+      { question: "Are your caregivers vetted and trained?", answer: "Yes. Every Bloom Home Care caregiver is thoroughly background-checked and trained before being placed with any client." },
     ],
     nearbyAreas: [
       { name: "Pasadena", slug: "pasadena-tx" },
@@ -957,7 +957,7 @@ const locations: Record<string, LocationData> = {
       { question: "Does Bloom Home Care serve Friendswood, TX?", answer: "Yes. We serve all of Friendswood within the 77546 zip code and neighboring communities in Galveston and Harris Counties." },
       { question: "How quickly can care begin in Friendswood?", answer: "For most clients, care begins within 24 to 72 hours of your initial call. We prioritize urgent situations including post-hospital discharge." },
       { question: "What home care services are available in Friendswood?", answer: "We offer companion care, personal care, respite care, post-hospital support, meal preparation, medication reminders, and light housekeeping." },
-      { question: "Are your caregivers in Friendswood fully vetted?", answer: "Yes. All Bloom Home Care caregivers undergo thorough background checks, are fully insured, and receive training before placement with any client." },
+      { question: "Are your caregivers in Friendswood fully vetted?", answer: "Yes. All Bloom Home Care caregivers undergo thorough background checks and receive training before placement with any client." },
     ],
     nearbyAreas: [
       { name: "Pearland", slug: "pearland-tx" },
@@ -1103,7 +1103,7 @@ const services = [
 
 const whyUs = [
   { icon: Handshake, title: "Personally Matched Caregivers", desc: "We match on personality and values, not just availability. Your loved one meets their caregiver before care begins." },
-  { icon: Shield, title: "Background-Checked & Insured", desc: "Every caregiver is thoroughly vetted, trained, and insured. You can trust the person in your loved one's home." },
+  { icon: Shield, title: "Background-Checked & Trained", desc: "Every caregiver is thoroughly vetted and trained. You can trust the person in your loved one's home." },
   { icon: Clock, title: "Consistent, On-Time Care", desc: "We show up when we say we will. Consistency is the foundation of trust — and we don't take it lightly." },
   { icon: Heart, title: "Locally Owned & Operated", desc: "We're not a franchise. We're neighbors who care about this community and are personally accountable to every family we serve." },
 ];
@@ -1210,7 +1210,7 @@ export default function LocationPage({ locationKey }: { locationKey: string }) {
 
             {/* Trust badges */}
             <div className="flex flex-wrap gap-x-6 gap-y-2 text-xs text-muted-foreground font-sans">
-              <span className="flex items-center gap-1.5"><CheckCircle2 size={13} className="text-primary" /> Licensed &amp; Insured</span>
+              <span className="flex items-center gap-1.5"><CheckCircle2 size={13} className="text-primary" /> Licensed</span>
               <span className="flex items-center gap-1.5"><CheckCircle2 size={13} className="text-primary" /> Background-Checked Caregivers</span>
               <span className="flex items-center gap-1.5"><CheckCircle2 size={13} className="text-primary" /> No Long-Term Contracts</span>
               <span className="flex items-center gap-1.5"><CheckCircle2 size={13} className="text-primary" /> Locally Owned &amp; Operated</span>
@@ -1428,7 +1428,7 @@ export default function LocationPage({ locationKey }: { locationKey: string }) {
               We Also Serve Nearby Communities
             </h2>
             <p className="text-muted-foreground font-sans text-sm mb-8">
-              Bloom Home Care provides home care throughout North Dallas and surrounding areas.
+              Bloom Home Care provides home care throughout Katy and the Greater Houston area.
             </p>
             <div className="flex flex-wrap gap-3 justify-center">
               {location.nearbyAreas.map((area) => (

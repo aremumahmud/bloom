@@ -142,8 +142,10 @@ export function Footer() {
 
         {/* Social + Bottom Bar */}
         <div className="mt-8 pt-6 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-xs text-muted-foreground font-sans">
-            © {new Date().getFullYear()} Bloom Home Care. All rights reserved.
+          <p className="text-xs text-muted-foreground font-sans flex items-center gap-2">
+            <span>© {new Date().getFullYear()} Bloom Home Care. All rights reserved.</span>
+            <span aria-hidden="true">·</span>
+            <Link href="/privacy-policy" className="hover:text-foreground transition-colors">Privacy Policy</Link>
           </p>
           <div className="flex items-center gap-4">
             <a href="https://www.instagram.com/bloomhomecare/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Instagram">
@@ -154,7 +156,7 @@ export function Footer() {
             </a>
           </div>
           <p className="text-xs text-muted-foreground font-sans">
-            Licensed & Insured · Privately Owned & Operated
+            Licensed · Privately Owned & Operated
           </p>
         </div>
       </div>

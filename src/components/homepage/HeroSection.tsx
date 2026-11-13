@@ -199,7 +199,7 @@ export function HeroSection() {
             </div>
             <div className="flex items-center gap-2 text-muted-foreground font-sans text-xs md:text-sm">
               <ShieldCheck size={15} className="text-primary flex-shrink-0" />
-              <span>Licensed &amp; Insured</span>
+              <span>Licensed</span>
             </div>
             <div className="flex items-center gap-2 text-muted-foreground font-sans text-xs md:text-sm">
               <ShieldCheck size={15} className="text-primary flex-shrink-0" />

@@ -383,7 +383,7 @@ const Services = () => {
             </p>
           </motion.div>
 
-          <div className="grid sm:grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -412,19 +412,6 @@ const Services = () => {
               <h3 className="font-serif text-xl text-foreground mb-4">Long-Term Care Insurance</h3>
               <p className="text-muted-foreground font-sans text-sm leading-relaxed">
                 Clients may use active long-term care insurance benefits. We provide required documentation to support reimbursement claims.
-              </p>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="p-8 bg-card rounded-xl border border-border"
-            >
-              <h3 className="font-serif text-xl text-foreground mb-4">Other Approved Sources</h3>
-              <p className="text-muted-foreground font-sans text-sm leading-relaxed">
-                Veterans benefits or other approved third-party funding sources, if applicable and authorized.
               </p>
             </motion.div>
           </div>

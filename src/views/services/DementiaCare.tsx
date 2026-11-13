@@ -361,7 +361,7 @@ const DementiaCare = () => {
               </Link>
             </div>
             <p className="text-sm text-muted-foreground font-sans mt-6 tracking-wide">
-              Licensed & Insured · Privately Owned & Operated
+              Licensed · Privately Owned & Operated
             </p>
           </motion.div>
         </div>

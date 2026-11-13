@@ -3,11 +3,11 @@ import CompanionCare from '@/views/services/CompanionCare'
 
 export const metadata: Metadata = {
   title: 'Companion Care Services in Katy, TX | Bloom Home Care',
-  description: 'Professional companion care for seniors and adults in Prosper, Frisco, McKinney, Allen, and Katy, TX. Meaningful conversation, social engagement, and trusted presence. Call 281-975-6044.',
-  keywords: ['companion care Katy, TX', 'senior companion care Prosper TX', 'companion care Frisco TX', 'social engagement home care', 'loneliness prevention seniors', 'companionship care McKinney'],
+  description: 'Professional companion care for seniors and adults in Katy, TX and Greater Houston. Meaningful conversation, social engagement, and trusted presence. Call 281-975-6044.',
+  keywords: ['companion care Katy, TX', 'social engagement home care', 'loneliness prevention seniors'],
   alternates: { canonical: 'https://bloomhomecare.org/services/companion-care' },
   openGraph: { title: 'Companion Care in Katy, TX | Bloom Home Care', description: 'Trusted companion care that combats isolation and brings meaningful engagement to seniors and adults across Katy, TX.', url: 'https://bloomhomecare.org/services/companion-care', type: 'website', siteName: 'Bloom Home Care' },
-  twitter: { card: 'summary', title: 'Companion Care in Katy, TX | Bloom Home Care', description: 'Meaningful companionship for seniors in Prosper, Frisco, McKinney, Allen, and Katy, TX.' },
+  twitter: { card: 'summary', title: 'Companion Care in Katy, TX | Bloom Home Care', description: 'Meaningful companionship for seniors in Katy, TX and Greater Houston.' },
 }
 
 const serviceSchema = {

@@ -49,7 +49,7 @@ export function TrustIndicators() {
             Why Families Choose Bloom Home Care
           </h2>
           <p className="text-muted-foreground font-sans text-lg max-w-2xl mx-auto">
-            Licensed &amp; insured. Serving Katy, TX and surrounding areas with care
+            Licensed. Serving Katy, TX and surrounding areas with care
             that is intentional, consistent, and built on trust and genuine commitment to well-being.
           </p>
         </motion.div>

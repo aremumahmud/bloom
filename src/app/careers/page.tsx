@@ -2,24 +2,19 @@ import type { Metadata } from 'next'
 import Careers from '@/views/Careers'
 
 export const metadata: Metadata = {
-  title: 'Caregiver Jobs in Prosper, Frisco & Katy, TX | Bloom Home Care',
-  description: "Join Bloom Home Care's care team. We're hiring compassionate, reliable home caregivers in Prosper, Frisco, Allen, McKinney, Celina, and Katy, TX. Flexible scheduling, team support, and meaningful work.",
+  title: 'Caregiver Jobs in Katy, TX | Bloom Home Care',
+  description: "Join Bloom Home Care's care team. We're hiring compassionate, reliable home caregivers in Katy, TX and Greater Houston. Flexible scheduling, team support, and meaningful work.",
   keywords: [
     'caregiver jobs Katy, TX TX',
-    'home care jobs Prosper TX',
-    'caregiver employment Frisco TX',
-    'home health aide jobs McKinney TX',
-    'senior care jobs Allen TX',
     'companion caregiver jobs',
     'non-medical caregiver positions',
     'Bloom Home Care careers',
-    'caregiving jobs Collin County',
     'flexible caregiver schedule',
   ],
   alternates: { canonical: 'https://bloomhomecare.org/careers' },
   openGraph: {
     title: 'Caregiver Jobs in Katy, TX | Bloom Home Care',
-    description: "Join our compassionate care team. We're hiring dedicated caregivers in Prosper, Frisco, McKinney, Allen, and greater Katy, TX. Make a meaningful difference every day.",
+    description: "Join our compassionate care team. We're hiring dedicated caregivers in Katy, TX and Greater Houston. Make a meaningful difference every day.",
     url: 'https://bloomhomecare.org/careers',
     type: 'website',
     siteName: 'Bloom Home Care',
@@ -27,7 +22,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary',
     title: 'Caregiver Jobs in Katy, TX | Bloom Home Care',
-    description: "Join Bloom Home Care's care team. Hiring compassionate caregivers in Prosper, Frisco, McKinney, Allen, and Katy, TX.",
+    description: "Join Bloom Home Care's care team. Hiring compassionate caregivers in Katy, TX and Greater Houston.",
   },
 }
 

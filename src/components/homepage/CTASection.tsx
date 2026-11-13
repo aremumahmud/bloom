@@ -103,7 +103,7 @@ export function CTASection({
             </div>
 
             <p className="text-sm text-muted-foreground font-sans mt-4 tracking-wide">
-              Licensed &amp; Insured · info@bloomhomecare.org
+              Licensed · info@bloomhomecare.org
             </p>
           </motion.div>
         </div>

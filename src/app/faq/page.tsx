@@ -3,7 +3,7 @@ import FAQ from '@/views/FAQ'
 
 export const metadata: Metadata = {
   title: 'Home Care FAQs | Bloom Home Care — Answers for Katy, TX Families',
-  description: "Answers to your questions about non-medical home care, caregiver selection, costs, insurance, and getting started with Bloom Home Care in Prosper, Frisco, McKinney, Allen, and Katy, TX.",
+  description: "Answers to your questions about non-medical home care, caregiver selection, costs, insurance, and getting started with Bloom Home Care in Katy, TX and Greater Houston.",
   keywords: [
     'home care FAQ',
     'senior home care questions',
@@ -11,15 +11,13 @@ export const metadata: Metadata = {
     'how to hire a caregiver',
     'home care insurance coverage',
     'long term care insurance home care',
-    'home care Prosper TX questions',
-    'home care Frisco TX questions',
     'home care Katy, TX',
     'Bloom Home Care FAQ',
   ],
   alternates: { canonical: 'https://bloomhomecare.org/faq' },
   openGraph: {
     title: 'Home Care FAQs | Bloom Home Care',
-    description: 'Common questions about non-medical home care, caregiver quality, costs, and getting started. Serving Prosper, Frisco, McKinney, Allen, and Katy, TX.',
+    description: 'Common questions about non-medical home care, caregiver quality, costs, and getting started. Serving Katy, TX and Greater Houston.',
     url: 'https://bloomhomecare.org/faq',
     type: 'website',
     siteName: 'Bloom Home Care',
@@ -48,7 +46,7 @@ const faqSchema = {
       name: 'What areas do you serve?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'We serve Prosper, Frisco, Allen, McKinney, Celina, Aubrey, Little Elm, The Colony, and the greater Katy, TX area. If you\'re unsure whether we serve your location, please contact us and we\'ll be happy to discuss your needs.',
+        text: 'We serve Aubrey, Little Elm, The Colony, and the greater Katy, TX area. If you\'re unsure whether we serve your location, please contact us and we\'ll be happy to discuss your needs.',
       },
     },
     {

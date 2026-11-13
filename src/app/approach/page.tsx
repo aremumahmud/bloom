@@ -3,14 +3,13 @@ import OurApproach from '@/views/OurApproach'
 
 export const metadata: Metadata = {
   title: 'Our Approach to Senior Home Care | Bloom Home Care Katy, TX',
-  description: "Discover Bloom Home Care's relationship-first approach to non-medical home care. Intentional, consistent, and deeply human care for seniors and adults across Prosper, Frisco, McKinney, Allen, and Katy, TX.",
+  description: "Discover Bloom Home Care's relationship-first approach to non-medical home care. Intentional, consistent, and deeply human care for seniors and adults across Katy, TX and Greater Houston.",
   keywords: [
     'home care approach Katy, TX',
     'relationship-first senior care',
     'intentional home care Texas',
     'dignified elder care Katy, TX',
     'Bloom Home Care values',
-    'compassionate home care Prosper TX',
     'consistent caregiver Katy, TX',
     'non-medical home care philosophy',
   ],
@@ -25,7 +24,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary',
     title: 'Our Approach to Senior Home Care | Bloom Home Care Katy, TX',
-    description: 'Relationship-first home care built on presence, consistency, and dignity. Serving Prosper, Frisco, McKinney, Allen, and greater Katy, TX.',
+    description: 'Relationship-first home care built on presence, consistency, and dignity. Serving Katy, TX and the Greater Houston area.',
   },
 }
 

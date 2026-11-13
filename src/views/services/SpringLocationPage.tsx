@@ -251,7 +251,7 @@ export default function SpringLocationPage() {
             </div>
 
             <div className="flex flex-wrap gap-x-6 gap-y-2 text-xs text-muted-foreground font-sans">
-              <span className="flex items-center gap-1.5"><CheckCircle2 size={13} className="text-primary" /> Licensed &amp; Insured</span>
+              <span className="flex items-center gap-1.5"><CheckCircle2 size={13} className="text-primary" /> Licensed</span>
               <span className="flex items-center gap-1.5"><CheckCircle2 size={13} className="text-primary" /> Background-Checked Caregivers</span>
               <span className="flex items-center gap-1.5"><CheckCircle2 size={13} className="text-primary" /> No Long-Term Contracts</span>
               <span className="flex items-center gap-1.5"><CheckCircle2 size={13} className="text-primary" /> Locally Owned &amp; Operated</span>

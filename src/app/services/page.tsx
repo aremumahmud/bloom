@@ -3,12 +3,12 @@ import Services from '@/views/Services'
 
 export const metadata: Metadata = {
   title: 'Home Care Services in Katy, TX | Bloom Home Care',
-  description: 'Non-medical home care services in Prosper, Frisco, Allen, McKinney, and Katy, TX. Companion care, personal care, dementia support, respite care, post-hospital recovery, and more.',
-  keywords: ['home care services Katy, TX', 'non-medical home care', 'companion care Texas', 'personal care assistance Katy, TX', 'respite care Collin County', 'senior care services Prosper TX'],
+  description: 'Non-medical home care services in Katy, TX and Greater Houston. Companion care, personal care, dementia support, respite care, post-hospital recovery, and more.',
+  keywords: ['home care services Katy, TX', 'non-medical home care', 'companion care Texas', 'personal care assistance Katy, TX'],
   alternates: { canonical: 'https://bloomhomecare.org/services' },
   openGraph: {
     title: 'Home Care Services in Katy, TX | Bloom Home Care',
-    description: 'Companion care, personal care, dementia support, respite care, and more — delivered with dignity across Prosper, Frisco, Allen, McKinney, and Katy, TX.',
+    description: 'Companion care, personal care, dementia support, respite care, and more — delivered with dignity across Katy, TX and Greater Houston.',
     url: 'https://bloomhomecare.org/services',
     type: 'website',
     siteName: 'Bloom Home Care',

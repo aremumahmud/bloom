@@ -3,11 +3,11 @@ import DementiaCare from '@/views/services/DementiaCare'
 
 export const metadata: Metadata = {
   title: 'Dementia & Memory Care Support in Katy, TX | Bloom Home Care',
-  description: 'Specialized dementia and memory care companion support for families in Prosper, Frisco, McKinney, Allen, and Katy, TX. Trained caregivers, consistent routines, safe home environment. Call 281-975-6044.',
-  keywords: ['dementia care Katy, TX', 'memory care companion Prosper TX', 'Alzheimer care home support', 'dementia caregiver Frisco TX', 'memory care McKinney', 'in-home dementia support'],
+  description: 'Specialized dementia and memory care companion support for families in Katy, TX and Greater Houston. Trained caregivers, consistent routines, safe home environment. Call 281-975-6044.',
+  keywords: ['dementia care Katy, TX', 'Alzheimer care home support', 'in-home dementia support'],
   alternates: { canonical: 'https://bloomhomecare.org/services/dementia-care' },
-  openGraph: { title: 'Dementia Care Support in Katy, TX | Bloom Home Care', description: 'Trained, patient dementia companion care for families across Prosper, Frisco, McKinney, Allen, and Katy, TX.', url: 'https://bloomhomecare.org/services/dementia-care', type: 'website', siteName: 'Bloom Home Care' },
-  twitter: { card: 'summary', title: 'Dementia Care Support in Katy, TX | Bloom Home Care', description: 'Specialized dementia companion support for families in Prosper, Frisco, McKinney, and Allen, TX.' },
+  openGraph: { title: 'Dementia Care Support in Katy, TX | Bloom Home Care', description: 'Trained, patient dementia companion care for families across Katy, TX and Greater Houston.', url: 'https://bloomhomecare.org/services/dementia-care', type: 'website', siteName: 'Bloom Home Care' },
+  twitter: { card: 'summary', title: 'Dementia Care Support in Katy, TX | Bloom Home Care', description: 'Specialized dementia companion support for families in Katy, TX and Greater Houston.' },
 }
 
 const serviceSchema = {

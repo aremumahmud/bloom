@@ -3,11 +3,11 @@ import SpecializedCare from '@/views/services/SpecializedCare'
 
 export const metadata: Metadata = {
   title: 'Specialized Home Care Services in Katy, TX | Bloom Home Care',
-  description: 'Specialized non-medical home care for adults with Parkinson\'s, stroke recovery, chronic illness, and complex daily living needs in Prosper, Frisco, McKinney, Allen, and Katy, TX. Call 281-975-6044.',
-  keywords: ['specialized home care Katy, TX', 'Parkinson care companion Texas', 'stroke recovery home care Prosper', 'chronic illness care Frisco TX', 'complex care needs McKinney', 'specialized senior care Allen TX'],
+  description: 'Specialized non-medical home care for adults with Parkinson\'s, stroke recovery, chronic illness, and complex daily living needs in Katy, TX and Greater Houston. Call 281-975-6044.',
+  keywords: ['specialized home care Katy, TX', 'Parkinson care companion Texas'],
   alternates: { canonical: 'https://bloomhomecare.org/services/specialized-care' },
-  openGraph: { title: 'Specialized Home Care in Katy, TX | Bloom Home Care', description: 'Tailored non-medical care for seniors with Parkinson\'s, stroke recovery, and complex needs across Prosper, Frisco, McKinney, Allen, and Katy, TX.', url: 'https://bloomhomecare.org/services/specialized-care', type: 'website', siteName: 'Bloom Home Care' },
-  twitter: { card: 'summary', title: 'Specialized Home Care in Katy, TX | Bloom Home Care', description: 'Specialized non-medical care for seniors with complex needs in Prosper, Frisco, McKinney, and Allen, TX.' },
+  openGraph: { title: 'Specialized Home Care in Katy, TX | Bloom Home Care', description: 'Tailored non-medical care for seniors with Parkinson\'s, stroke recovery, and complex needs across Katy, TX and Greater Houston.', url: 'https://bloomhomecare.org/services/specialized-care', type: 'website', siteName: 'Bloom Home Care' },
+  twitter: { card: 'summary', title: 'Specialized Home Care in Katy, TX | Bloom Home Care', description: 'Specialized non-medical care for seniors with complex needs in Katy, TX and Greater Houston.' },
 }
 
 const serviceSchema = {

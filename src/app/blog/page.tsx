@@ -4,13 +4,12 @@ import { getAllBlogPosts } from '@/content/blog-posts'
 
 export const metadata: Metadata = {
   title: 'Bloom Home Care Journal | Home Care Insights for Houston Families',
-  description: "Read Bloom Home Care's blog for expert guidance on home care, aging in place, caregiver resources, and supporting loved ones across Prosper, Frisco, McKinney, Allen, and Katy, TX.",
+  description: "Read Bloom Home Care's blog for expert guidance on home care, aging in place, caregiver resources, and supporting loved ones across Katy, TX and Greater Houston.",
   keywords: [
     'home care blog Katy, TX',
     'senior care tips',
     'aging in place Katy, TX TX',
     'caregiver resources',
-    'home care advice Prosper TX',
     'family caregiver support',
     'elder care insights',
     'senior living tips Texas',
